@@ -1,0 +1,30 @@
+'TechDivision.NodeTypes.FlexColumnLayouts:TailwindBreakpointsMixin':
+  abstract: true
+  ui:
+    inspector:
+      groups:
+        defaultBreakpoint:
+          label: 'Default (smallest)'
+          position: 1
+          icon: 'icon-columns'
+          collapsed: false
+        smBreakpoint:
+          label: 'Phone (sm)'
+          position: 10
+          icon: 'icon-phone'
+          collapsed: true
+        mdBreakpoint:
+          label: 'Tablet (md)'
+          position: 20
+          icon: 'icon-tablet'
+          collapsed: true
+        lgBreakpoint:
+          label: 'Desktop (lg)'
+          position: 20
+          icon: 'icon-desktop'
+          collapsed: true
+        xlBreakpoint:
+          label: 'Large Screen (xl)'
+          position: 20
+          icon: 'icon-desktop'
+          collapsed: true

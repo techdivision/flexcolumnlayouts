@@ -1,0 +1,86 @@
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexShrinkMixin':
+  abstract: true
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:TailwindBreakpointsMixin': true
+  properties:
+    flexShrink:
+      type: string
+      ui:
+        label: 'Allow shrinking (flex-shrink)'
+        reloadIfChanged: true
+        inspector:
+          group: 'defaultBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'flex-shrink':
+                label: 'explicitly allow shrinking'
+              'flex-shrink-0':
+                label: 'explicitly deny shrinking'
+    smFlexShrink:
+      type: string
+      ui:
+        label: 'Allow shrinking (flex-shrink)'
+        reloadIfChanged: true
+        inspector:
+          group: 'smBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'sm:flex-shrink':
+                label: 'explicitly allow shrinking'
+              'sm:flex-shrink-0':
+                label: 'explicitly deny shrinking'
+    mdFlexShrink:
+      type: string
+      ui:
+        label: 'Allow shrinking (flex-shrink)'
+        reloadIfChanged: true
+        inspector:
+          group: 'mdBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'md:flex-shrink':
+                label: 'explicitly allow shrinking'
+              'md:flex-shrink-0':
+                label: 'explicitly deny shrinking'
+    lgFlexShrink:
+      type: string
+      ui:
+        label: 'Allow shrinking (flex-shrink)'
+        reloadIfChanged: true
+        inspector:
+          group: 'lgBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'lg:flex-shrink':
+                label: 'explicitly allow shrinking'
+              'lg:flex-shrink-0':
+                label: 'explicitly deny shrinking'
+    xlFlexShrink:
+      type: string
+      ui:
+        label: 'Allow shrinking (flex-shrink)'
+        reloadIfChanged: true
+        inspector:
+          group: 'xlBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'xl:flex-shrink':
+                label: 'explicitly allow shrinking'
+              'xl:flex-shrink-0':
+                label: 'explicitly deny shrinking'
+

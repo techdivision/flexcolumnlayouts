@@ -1,0 +1,125 @@
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexAlignContentMixin':
+  abstract: true
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:TailwindBreakpointsMixin': true
+  properties:
+    flexAlignContent:
+      type: string
+      ui:
+        label: 'Vertical row alignment (align content)'
+        reloadIfChanged: true
+        help:
+          message: 'Choose how to align rows in vertical axis'
+        inspector:
+          group: 'defaultBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'content-between':
+                label: 'centered, space between'
+              'content-around':
+                label: 'centered, space around'
+              'content-start':
+                label: 'start'
+              'content-end':
+                label: 'end'
+              'content-center':
+                label: 'center'
+    smFlexAlignContent:
+      type: string
+      ui:
+        label: 'Vertical row alignment (align content)'
+        reloadIfChanged: true
+        help:
+          message: 'Choose how to align rows in vertical axis'
+        inspector:
+          group: 'smBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'sm:content-between':
+                label: 'centered, space between'
+              'sm:content-around':
+                label: 'centered, space around'
+              'sm:content-start':
+                label: 'start'
+              'sm:content-end':
+                label: 'end'
+              'sm:content-center':
+                label: 'center'
+    mdFlexAlignContent:
+      type: string
+      ui:
+        label: 'Vertical row alignment (align content)'
+        reloadIfChanged: true
+        help:
+          message: 'Choose how to align rows in vertical axis'
+        inspector:
+          group: 'mdBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'md:content-between':
+                label: 'centered, space between'
+              'md:content-around':
+                label: 'centered, space around'
+              'md:content-start':
+                label: 'start'
+              'md:content-end':
+                label: 'end'
+              'md:content-center':
+                label: 'center'
+    lgFlexAlignContent:
+      type: string
+      ui:
+        label: 'Vertical row alignment (align content)'
+        reloadIfChanged: true
+        help:
+          message: 'Choose how to align rows in vertical axis'
+        inspector:
+          group: 'lgBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'lg:content-between':
+                label: 'centered, space between'
+              'lg:content-around':
+                label: 'centered, space around'
+              'lg:content-start':
+                label: 'start'
+              'lg:content-end':
+                label: 'end'
+              'lg:content-center':
+                label: 'center'
+    xlFlexAlignContent:
+      type: string
+      ui:
+        label: 'Vertical row alignment (align content)'
+        reloadIfChanged: true
+        help:
+          message: 'Choose how to align rows in vertical axis'
+        inspector:
+          group: 'xlBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'xl:content-between':
+                label: 'centered, space between'
+              'xl:content-around':
+                label: 'centered, space around'
+              'xl:content-start':
+                label: 'start'
+              'xl:content-end':
+                label: 'end'
+              'xl:content-center':
+                label: 'center'

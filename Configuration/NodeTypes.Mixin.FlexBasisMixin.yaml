@@ -1,0 +1,135 @@
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexBasisMixin':
+  abstract: true
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:TailwindBreakpointsMixin': true
+  properties:
+    flexBasis:
+      type: string
+      ui:
+        label: 'Override width (flex-basis)'
+        reloadIfChanged: true
+        help:
+          message: 'Override settings from parent element'
+        inspector:
+          group: 'defaultBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'flex-basis-25':
+                label: '25'
+              'flex-basis-33':
+                label: '33'
+              'flex-basis-50':
+                label: '50'
+              'flex-basis-66':
+                label: '66'
+              'flex-basis-75':
+                label: '75'
+              'flex-basis-100':
+                label: '100'
+    smFlexBasis:
+      type: string
+      ui:
+        label: 'Override width (flex-basis)'
+        reloadIfChanged: true
+        help:
+          message: 'Override settings from parent element'
+        inspector:
+          group: 'smBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'sm:flex-basis-25':
+                label: '25'
+              'sm:flex-basis-33':
+                label: '33'
+              'sm:flex-basis-50':
+                label: '50'
+              'sm:flex-basis-66':
+                label: '66'
+              'sm:flex-basis-75':
+                label: '75'
+              'sm:flex-basis-100':
+                label: '100'
+    mdFlexBasis:
+      type: string
+      ui:
+        label: 'Override width (flex-basis)'
+        reloadIfChanged: true
+        help:
+          message: 'Override settings from parent element'
+        inspector:
+          group: 'mdBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'md:flex-basis-25':
+                label: '25'
+              'md:flex-basis-33':
+                label: '33'
+              'md:flex-basis-50':
+                label: '50'
+              'md:flex-basis-66':
+                label: '66'
+              'md:flex-basis-75':
+                label: '75'
+              'md:flex-basis-100':
+                label: '100'
+    lgFlexBasis:
+      type: string
+      ui:
+        label: 'Override width (flex-basis)'
+        reloadIfChanged: true
+        help:
+          message: 'Override settings from parent element'
+        inspector:
+          group: 'lgBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'lg:flex-basis-25':
+                label: '25'
+              'lg:flex-basis-33':
+                label: '33'
+              'lg:flex-basis-50':
+                label: '50'
+              'lg:flex-basis-66':
+                label: '66'
+              'lg:flex-basis-75':
+                label: '75'
+              'lg:flex-basis-100':
+                label: '100'
+    xlFlexBasis:
+      type: string
+      ui:
+        label: 'Override width (flex-basis)'
+        reloadIfChanged: true
+        help:
+          message: 'Override settings from parent element'
+        inspector:
+          group: 'xlBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'xl:flex-basis-25':
+                label: '25'
+              'xl:flex-basis-33':
+                label: '33'
+              'xl:flex-basis-50':
+                label: '50'
+              'xl:flex-basis-66':
+                label: '66'
+              'xl:flex-basis-75':
+                label: '75'
+              'xl:flex-basis-100':
+                label: '100'

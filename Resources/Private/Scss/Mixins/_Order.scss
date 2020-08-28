@@ -1,0 +1,19 @@
+@mixin flex-order($prefix: '') {
+    .#{$prefix}order-first {
+        order: -9999;
+    }
+
+    .#{$prefix}order-last {
+        order: 9999;
+    }
+
+    .#{$prefix}order-none {
+        order: 0;
+    }
+
+    @for $i from 0 through $flexColumns {
+        .#{$prefix}order-#{$i} {
+            order: $i;
+        }
+    }
+}

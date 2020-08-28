@@ -1,0 +1,125 @@
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexAlignItemsMixin':
+  abstract: true
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:TailwindBreakpointsMixin': true
+  properties:
+    flexAlignItems:
+      type: string
+      ui:
+        label: 'Vertical items alignment (align items)'
+        reloadIfChanged: true
+        help:
+          message: 'Choose how to align items in vertical axis'
+        inspector:
+          group: 'defaultBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'items-stretch':
+                label: 'stretch'
+              'items-baseline':
+                label: 'baseline'
+              'items-start':
+                label: 'start'
+              'items-end':
+                label: 'end'
+              'items-center':
+                label: 'center'
+    smFlexAlignItems:
+      type: string
+      ui:
+        label: 'Vertical items alignment (align items)'
+        reloadIfChanged: true
+        help:
+          message: 'Choose how to align items in vertical axis'
+        inspector:
+          group: 'smBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'sm:items-stretch':
+                label: 'stretch'
+              'sm:items-baseline':
+                label: 'baseline'
+              'sm:items-start':
+                label: 'start'
+              'sm:items-end':
+                label: 'end'
+              'sm:items-center':
+                label: 'center'
+    mdFlexAlignItems:
+      type: string
+      ui:
+        label: 'Vertical items alignment (align items)'
+        reloadIfChanged: true
+        help:
+          message: 'Choose how to align items in vertical axis'
+        inspector:
+          group: 'mdBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'md:items-stretch':
+                label: 'stretch'
+              'md:items-baseline':
+                label: 'baseline'
+              'md:items-start':
+                label: 'start'
+              'md:items-end':
+                label: 'end'
+              'md:items-center':
+                label: 'center'
+    lgFlexAlignItems:
+      type: string
+      ui:
+        label: 'Vertical items alignment (align items)'
+        reloadIfChanged: true
+        help:
+          message: 'Choose how to align items in vertical axis'
+        inspector:
+          group: 'lgBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'lg:items-stretch':
+                label: 'stretch'
+              'lg:items-baseline':
+                label: 'baseline'
+              'lg:items-start':
+                label: 'start'
+              'lg:items-end':
+                label: 'end'
+              'lg:items-center':
+                label: 'center'
+    xlFlexAlignItems:
+      type: string
+      ui:
+        label: 'Vertical items alignment (align items)'
+        reloadIfChanged: true
+        help:
+          message: 'Choose how to align items in vertical axis'
+        inspector:
+          group: 'xlBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'xl:items-stretch':
+                label: 'stretch'
+              'xl:items-baseline':
+                label: 'baseline'
+              'xl:items-start':
+                label: 'start'
+              'xl:items-end':
+                label: 'end'
+              'xl:items-center':
+                label: 'center'

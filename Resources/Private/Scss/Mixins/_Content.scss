@@ -1,0 +1,21 @@
+@mixin flex-content($prefix: '') {
+    .#{$prefix}content-center {
+        align-content: center;
+    }
+
+    .#{$prefix}content-start {
+        align-content: flex-start;
+    }
+
+    .#{$prefix}content-end {
+        align-content: flex-end;
+    }
+
+    .#{$prefix}content-between {
+        align-content: space-between;
+    }
+
+    .#{$prefix}content-around {
+        align-content: space-around;
+    }
+}

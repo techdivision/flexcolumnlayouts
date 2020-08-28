@@ -1,0 +1,131 @@
+prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos.Neos:ContentComponent) {
+    containerClasses = Neos.Fusion:Join {
+        flex = 'flex'
+        flexDirection = Neos.Fusion:Join {
+            flexDirection = ${q(node).property('flexDirection') ? q(node).property('flexDirection') : 'flex-row'}
+            smFlexDirection = ${q(node).property('smFlexDirection')}
+            mdFlexDirection = ${q(node).property('mdFlexDirection')}
+            lgFlexDirection = ${q(node).property('lgFlexDirection')}
+            xlFlexDirection = ${q(node).property('xlFlexDirection')}
+            @glue = ' '
+        }
+        flexWrap = Neos.Fusion:Join {
+            flexWrap = ${q(node).property('flexWrap') ? q(node).property('flexWrap') : 'flex-wrap'}
+            smFlexJustify = ${q(node).property('smFlexJustify')}
+            mdFlexJustify = ${q(node).property('mdFlexJustify')}
+            lgFlexJustify = ${q(node).property('lgFlexJustify')}
+            xlFlexJustify = ${q(node).property('xlFlexJustify')}
+            @glue = ' '
+        }
+        flexJustify = Neos.Fusion:Join {
+            flexJustify = ${q(node).property('flexJustify')}
+            smFlexWrap = ${q(node).property('smFlexWrap')}
+            mdFlexWrap = ${q(node).property('mdFlexWrap')}
+            lgFlexWrap = ${q(node).property('lgFlexWrap')}
+            xlFlexWrap = ${q(node).property('xlFlexWrap')}
+            @glue = ' '
+        }
+        flexAlignItems = Neos.Fusion:Join {
+            flexAlignItems = ${q(node).property('flexAlignItems')}
+            smFlexAlignItems = ${q(node).property('smFlexAlignItems')}
+            mdFlexAlignItems = ${q(node).property('mdFlexAlignItems')}
+            lgFlexAlignItems = ${q(node).property('lgFlexAlignItems')}
+            xlFlexAlignItems = ${q(node).property('xlFlexAlignItems')}
+            @glue = ' '
+        }
+        flexAlignContent = Neos.Fusion:Join {
+            flexAlignContent = ${q(node).property('flexAlignContent')}
+            smFlexAlignContent = ${q(node).property('smFlexAlignContent')}
+            mdFlexAlignContent = ${q(node).property('mdFlexAlignContent')}
+            lgFlexAlignContent = ${q(node).property('lgFlexAlignContent')}
+            xlFlexAlignContent = ${q(node).property('xlFlexAlignContent')}
+            @glue = ' '
+        }
+        @glue = ' '
+        @process.removeSpaces = ${String.trim(String.replace(value,'  ', ' '))}
+    }
+
+    columns = Neos.Fusion:Collection {
+        @context.columnLayout = ${q(node).property('layout')}
+        @context.parentNode = ${node}
+        collection = ${q(node).children('[instanceof TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection]')}
+        itemName = 'node'
+        iterationName = 'columnIteration'
+        itemRenderer = Neos.Neos:ContentCollection {
+            nodePath = '.'
+            attributes = Neos.Fusion:Attributes {
+                class >
+                class = Neos.Fusion:Join {
+                    flexItem = ${'flex-item'}
+                    basis = Neos.Fusion:Case {
+                        self {
+                            @position = 'start'
+                            condition = ${q(node).property('flexBasis') || q(node).property('smFlexBasis') || q(node).property('mdFlexBasis') || q(node).property('lgFlexBasis') || q(node).property('xlFlexBasis')}
+                            renderer = Neos.Fusion:Join {
+                                basis = ${q(node).property('flexBasis')}
+                                smBasis = ${q(node).property('smFlexBasis')}
+                                mdBasis = ${q(node).property('mdFlexBasis')}
+                                lgBasis = ${q(node).property('lgFlexBasis')}
+                                xlBasis = ${q(node).property('xlFlexBasis')}
+                                @glue = ' '
+                            }
+                        }
+                        parentElement {
+                            condition = ${true}
+                            renderer = Neos.Fusion:Loop {
+                                @context.breakpoints = ${['','sm:','md:','lg:','xl:']}
+                                items = ${String.split(q(parentNode).property('layout'), '_')}
+                                itemName = 'breakpoint'
+                                iterationName = 'breakpointIterator'
+                                itemRenderer = ${breakpoints[breakpointIterator.index] + 'flex-basis-' + String.split(breakpoint, '-')[columnIteration.index] + ' '}
+                            }
+                        }
+
+                    }
+                    shrink = Neos.Fusion:Join {
+                        shrink = ${q(node).property('flexShrink')}
+                        smShrink = ${q(node).property('smFlexShrink')}
+                        mdShrink = ${q(node).property('mdFlexShrink')}
+                        lgShrink = ${q(node).property('lgFlexShrink')}
+                        xlShrink = ${q(node).property('xlFlexShrink')}
+                        @glue = ' '
+                    }
+                    order = Neos.Fusion:Join {
+                        order = ${q(node).property('flexOrder')}
+                        smOrder = ${q(node).property('smFlexOrder')}
+                        mdOrder = ${q(node).property('mdFlexOrder')}
+                        lgOrder = ${q(node).property('lgFlexOrder')}
+                        xlOrder = ${q(node).property('xlFlexOrder')}
+                        @glue = ' '
+                    }
+                    contentBehaviour = Neos.Fusion:Join {
+                        contentAlignment = ${q(node).property('contentAlignment')}
+                        @glue = ' '
+                    }
+                    @glue = ' '
+                    @process.removeSpaces = ${String.trim(String.replace(value,'  ', ' '))}
+                }
+                style = Neos.Fusion:Join {
+                    backgroundColor = Neos.Fusion:Value {
+                        value = ${'background-color:' + q(node).property('backgroundColor') + ';'}
+                        @if.exists = ${q(node).property('backgroundColor')}
+                    }
+                    textColor = Neos.Fusion:Value {
+                        value = ${'color:' + q(node).property('textColor') + ';'}
+                        @if.exists = ${q(node).property('textColor')}
+                    }
+                    backgroundImage = Neos.Neos:ImageUri {
+                        asset = ${q(node).property('backgroundImage')}
+                        @process.wrap = ${'background-image:url(' + value + ');background-repeat:no-repeat; background-position:center center;;'}
+                        @if.exists = ${q(node).property('backgroundImage')}
+                    }
+                }
+            }
+        }
+    }
+    renderer = afx`
+        <div class={props.containerClasses}>
+            {props.columns}
+        </div>
+    `
+}

@@ -1,0 +1,95 @@
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexWrapMixin':
+  abstract: true
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:TailwindBreakpointsMixin': true
+  properties:
+    flexWrap:
+      type: string
+      ui:
+        label: 'Wrap Items'
+        reloadIfChanged: true
+        help:
+          message: 'Choose how to wrap items in Flexbox'
+        inspector:
+          group: 'defaultBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'wrap (default)'
+              'flex-no-wrap':
+                label: 'no wrap'
+              'flex-wrap-reverse':
+                label: 'wrap reverse'
+    smFlexWrap:
+      type: string
+      ui:
+        label: 'Wrap Items'
+        reloadIfChanged: true
+        help:
+          message: 'Choose how to wrap items in Flexbox'
+        inspector:
+          group: 'smBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'wrap (default)'
+              'sm:flex-no-wrap':
+                label: 'no wrap'
+              'sm:flex-wrap-reverse':
+                label: 'wrap reverse'
+    mdFlexWrap:
+      type: string
+      ui:
+        label: 'Wrap Items'
+        reloadIfChanged: true
+        help:
+          message: 'Choose how to wrap items in Flexbox'
+        inspector:
+          group: 'mdBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'wrap (default)'
+              'md:flex-no-wrap':
+                label: 'no wrap'
+              'md:flex-wrap-reverse':
+                label: 'wrap reverse'
+    lgFlexWrap:
+      type: string
+      ui:
+        label: 'Wrap Items'
+        reloadIfChanged: true
+        help:
+          message: 'Choose how to wrap items in Flexbox'
+        inspector:
+          group: 'lgBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'wrap (default)'
+              'lg:flex-no-wrap':
+                label: 'no wrap'
+              'lg:flex-wrap-reverse':
+                label: 'wrap reverse'
+    xlFlexWrap:
+      type: string
+      ui:
+        label: 'Wrap Items'
+        reloadIfChanged: true
+        help:
+          message: 'Choose how to wrap items in Flexbox'
+        inspector:
+          group: 'xlBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'wrap (default)'
+              'xl:flex-no-wrap':
+                label: 'no wrap'
+              'xl:flex-wrap-reverse':
+                label: 'wrap reverse'

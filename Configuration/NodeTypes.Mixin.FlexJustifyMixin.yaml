@@ -1,0 +1,125 @@
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexJustifyMixin':
+  abstract: true
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:TailwindBreakpointsMixin': true
+  properties:
+    flexJustify:
+      type: string
+      ui:
+        label: 'Horizontal alignment (justify)'
+        reloadIfChanged: true
+        help:
+          message: 'Choose how to align items (justify) in horizontal axis'
+        inspector:
+          group: 'defaultBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'justify-between':
+                label: 'centered, space between (default)'
+              'justify-around':
+                label: 'centered, space around'
+              'justify-start':
+                label: 'start'
+              'justify-end':
+                label: 'end'
+              'justify-center':
+                label: 'center'
+    smFlexJustify:
+      type: string
+      ui:
+        label: 'Horizontal alignment (justify)'
+        reloadIfChanged: true
+        help:
+          message: 'Choose how to align items (justify) in horizontal axis'
+        inspector:
+          group: 'smBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'sm:justify-between':
+                label: 'centered, space between (default)'
+              'sm:justify-around':
+                label: 'centered, space around'
+              'sm:justify-start':
+                label: 'start'
+              'sm:justify-end':
+                label: 'end'
+              'sm:justify-center':
+                label: 'center'
+    mdFlexJustify:
+      type: string
+      ui:
+        label: 'Horizontal alignment (justify)'
+        reloadIfChanged: true
+        help:
+          message: 'Choose how to align items (justify) in horizontal axis'
+        inspector:
+          group: 'mdBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'md:justify-between':
+                label: 'centered, space between (default)'
+              'md:justify-around':
+                label: 'centered, space around'
+              'md:justify-start':
+                label: 'start'
+              'md:justify-end':
+                label: 'end'
+              'md:justify-center':
+                label: 'center'
+    lgFlexJustify:
+      type: string
+      ui:
+        label: 'Horizontal alignment (justify)'
+        reloadIfChanged: true
+        help:
+          message: 'Choose how to align items (justify) in horizontal axis'
+        inspector:
+          group: 'lgBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'lg:justify-between':
+                label: 'centered, space between (default)'
+              'lg:justify-around':
+                label: 'centered, space around'
+              'lg:justify-start':
+                label: 'start'
+              'lg:justify-end':
+                label: 'end'
+              'lg:justify-center':
+                label: 'center'
+    xlFlexJustify:
+      type: string
+      ui:
+        label: 'Horizontal alignment (justify)'
+        reloadIfChanged: true
+        help:
+          message: 'Choose how to align items (justify) in horizontal axis'
+        inspector:
+          group: 'xlBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'xl:justify-between':
+                label: 'centered, space between (default)'
+              'xl:justify-around':
+                label: 'centered, space around'
+              'xl:justify-start':
+                label: 'start'
+              'xl:justify-end':
+                label: 'end'
+              'xl:justify-center':
+                label: 'center'

@@ -1,0 +1,7 @@
+'Neos.NodeTypes.ColumnLayouts:Column':
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexDirectionMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexWrapMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexJustifyMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexAlignItemsMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexAlignContentMixin': true

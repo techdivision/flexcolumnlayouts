@@ -1,0 +1,28 @@
+'Neos.NodeTypes.ColumnLayouts:OneColumn':
+  superTypes:
+    'Neos.NodeTypes.ColumnLayouts:Column': true
+  ui:
+    label: 'One column content'
+    position: 100
+  childNodes:
+    column0:
+      type: 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollectionContainer'
+  properties:
+    layout:
+      defaultValue: '100-100_100-100'
+      ui:
+        reloadIfChanged: true
+        inspector:
+          editorOptions:
+            values:
+              '50-50': ~
+              '75-25': ~
+              '25-75': ~
+              '66-33': ~
+              '33-66': ~
+              '100-100_100-100':
+                label: '100%'
+    flexDirection: [ ]
+    flexWrap: [ ]
+    flexAlignItems: [ ]
+    flexAlignContent: [ ]

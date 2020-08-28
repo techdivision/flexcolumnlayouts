@@ -1,0 +1,51 @@
+'TechDivision.NodeTypes.FlexColumnLayouts:VisualMixin':
+  ui:
+    inspector:
+      tabs:
+        visual:
+          label: 'Visual settings'
+          position: 'end'
+          icon: 'icon-brush'
+      groups:
+        visual:
+          label: 'Visual Settings'
+          position: 1
+          icon: 'icon-brush'
+          tab: 'visual'
+          collapsed: false
+  abstract: true
+  properties:
+    backgroundImage:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        label: 'Background-Image'
+        reloadIfChanged: true
+        inspector:
+          group: 'visual'
+          position: 10
+    backgroundColor:
+      type: string
+      ui:
+        label: 'Background-Color'
+        reloadIfChanged: true
+        inspector:
+          group: 'visual'
+          position: 20
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'rgba'
+            picker: true
+            fields: true
+    textColor:
+      type: string
+      ui:
+        label: 'Text-Color'
+        reloadIfChanged: true
+        inspector:
+          group: 'visual'
+          position: 25
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'rgba'
+            picker: true
+            fields: true

@@ -1,0 +1,5 @@
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        'TechDivision.NodeTypes.FlexColumnLayouts': true

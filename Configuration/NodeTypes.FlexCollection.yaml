@@ -1,0 +1,8 @@
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection':
+  superTypes:
+    'Neos.Neos:ContentCollection': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexBasisMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexOrderMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexShrinkMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:VisualMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:ContentBehaviourMixin': true

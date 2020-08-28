@@ -1,0 +1,2 @@
+prototype(Neos.NodeTypes.ColumnLayouts:ThreeColumn) >
+prototype(Neos.NodeTypes.ColumnLayouts:ThreeColumn) < prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn)

@@ -1,0 +1,21 @@
+@mixin flex-self($prefix: '') {
+    .#{$prefix}self-auto {
+        align-self: auto;
+    }
+
+    .#{$prefix}self-start {
+        align-self: flex-start;
+    }
+
+    .#{$prefix}self-end {
+        align-self: flex-end;
+    }
+
+    .#{$prefix}self-center {
+        align-self: center;
+    }
+
+    .#{$prefix}self-stretch {
+        align-self: stretch;
+    }
+}

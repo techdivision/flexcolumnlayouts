@@ -1,0 +1,29 @@
+'Neos.NodeTypes.ColumnLayouts:TwoColumn':
+  childNodes:
+    column0:
+      type: 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection'
+    column1:
+      type: 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection'
+  properties:
+    layout:
+      defaultValue: '100-100_100-100_50-50_50-50_50-50'
+      ui:
+        reloadIfChanged: true
+        inspector:
+          editorOptions:
+            values:
+              '50-50': ~
+              '75-25': ~
+              '25-75': ~
+              '66-33': ~
+              '33-66': ~
+              '100-100_100-100_50-50_50-50_50-50':
+                label: '50% / 50%'
+              '100-100_100-100_75-25_75-25_75-25':
+                label: '75% / 25%'
+              '100-100_100-100_25-75_25-75_25-75':
+                label: '25% / 75%'
+              '100-100_100-100_66-33_66-33_66-33':
+                label: '66% / 33%'
+              '100-100_100-100_33-66_33-66_33-66':
+                label: '33% / 66%'

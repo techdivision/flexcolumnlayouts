@@ -1,0 +1,105 @@
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexDirectionMixin':
+  abstract: true
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:TailwindBreakpointsMixin': true
+  properties:
+    flexDirection:
+      type: string
+      ui:
+        label: 'Row / cols / reverse'
+        reloadIfChanged: true
+        help:
+          message: 'Select in which direction your boxes should flow: '
+        inspector:
+          group: 'defaultBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'Row (default)'
+              'flex-row-reverse':
+                label: 'Reverse rows'
+              'flex-col':
+                label: 'Columns'
+              'flex-col-reverse':
+                label: 'Reverse columns'
+    smFlexDirection:
+      type: string
+      ui:
+        label: 'Row / cols / reverse'
+        reloadIfChanged: true
+        help:
+          message: 'Select in which direction your boxes should flow: '
+        inspector:
+          group: 'smBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'Row (default)'
+              'sm:flex-row-reverse':
+                label: 'Reverse rows'
+              'sm:flex-col':
+                label: 'Columns'
+              'sm:flex-col-reverse':
+                label: 'Reverse columns'
+    mdFlexDirection:
+      type: string
+      ui:
+        label: 'Row / cols / reverse'
+        reloadIfChanged: true
+        help:
+          message: 'Select in which direction your boxes should flow: '
+        inspector:
+          group: 'mdBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'Row (default)'
+              'md:flex-row-reverse':
+                label: 'Reverse rows'
+              'md:flex-col':
+                label: 'Columns'
+              'md:flex-col-reverse':
+                label: 'Reverse columns'
+    lgFlexDirection:
+      type: string
+      ui:
+        label: 'Row / cols / reverse'
+        reloadIfChanged: true
+        help:
+          message: 'Select in which direction your boxes should flow: '
+        inspector:
+          group: 'lgBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'Row (default)'
+              'lg:flex-row-reverse':
+                label: 'Reverse rows'
+              'lg:flex-col':
+                label: 'Columns'
+              'lg:flex-col-reverse':
+                label: 'Reverse columns'
+    xlFlexDirection:
+      type: string
+      ui:
+        label: 'Row / cols / reverse'
+        reloadIfChanged: true
+        help:
+          message: 'Select in which direction your boxes should flow: '
+        inspector:
+          group: 'xlBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'Row (default)'
+              'xl:flex-row-reverse':
+                label: 'Reverse rows'
+              'xl:flex-col':
+                label: 'Columns'
+              'xl:flex-col-reverse':
+                label: 'Reverse columns'

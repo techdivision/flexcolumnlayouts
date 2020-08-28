@@ -1,0 +1,85 @@
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexOrderMixin':
+  abstract: true
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:TailwindBreakpointsMixin': true
+  properties:
+    flexOrder:
+      type: string
+      ui:
+        label: 'Order (flex-order)'
+        reloadIfChanged: true
+        inspector:
+          group: 'defaultBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'order-first':
+                label: 'first'
+              'order-last':
+                label: 'last'
+    smFlexOrder:
+      type: string
+      ui:
+        label: 'Order (flex-order)'
+        reloadIfChanged: true
+        inspector:
+          group: 'smBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'sm:order-first':
+                label: 'first'
+              'sm:order-last':
+                label: 'last'
+    mdFlexOrder:
+      type: string
+      ui:
+        label: 'Order (flex-order)'
+        reloadIfChanged: true
+        inspector:
+          group: 'mdBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'md:order-first':
+                label: 'first'
+              'md:order-last':
+                label: 'last'
+    lgFlexOrder:
+      type: string
+      ui:
+        label: 'Order (flex-order)'
+        reloadIfChanged: true
+        inspector:
+          group: 'lgBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'lg:order-first':
+                label: 'first'
+              'lg:order-last':
+                label: 'last'
+    xlFlexOrder:
+      type: string
+      ui:
+        label: 'Order (flex-order)'
+        reloadIfChanged: true
+        inspector:
+          group: 'xlBreakpoint'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: 'none'
+              'xl:order-first':
+                label: 'first'
+              'xl:order-last':
+                label: 'last'

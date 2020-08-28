@@ -1,0 +1,3 @@
+prototype(TechDivision.NodeTypes.FlexColumnLayouts:SingleColumn) < prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) {
+    columns.collection = ${q(node).children('[instanceof TechDivision.NodeTypes.FlexColumnLayouts:FlexCollectionContainer]')}
+}
