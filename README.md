@@ -23,12 +23,14 @@ If not, you have several choices:
 
 
 #### SCSS files
-```
+
+```scss
 @import "Plugins/TechDivision.NodeTypes.FlexColumnLayouts/Resources/Private/Scss/FlexColumnLayout";
 ```
 
 In this case, you can overwrite the variables defined by default:
-```
+
+```scss
 // Define number of columns
 $flexColumns: 12 !default;
 
