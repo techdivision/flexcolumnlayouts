@@ -45,4 +45,4 @@ $flexBreakpointConfiguration: (
 ) !default;
 ```
 
-@todo: Add breakpoints on NodeType level 
+@todo: Add NodeType level flex stuff to scss
