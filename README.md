@@ -5,7 +5,10 @@ It is based  on tailwindcss class names.
 If you want to change the class names, feel free to do so and build a more generic grid system.
 
 ## How does it work?
+You find a whole lot of settings now in your multi column nodes.
+### NodeType level
 
+### Column level 
 
 ## Principle
 The idea behind this package is to have any options for flex layouts available to columns so as to 
@@ -23,12 +26,14 @@ If not, you have several choices:
 
 
 #### SCSS files
-```
+
+```scss
 @import "Plugins/TechDivision.NodeTypes.FlexColumnLayouts/Resources/Private/Scss/FlexColumnLayout";
 ```
 
 In this case, you can overwrite the variables defined by default:
-```
+
+```scss
 // Define number of columns
 $flexColumns: 12 !default;
 
@@ -44,5 +49,3 @@ $flexBreakpointConfiguration: (
         '1280px': 'xl\\:'
 ) !default;
 ```
-
-@todo: Add NodeType level flex stuff to scss
