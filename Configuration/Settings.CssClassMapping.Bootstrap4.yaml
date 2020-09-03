@@ -1,0 +1,125 @@
+TechDivision:
+  NodeTypes:
+    FlexColumnLayouts:
+      cssClassMapping:
+        bootstrap4:
+          'sm:flex-row': 'flex-sm-row'
+          'md:flex-row': 'flex-md-row'
+          'lg:flex-row': 'flex-lg-row'
+          'xl:flex-row': 'flex-xl-row'
+
+          'sm:flex-row-reverse': 'flex-sm-row-reverse'
+          'md:flex-row-reverse': 'flex-md-row-reverse'
+          'lg:flex-row-reverse': 'flex-lg-row-reverse'
+          'xl:flex-row-reverse': 'flex-xl-row-reverse'
+
+          'sm:flex-no-wrap': 'flex-sm-nowrap'
+          'md:flex-no-wrap': 'flex-md-nowrap'
+          'lg:flex-no-wrap': 'flex-lg-nowrap'
+          'xl:flex-no-wrap': 'flex-xl-nowrap'
+
+          'sm:flex-wrap-reverse': 'flex-sm-wrap-reverse'
+          'md:flex-wrap-reverse': 'flex-lg-wrap-reverse'
+          'lg:flex-wrap-reverse': 'flex-md-wrap-reverse'
+          'xl:flex-wrap-reverse': 'flex-xl-wrap-reverse'
+
+          'justify-between': 'justify-content-between'
+          'sm:justify-between': 'justify-content-sm-between'
+          'md:justify-between': 'justify-content-md-between'
+          'lg:justify-between': 'justify-content-lg-between'
+          'xl:justify-between': 'justify-content-xl-between'
+
+          'justify-start': 'justify-content-start'
+          'sm:justify-start': 'justify-content-sm-start'
+          'md:justify-start': 'justify-content-md-start'
+          'lg:justify-start': 'justify-content-lg-start'
+          'xl:justify-start': 'justify-content-xl-start'
+
+          'justify-end': 'justify-content-end'
+          'sm:justify-end': 'justify-content-sm-end'
+          'md:justify-end': 'justify-content-md-end'
+          'lg:justify-end': 'justify-content-lg-end'
+          'xl:justify-end': 'justify-content-xl-end'
+
+          'justify-center': 'justify-content-center'
+          'sm:justify-center': 'justify-content-sm-center'
+          'md:justify-center': 'justify-content-md-center'
+          'lg:justify-center': 'justify-content-lg-center'
+          'xl:justify-center': 'justify-content-xl-center'
+
+          'justify-around': 'justify-content-around'
+          'sm:justify-around': 'justify-content-sm-around'
+          'md:justify-around': 'justify-content-md-around'
+          'lg:justify-around': 'justify-content-lg-around'
+          'xl:justify-around': 'justify-content-xl-around'
+
+          'items-stretch': 'align-items-stretch'
+          'sm:items-stretch': 'align-items-sm-stretch'
+          'md:items-stretch': 'align-items-md-stretch'
+          'lg:items-stretch': 'align-items-lg-stretch'
+          'xl:items-stretch': 'align-items-xl-stretch'
+
+          'items-baseline': 'align-items-baseline'
+          'sm:items-baseline': 'align-items-sm-baseline'
+          'md:items-baseline': 'align-items-md-baseline'
+          'lg:items-baseline': 'align-items-lg-baseline'
+          'xl:items-baseline': 'align-items-xl-baseline'
+
+          'items-start': 'align-items-start'
+          'sm:items-start': 'align-items-sm-start'
+          'md:items-start': 'align-items-md-start'
+          'lg:items-start': 'align-items-lg-start'
+          'xl:items-start': 'align-items-xl-start'
+
+          'items-end': 'align-items-end'
+          'sm:items-end': 'align-items-sm-end'
+          'md:items-end': 'align-items-md-end'
+          'lg:items-end': 'align-items-lg-end'
+          'xl:items-end': 'align-items-xl-end'
+
+          'items-center': 'align-items-center'
+          'sm:items-center': 'align-items-sm-center'
+          'md:items-center': 'align-items-md-center'
+          'lg:items-center': 'align-items-lg-center'
+          'xl:items-center': 'align-items-xl-center'
+
+          'content-between': 'align-content-between'
+          'sm:content-between': 'align-content-sm-between'
+          'md:content-between': 'align-content-md-between'
+          'lg:content-between': 'align-content-lg-between'
+          'xl:content-between': 'align-content-xl-between'
+
+          'content-start': 'align-content-start'
+          'sm:content-start': 'align-content-sm-start'
+          'md:content-start': 'align-content-md-start'
+          'lg:content-start': 'align-content-lg-start'
+          'xl:content-start': 'align-content-xl-start'
+
+          'content-end': 'align-content-end'
+          'sm:content-end': 'align-content-sm-end'
+          'md:content-end': 'align-content-md-end'
+          'lg:content-end': 'align-content-lg-end'
+          'xl:content-end': 'align-content-xl-end'
+
+          'content-center': 'align-content-center'
+          'sm:content-center': 'align-content-sm-center'
+          'md:content-center': 'align-content-md-center'
+          'lg:content-center': 'align-content-lg-center'
+          'xl:content-center': 'align-content-xl-center'
+
+          'content-around': 'align-content-around'
+          'sm:content-around': 'align-content-sm-around'
+          'md:content-around': 'align-content-md-around'
+          'lg:content-around': 'align-content-lg-around'
+          'xl:content-around': 'align-content-xl-around'
+
+          'flex-shrink': 'flex-shrink-1'
+          'sm:flex-shrink': 'flex-sm-shrink-1'
+          'md:flex-shrink': 'flex-md-shrink-1'
+          'lg:flex-shrink': 'flex-lg-shrink-1'
+          'xl:flex-shrink': 'flex-xl-shrink-1'
+
+          'sm:flex-shrink-0': 'flex-sm-shrink-0'
+          'md:flex-shrink-0': 'flex-md-shrink-0'
+          'lg:flex-shrink-0': 'flex-lg-shrink-0'
+          'xl:flex-shrink-0': 'flex-xl-shrink-0'

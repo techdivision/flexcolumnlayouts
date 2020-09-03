@@ -1,15 +1,15 @@
 'TechDivision.NodeTypes.FlexColumnLayouts:FlexAlignItemsMixin':
   abstract: true
   superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:TailwindBreakpointsMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin': true
   properties:
     flexAlignItems:
       type: string
       ui:
-        label: 'Vertical items alignment (align items)'
+        label: 'align-items'
         reloadIfChanged: true
         help:
-          message: 'Choose how to align items in vertical axis'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-align-items-self'
         inspector:
           group: 'defaultBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -30,10 +30,10 @@
     smFlexAlignItems:
       type: string
       ui:
-        label: 'Vertical items alignment (align items)'
+        label: 'align-items'
         reloadIfChanged: true
         help:
-          message: 'Choose how to align items in vertical axis'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-align-items-self'
         inspector:
           group: 'smBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -54,10 +54,10 @@
     mdFlexAlignItems:
       type: string
       ui:
-        label: 'Vertical items alignment (align items)'
+        label: 'align-items'
         reloadIfChanged: true
         help:
-          message: 'Choose how to align items in vertical axis'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-align-items-self'
         inspector:
           group: 'mdBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -78,10 +78,10 @@
     lgFlexAlignItems:
       type: string
       ui:
-        label: 'Vertical items alignment (align items)'
+        label: 'align-items'
         reloadIfChanged: true
         help:
-          message: 'Choose how to align items in vertical axis'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-align-items-self'
         inspector:
           group: 'lgBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -102,10 +102,10 @@
     xlFlexAlignItems:
       type: string
       ui:
-        label: 'Vertical items alignment (align items)'
+        label: 'align-items'
         reloadIfChanged: true
         help:
-          message: 'Choose how to align items in vertical axis'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-align-items-self'
         inspector:
           group: 'xlBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'

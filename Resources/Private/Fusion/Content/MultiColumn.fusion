@@ -42,7 +42,15 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos
             @glue = ' '
         }
         @glue = ' '
-        @process.removeSpaces = ${String.trim(String.replace(value,'  ', ' '))}
+
+        @process.removeSpaces {
+            expression = ${String.trim(String.replace(value, '  ', ' '))}
+            @position = 'start'
+        }
+        @process.replaceClasses {
+            expression = ${CssClassMapping.replace(value, 'bootstrap4')}
+            @position = 'end'
+        }
     }
 
     columns = Neos.Fusion:Collection {
@@ -74,7 +82,7 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos
                             condition = ${true}
                             renderer = Neos.Fusion:Loop {
                                 @context.breakpoints = ${['','sm:','md:','lg:','xl:']}
-                                items = ${String.split(q(parentNode).property('layout'), '_')}
+                                items = ${String.split(q(parentNode).property('layout'), '__')}
                                 itemName = 'breakpoint'
                                 iterationName = 'breakpointIterator'
                                 itemRenderer = ${breakpoints[breakpointIterator.index] + 'flex-basis-' + String.split(breakpoint, '-')[columnIteration.index] + ' '}
@@ -98,12 +106,16 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos
                         xlOrder = ${q(node).property('xlFlexOrder')}
                         @glue = ' '
                     }
-                    contentBehaviour = Neos.Fusion:Join {
-                        contentAlignment = ${q(node).property('contentAlignment')}
-                        @glue = ' '
-                    }
+                    contentAlignment = ${q(node).property('contentAlignment')}
                     @glue = ' '
-                    @process.removeSpaces = ${String.trim(String.replace(value,'  ', ' '))}
+                    @process.removeSpaces {
+                        expression = ${String.trim(String.replace(value, '  ', ' '))}
+                        @position = 'start'
+                    }
+                    @process.replaceClasses {
+                        expression = ${CssClassMapping.replace(value, 'bootstrap4')}
+                        @position = 'end'
+                    }
                 }
                 style = Neos.Fusion:Join {
                     backgroundColor = Neos.Fusion:Value {
@@ -116,7 +128,7 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos
                     }
                     backgroundImage = Neos.Neos:ImageUri {
                         asset = ${q(node).property('backgroundImage')}
-                        @process.wrap = ${'background-image:url(' + value + ');background-repeat:no-repeat; background-position:center center;;'}
+                        @process.wrap = ${'background-image:url(' + value + ');background-repeat:no-repeat; background-position:center center;'}
                         @if.exists = ${q(node).property('backgroundImage')}
                     }
                 }

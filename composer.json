@@ -11,5 +11,10 @@
         "neos": {
             "package-key": "TechDivision.NodeTypes.FlexColumnLayouts"
         }
+    },
+    "autoload": {
+        "psr-4": {
+            "TechDivision\\NodeTypes\\FlexColumnLayouts\\": "Classes/"
+        }
     }
 }

@@ -1,4 +1,4 @@
-'TechDivision.NodeTypes.FlexColumnLayouts:TailwindBreakpointsMixin':
+'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin':
   abstract: true
   ui:
     inspector:

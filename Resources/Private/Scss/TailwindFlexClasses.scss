@@ -1,0 +1,41 @@
+@import "Variables";
+@import "Mixins/Content";
+@import "Mixins/Flex";
+@import "Mixins/FlexBasis";
+@import "Mixins/Item";
+@import "Mixins/Justify";
+@import "Mixins/Order";
+@import "Mixins/Self";
+
+@mixin flex-breakpoint($size, $mediaCondition) {
+  @media ($mediaCondition + $size) {
+    @content;
+  }
+}
+
+@mixin responsive-flex-builder($configuration: $flexBreakpointConfiguration) {
+  @if $configuration {
+    @each $size in map-keys($configuration) {
+      @include flex-breakpoint($size, $flexMediaCondition) {
+        $prefix: map-get($configuration, $size);
+
+        @include flex-content($prefix);
+        @include flex($prefix);
+        @include flex-basis($prefix);
+        @include flex-item($prefix);
+        @include flex-justify($prefix);
+        @include flex-order($prefix);
+        @include flex-self($prefix);
+      }
+    }
+  }
+}
+
+// Output the styles
+@include flex-content('');
+@include flex('');
+@include flex-item('');
+@include flex-justify('');
+@include flex-order('');
+@include flex-self('');
+@include responsive-flex-builder();

@@ -1,12 +1,12 @@
 'TechDivision.NodeTypes.FlexColumnLayouts:FlexOrderMixin':
   abstract: true
   superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:TailwindBreakpointsMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin': true
   properties:
     flexOrder:
       type: string
       ui:
-        label: 'Order (flex-order)'
+        label: 'flex-order'
         reloadIfChanged: true
         inspector:
           group: 'defaultBreakpoint'
@@ -22,7 +22,7 @@
     smFlexOrder:
       type: string
       ui:
-        label: 'Order (flex-order)'
+        label: 'flex-order'
         reloadIfChanged: true
         inspector:
           group: 'smBreakpoint'
@@ -38,7 +38,7 @@
     mdFlexOrder:
       type: string
       ui:
-        label: 'Order (flex-order)'
+        label: 'flex-order'
         reloadIfChanged: true
         inspector:
           group: 'mdBreakpoint'
@@ -54,7 +54,7 @@
     lgFlexOrder:
       type: string
       ui:
-        label: 'Order (flex-order)'
+        label: 'flex-order'
         reloadIfChanged: true
         inspector:
           group: 'lgBreakpoint'
@@ -70,7 +70,7 @@
     xlFlexOrder:
       type: string
       ui:
-        label: 'Order (flex-order)'
+        label: 'flex-order'
         reloadIfChanged: true
         inspector:
           group: 'xlBreakpoint'

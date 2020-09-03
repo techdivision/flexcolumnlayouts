@@ -1,12 +1,12 @@
 'TechDivision.NodeTypes.FlexColumnLayouts:FlexShrinkMixin':
   abstract: true
   superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:TailwindBreakpointsMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin': true
   properties:
     flexShrink:
       type: string
       ui:
-        label: 'Allow shrinking (flex-shrink)'
+        label: 'flex-shrink'
         reloadIfChanged: true
         inspector:
           group: 'defaultBreakpoint'
@@ -22,7 +22,7 @@
     smFlexShrink:
       type: string
       ui:
-        label: 'Allow shrinking (flex-shrink)'
+        label: 'flex-shrink'
         reloadIfChanged: true
         inspector:
           group: 'smBreakpoint'
@@ -38,7 +38,7 @@
     mdFlexShrink:
       type: string
       ui:
-        label: 'Allow shrinking (flex-shrink)'
+        label: 'flex-shrink'
         reloadIfChanged: true
         inspector:
           group: 'mdBreakpoint'
@@ -54,7 +54,7 @@
     lgFlexShrink:
       type: string
       ui:
-        label: 'Allow shrinking (flex-shrink)'
+        label: 'flex-shrink'
         reloadIfChanged: true
         inspector:
           group: 'lgBreakpoint'
@@ -70,7 +70,7 @@
     xlFlexShrink:
       type: string
       ui:
-        label: 'Allow shrinking (flex-shrink)'
+        label: 'flex-shrink'
         reloadIfChanged: true
         inspector:
           group: 'xlBreakpoint'

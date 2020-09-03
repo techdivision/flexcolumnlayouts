@@ -1,7 +1,7 @@
 'TechDivision.NodeTypes.FlexColumnLayouts:FlexBasisMixin':
   abstract: true
   superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:TailwindBreakpointsMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin': true
   properties:
     flexBasis:
       type: string
@@ -9,7 +9,7 @@
         label: 'Override width (flex-basis)'
         reloadIfChanged: true
         help:
-          message: 'Override settings from parent element'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-basis'
         inspector:
           group: 'defaultBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -35,7 +35,7 @@
         label: 'Override width (flex-basis)'
         reloadIfChanged: true
         help:
-          message: 'Override settings from parent element'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-basis'
         inspector:
           group: 'smBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -61,7 +61,7 @@
         label: 'Override width (flex-basis)'
         reloadIfChanged: true
         help:
-          message: 'Override settings from parent element'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-basis'
         inspector:
           group: 'mdBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -87,7 +87,7 @@
         label: 'Override width (flex-basis)'
         reloadIfChanged: true
         help:
-          message: 'Override settings from parent element'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-basis'
         inspector:
           group: 'lgBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -113,7 +113,7 @@
         label: 'Override width (flex-basis)'
         reloadIfChanged: true
         help:
-          message: 'Override settings from parent element'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-basis'
         inspector:
           group: 'xlBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'

@@ -1,15 +1,15 @@
 'TechDivision.NodeTypes.FlexColumnLayouts:FlexAlignContentMixin':
   abstract: true
   superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:TailwindBreakpointsMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin': true
   properties:
     flexAlignContent:
       type: string
       ui:
-        label: 'Vertical row alignment (align content)'
+        label: 'align-content'
         reloadIfChanged: true
         help:
-          message: 'Choose how to align rows in vertical axis'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-align-content'
         inspector:
           group: 'defaultBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -30,10 +30,10 @@
     smFlexAlignContent:
       type: string
       ui:
-        label: 'Vertical row alignment (align content)'
+        label: 'align-content'
         reloadIfChanged: true
         help:
-          message: 'Choose how to align rows in vertical axis'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-align-content'
         inspector:
           group: 'smBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -54,10 +54,10 @@
     mdFlexAlignContent:
       type: string
       ui:
-        label: 'Vertical row alignment (align content)'
+        label: 'align-content'
         reloadIfChanged: true
         help:
-          message: 'Choose how to align rows in vertical axis'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-align-content'
         inspector:
           group: 'mdBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -78,10 +78,10 @@
     lgFlexAlignContent:
       type: string
       ui:
-        label: 'Vertical row alignment (align content)'
+        label: 'align-content'
         reloadIfChanged: true
         help:
-          message: 'Choose how to align rows in vertical axis'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-align-content'
         inspector:
           group: 'lgBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -102,10 +102,10 @@
     xlFlexAlignContent:
       type: string
       ui:
-        label: 'Vertical row alignment (align content)'
+        label: 'align-content'
         reloadIfChanged: true
         help:
-          message: 'Choose how to align rows in vertical axis'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-align-content'
         inspector:
           group: 'xlBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'

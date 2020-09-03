@@ -1,15 +1,15 @@
 'TechDivision.NodeTypes.FlexColumnLayouts:FlexWrapMixin':
   abstract: true
   superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:TailwindBreakpointsMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin': true
   properties:
     flexWrap:
       type: string
       ui:
-        label: 'Wrap Items'
+        label: 'flex-wrap'
         reloadIfChanged: true
         help:
-          message: 'Choose how to wrap items in Flexbox'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-wrap'
         inspector:
           group: 'defaultBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -24,10 +24,10 @@
     smFlexWrap:
       type: string
       ui:
-        label: 'Wrap Items'
+        label: 'flex-wrap'
         reloadIfChanged: true
         help:
-          message: 'Choose how to wrap items in Flexbox'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-wrap'
         inspector:
           group: 'smBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -42,10 +42,10 @@
     mdFlexWrap:
       type: string
       ui:
-        label: 'Wrap Items'
+        label: 'flex-wrap'
         reloadIfChanged: true
         help:
-          message: 'Choose how to wrap items in Flexbox'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-wrap'
         inspector:
           group: 'mdBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -60,10 +60,10 @@
     lgFlexWrap:
       type: string
       ui:
-        label: 'Wrap Items'
+        label: 'flex-wrap'
         reloadIfChanged: true
         help:
-          message: 'Choose how to wrap items in Flexbox'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-wrap'
         inspector:
           group: 'lgBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -78,10 +78,10 @@
     xlFlexWrap:
       type: string
       ui:
-        label: 'Wrap Items'
+        label: 'flex-wrap'
         reloadIfChanged: true
         help:
-          message: 'Choose how to wrap items in Flexbox'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-wrap'
         inspector:
           group: 'xlBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'

@@ -1,105 +1,105 @@
 'TechDivision.NodeTypes.FlexColumnLayouts:FlexDirectionMixin':
   abstract: true
   superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:TailwindBreakpointsMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin': true
   properties:
     flexDirection:
       type: string
       ui:
-        label: 'Row / cols / reverse'
+        label: 'flex-direction'
         reloadIfChanged: true
         help:
-          message: 'Select in which direction your boxes should flow: '
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-direction'
         inspector:
           group: 'defaultBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'Row (default)'
+                label: 'row (default)'
               'flex-row-reverse':
-                label: 'Reverse rows'
+                label: 'reverse rows'
               'flex-col':
-                label: 'Columns'
+                label: 'columns'
               'flex-col-reverse':
-                label: 'Reverse columns'
+                label: 'reverse columns'
     smFlexDirection:
       type: string
       ui:
-        label: 'Row / cols / reverse'
+        label: 'flex-direction'
         reloadIfChanged: true
         help:
-          message: 'Select in which direction your boxes should flow: '
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-direction'
         inspector:
           group: 'smBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'Row (default)'
+                label: 'row (default)'
               'sm:flex-row-reverse':
-                label: 'Reverse rows'
+                label: 'reverse rows'
               'sm:flex-col':
-                label: 'Columns'
+                label: 'columns'
               'sm:flex-col-reverse':
-                label: 'Reverse columns'
+                label: 'reverse columns'
     mdFlexDirection:
       type: string
       ui:
-        label: 'Row / cols / reverse'
+        label: 'flex-direction'
         reloadIfChanged: true
         help:
-          message: 'Select in which direction your boxes should flow: '
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-direction'
         inspector:
           group: 'mdBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'Row (default)'
+                label: 'row (default)'
               'md:flex-row-reverse':
-                label: 'Reverse rows'
+                label: 'reverse rows'
               'md:flex-col':
-                label: 'Columns'
+                label: 'columns'
               'md:flex-col-reverse':
-                label: 'Reverse columns'
+                label: 'reverse columns'
     lgFlexDirection:
       type: string
       ui:
-        label: 'Row / cols / reverse'
+        label: 'flex-direction'
         reloadIfChanged: true
         help:
-          message: 'Select in which direction your boxes should flow: '
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-direction'
         inspector:
           group: 'lgBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'Row (default)'
+                label: 'row (default)'
               'lg:flex-row-reverse':
-                label: 'Reverse rows'
+                label: 'reverse rows'
               'lg:flex-col':
-                label: 'Columns'
+                label: 'columns'
               'lg:flex-col-reverse':
-                label: 'Reverse columns'
+                label: 'reverse columns'
     xlFlexDirection:
       type: string
       ui:
-        label: 'Row / cols / reverse'
+        label: 'flex-direction'
         reloadIfChanged: true
         help:
-          message: 'Select in which direction your boxes should flow: '
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-direction'
         inspector:
           group: 'xlBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'Row (default)'
+                label: 'row (default)'
               'xl:flex-row-reverse':
-                label: 'Reverse rows'
+                label: 'reverse rows'
               'xl:flex-col':
-                label: 'Columns'
+                label: 'columns'
               'xl:flex-col-reverse':
-                label: 'Reverse columns'
+                label: 'reverse columns'

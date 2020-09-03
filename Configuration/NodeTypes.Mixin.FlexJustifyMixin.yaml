@@ -1,7 +1,7 @@
 'TechDivision.NodeTypes.FlexColumnLayouts:FlexJustifyMixin':
   abstract: true
   superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:TailwindBreakpointsMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin': true
   properties:
     flexJustify:
       type: string
@@ -9,7 +9,7 @@
         label: 'Horizontal alignment (justify)'
         reloadIfChanged: true
         help:
-          message: 'Choose how to align items (justify) in horizontal axis'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-justify-content'
         inspector:
           group: 'defaultBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -33,7 +33,7 @@
         label: 'Horizontal alignment (justify)'
         reloadIfChanged: true
         help:
-          message: 'Choose how to align items (justify) in horizontal axis'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-justify-content'
         inspector:
           group: 'smBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -57,7 +57,7 @@
         label: 'Horizontal alignment (justify)'
         reloadIfChanged: true
         help:
-          message: 'Choose how to align items (justify) in horizontal axis'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-justify-content'
         inspector:
           group: 'mdBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -81,7 +81,7 @@
         label: 'Horizontal alignment (justify)'
         reloadIfChanged: true
         help:
-          message: 'Choose how to align items (justify) in horizontal axis'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-justify-content'
         inspector:
           group: 'lgBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -105,7 +105,7 @@
         label: 'Horizontal alignment (justify)'
         reloadIfChanged: true
         help:
-          message: 'Choose how to align items (justify) in horizontal axis'
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-justify-content'
         inspector:
           group: 'xlBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'

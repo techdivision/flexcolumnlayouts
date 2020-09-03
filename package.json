@@ -3,7 +3,7 @@
   "license": "GNU GPLv3",
   "private": true,
   "scripts": {
-    "build-css": "node-sass --output-style=compressed Resources/Private/Scss/_FlexColumnLayout.scss   Resources/Public/Css/Styles.css"
+    "build-css": "node-sass --output-style compressed --output Resources/Public/Css/ Resources/Private/Scss/"
   },
   "dependencies": {
     "node-sass": "^4"
