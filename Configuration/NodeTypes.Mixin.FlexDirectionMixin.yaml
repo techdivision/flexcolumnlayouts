@@ -16,7 +16,7 @@
           editorOptions:
             values:
               '':
-                label: 'row (default)'
+                label: 'rows (default)'
               'flex-row-reverse':
                 label: 'reverse rows'
               'flex-col':
@@ -36,7 +36,9 @@
           editorOptions:
             values:
               '':
-                label: 'row (default)'
+                label: 'none'
+              'sm:flex-row':
+                label: 'rows'
               'sm:flex-row-reverse':
                 label: 'reverse rows'
               'sm:flex-col':
@@ -56,7 +58,9 @@
           editorOptions:
             values:
               '':
-                label: 'row (default)'
+                label: 'none'
+              'md:flex-row':
+                label: 'rows'
               'md:flex-row-reverse':
                 label: 'reverse rows'
               'md:flex-col':
@@ -76,7 +80,9 @@
           editorOptions:
             values:
               '':
-                label: 'row (default)'
+                label: 'none'
+              'lg:flex-row':
+                label: 'rows'
               'lg:flex-row-reverse':
                 label: 'reverse rows'
               'lg:flex-col':
@@ -96,7 +102,9 @@
           editorOptions:
             values:
               '':
-                label: 'row (default)'
+                label: 'none'
+              'xl:flex-row':
+                label: 'rows'
               'xl:flex-row-reverse':
                 label: 'reverse rows'
               'xl:flex-col':

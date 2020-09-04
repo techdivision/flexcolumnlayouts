@@ -1,55 +1,40 @@
 prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos.Neos:ContentComponent) {
-    containerClasses = Neos.Fusion:Join {
+    containerClasses = TechDivision.NodeTypes.FlexColumnLayouts:CssClasses {
         flex = 'flex'
-        flexDirection = Neos.Fusion:Join {
+        flexDirection = TechDivision.NodeTypes.FlexColumnLayouts:CssClasses {
             flexDirection = ${q(node).property('flexDirection') ? q(node).property('flexDirection') : 'flex-row'}
             smFlexDirection = ${q(node).property('smFlexDirection')}
             mdFlexDirection = ${q(node).property('mdFlexDirection')}
             lgFlexDirection = ${q(node).property('lgFlexDirection')}
             xlFlexDirection = ${q(node).property('xlFlexDirection')}
-            @glue = ' '
         }
-        flexWrap = Neos.Fusion:Join {
+        flexWrap = TechDivision.NodeTypes.FlexColumnLayouts:CssClasses {
             flexWrap = ${q(node).property('flexWrap') ? q(node).property('flexWrap') : 'flex-wrap'}
-            smFlexJustify = ${q(node).property('smFlexJustify')}
-            mdFlexJustify = ${q(node).property('mdFlexJustify')}
-            lgFlexJustify = ${q(node).property('lgFlexJustify')}
-            xlFlexJustify = ${q(node).property('xlFlexJustify')}
-            @glue = ' '
-        }
-        flexJustify = Neos.Fusion:Join {
-            flexJustify = ${q(node).property('flexJustify')}
             smFlexWrap = ${q(node).property('smFlexWrap')}
             mdFlexWrap = ${q(node).property('mdFlexWrap')}
             lgFlexWrap = ${q(node).property('lgFlexWrap')}
             xlFlexWrap = ${q(node).property('xlFlexWrap')}
-            @glue = ' '
         }
-        flexAlignItems = Neos.Fusion:Join {
+        flexJustify = TechDivision.NodeTypes.FlexColumnLayouts:CssClasses {
+            flexJustify = ${q(node).property('flexJustify')}
+            smFlexJustify = ${q(node).property('smFlexJustify')}
+            mdFlexJustify = ${q(node).property('mdFlexJustify')}
+            lgFlexJustify = ${q(node).property('lgFlexJustify')}
+            xlFlexJustify = ${q(node).property('xlFlexJustify')}
+        }
+        flexAlignItems = TechDivision.NodeTypes.FlexColumnLayouts:CssClasses {
             flexAlignItems = ${q(node).property('flexAlignItems')}
             smFlexAlignItems = ${q(node).property('smFlexAlignItems')}
             mdFlexAlignItems = ${q(node).property('mdFlexAlignItems')}
             lgFlexAlignItems = ${q(node).property('lgFlexAlignItems')}
             xlFlexAlignItems = ${q(node).property('xlFlexAlignItems')}
-            @glue = ' '
         }
-        flexAlignContent = Neos.Fusion:Join {
+        flexAlignContent = TechDivision.NodeTypes.FlexColumnLayouts:CssClasses {
             flexAlignContent = ${q(node).property('flexAlignContent')}
             smFlexAlignContent = ${q(node).property('smFlexAlignContent')}
             mdFlexAlignContent = ${q(node).property('mdFlexAlignContent')}
             lgFlexAlignContent = ${q(node).property('lgFlexAlignContent')}
             xlFlexAlignContent = ${q(node).property('xlFlexAlignContent')}
-            @glue = ' '
-        }
-        @glue = ' '
-
-        @process.removeSpaces {
-            expression = ${String.trim(String.replace(value, '  ', ' '))}
-            @position = 'start'
-        }
-        @process.replaceClasses {
-            expression = ${CssClassMapping.replace(value, 'bootstrap4')}
-            @position = 'end'
         }
     }
 
@@ -63,19 +48,18 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos
             nodePath = '.'
             attributes = Neos.Fusion:Attributes {
                 class >
-                class = Neos.Fusion:Join {
+                class = TechDivision.NodeTypes.FlexColumnLayouts:CssClasses {
                     flexItem = ${'flex-item'}
                     basis = Neos.Fusion:Case {
                         self {
                             @position = 'start'
                             condition = ${q(node).property('flexBasis') || q(node).property('smFlexBasis') || q(node).property('mdFlexBasis') || q(node).property('lgFlexBasis') || q(node).property('xlFlexBasis')}
-                            renderer = Neos.Fusion:Join {
+                            renderer = TechDivision.NodeTypes.FlexColumnLayouts:CssClasses {
                                 basis = ${q(node).property('flexBasis')}
                                 smBasis = ${q(node).property('smFlexBasis')}
                                 mdBasis = ${q(node).property('mdFlexBasis')}
                                 lgBasis = ${q(node).property('lgFlexBasis')}
                                 xlBasis = ${q(node).property('xlFlexBasis')}
-                                @glue = ' '
                             }
                         }
                         parentElement {
@@ -90,31 +74,19 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos
                         }
 
                     }
-                    shrink = Neos.Fusion:Join {
+                    shrink = TechDivision.NodeTypes.FlexColumnLayouts:CssClasses {
                         shrink = ${q(node).property('flexShrink')}
                         smShrink = ${q(node).property('smFlexShrink')}
                         mdShrink = ${q(node).property('mdFlexShrink')}
                         lgShrink = ${q(node).property('lgFlexShrink')}
                         xlShrink = ${q(node).property('xlFlexShrink')}
-                        @glue = ' '
                     }
-                    order = Neos.Fusion:Join {
+                    order = TechDivision.NodeTypes.FlexColumnLayouts:CssClasses {
                         order = ${q(node).property('flexOrder')}
                         smOrder = ${q(node).property('smFlexOrder')}
                         mdOrder = ${q(node).property('mdFlexOrder')}
                         lgOrder = ${q(node).property('lgFlexOrder')}
                         xlOrder = ${q(node).property('xlFlexOrder')}
-                        @glue = ' '
-                    }
-                    contentAlignment = ${q(node).property('contentAlignment')}
-                    @glue = ' '
-                    @process.removeSpaces {
-                        expression = ${String.trim(String.replace(value, '  ', ' '))}
-                        @position = 'start'
-                    }
-                    @process.replaceClasses {
-                        expression = ${CssClassMapping.replace(value, 'bootstrap4')}
-                        @position = 'end'
                     }
                 }
                 style = Neos.Fusion:Join {

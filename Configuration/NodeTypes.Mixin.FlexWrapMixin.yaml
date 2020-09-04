@@ -34,7 +34,9 @@
           editorOptions:
             values:
               '':
-                label: 'wrap (default)'
+                label: 'none'
+              'sm:flex-wrap':
+                label: 'wrap'
               'sm:flex-no-wrap':
                 label: 'no wrap'
               'sm:flex-wrap-reverse':
@@ -52,7 +54,9 @@
           editorOptions:
             values:
               '':
-                label: 'wrap (default)'
+                label: 'none'
+              'md:flex-wrap':
+                label: 'wrap'
               'md:flex-no-wrap':
                 label: 'no wrap'
               'md:flex-wrap-reverse':
@@ -70,7 +74,9 @@
           editorOptions:
             values:
               '':
-                label: 'wrap (default)'
+                label: 'none'
+              'lg:flex-wrap':
+                label: 'wrap'
               'lg:flex-no-wrap':
                 label: 'no wrap'
               'lg:flex-wrap-reverse':
@@ -88,7 +94,9 @@
           editorOptions:
             values:
               '':
-                label: 'wrap (default)'
+                label: 'none'
+              'xl:flex-wrap':
+                label: 'wrap'
               'xl:flex-no-wrap':
                 label: 'no wrap'
               'xl:flex-wrap-reverse':

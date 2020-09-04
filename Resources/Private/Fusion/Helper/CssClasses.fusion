@@ -1,0 +1,6 @@
+prototype(TechDivision.NodeTypes.FlexColumnLayouts:CssClasses) < prototype(Neos.Fusion:DataStructure) {
+    @process {
+        removeEmpty = ${Array.filter(value, (val) => val != '' && val != null)}
+        join = ${Array.join(value, ' ')}
+    }
+}

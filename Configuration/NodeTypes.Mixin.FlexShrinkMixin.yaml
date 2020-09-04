@@ -7,6 +7,8 @@
       type: string
       ui:
         label: 'flex-shrink'
+        help:
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-shrink'
         reloadIfChanged: true
         inspector:
           group: 'defaultBreakpoint'
@@ -23,6 +25,8 @@
       type: string
       ui:
         label: 'flex-shrink'
+        help:
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-shrink'
         reloadIfChanged: true
         inspector:
           group: 'smBreakpoint'
@@ -39,6 +43,8 @@
       type: string
       ui:
         label: 'flex-shrink'
+        help:
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-shrink'
         reloadIfChanged: true
         inspector:
           group: 'mdBreakpoint'
@@ -55,6 +61,8 @@
       type: string
       ui:
         label: 'flex-shrink'
+        help:
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-shrink'
         reloadIfChanged: true
         inspector:
           group: 'lgBreakpoint'
@@ -71,6 +79,8 @@
       type: string
       ui:
         label: 'flex-shrink'
+        help:
+          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-shrink'
         reloadIfChanged: true
         inspector:
           group: 'xlBreakpoint'

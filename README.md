@@ -5,10 +5,17 @@ It is based  on tailwindcss class names.
 If you want to change the class names, feel free to do so and build a more generic grid system.
 
 ## How does it work?
-You find a whole lot of settings now in your multi column nodes.
-All the settings can be overidden per breakpoint.
+You find a whole lot of settings now in your multi column nodes. 
+We kept the css names instead of more speaking ones and added some links to an interactive documentation right in the inspector.
+Flex is sometimes better understood if you try it out.  
+
+**All the settings can be overidden per breakpoint.**
 
 ### NodeType level
+Here you can see, how it looks like on NodeType level: You have plenty of options to adjust your columns
+
+![NodeType level](Documentation/assets/FlexColumnLayouts-NodeType.png "NodeType level")
+
 You have the following options for the whole grid  
 * _Layout_: (as usual, but a bit more refined, see "Layouts")  
 like 50/50, 60/33 or similar
@@ -18,7 +25,14 @@ like 50/50, 60/33 or similar
 * [align-items](https://yoksel.github.io/flex-cheatsheet/#section-align-items-self)
 * [align-content](https://yoksel.github.io/flex-cheatsheet/#section-align-content)
 
+
 ### Column level 
+
+Here you can see, how it looks like on Column level: There you can override your options.
+
+![Column level](Documentation/assets/FlexColumnLayouts-Column.png "Column level")
+
+
 * Override width: Here you can override the width on a column-basis, so that you can have individual grids like 25/33 and dont have to add fixed layouts
 * [flex-order](https://yoksel.github.io/flex-cheatsheet/#section-order)
 * [flex-shrink](https://yoksel.github.io/flex-cheatsheet/#section-flex-shrink)
@@ -42,10 +56,11 @@ Two columns-example:
 
 ## Principle
 The idea behind this package is to have any options for flex layouts available to columns so as to 
-test things on a website and get ideas for which layouts are feasible for the website.  
-From that you can build great columnlayouts yourself which are not bound to number of columns.  
-It will be far too complicated for most editors, but gives a great toolbox for advanced ones.
+test things on a website and get ideas for which layouts do make some sense.  
+From that you can build great columnlayouts yourself.  
+Using all the options might be far too complicated for most editors, but gives a great toolbox for advanced ones.
 
+So it is considered rather a prototyping tool or one for advanced editors.
 ### TailwindCSS Classnames
 If you already use tailwindcss in your project, you are all set and the classnames will be available to you.
 If not, you have several choices:
@@ -65,8 +80,19 @@ to your page that adds some classes that bootstrap doesn't provide.
 ```scss
 @import "Plugins/TechDivision.NodeTypes.FlexColumnLayouts/Resources/Private/Scss/Bootstrap4AdditionalFlexClasses";
 ```
-
-
+* For sure you need to add some fusion code to replace those classes:
+```
+prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) {
+    containerClasses.@process.replaceClasses {
+            expression = ${CssClassMapping.replace(value, 'bootstrap4')}
+            @position = 'end'
+    }
+    columns.itemRenderer.attributes.class.@process.replaceClasses {
+            expression = ${CssClassMapping.replace(value, 'bootstrap4')}
+            @position = 'end'
+    }
+}
+```
 
 #### SCSS variables
 
@@ -80,3 +106,6 @@ $flexBreakpointConfiguration: (
         '1280px': 'xl\\:'
 );
 ```
+
+ToDo:
+- Remove empty spaces in classes 
