@@ -1,0 +1,119 @@
+up:
+  comments: 'This migration changes all your existing grid columns'
+  migration:
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Neos:ContentCollection'
+        -
+          type: 'NodeName'
+          settings:
+            nodeName: 'column0'
+
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.FirstColumn'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Neos:ContentCollection'
+        -
+          type: 'NodeName'
+          settings:
+            nodeName: 'column1'
+
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.SecondColumn'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Neos:ContentCollection'
+        -
+          type: 'NodeName'
+          settings:
+            nodeName: 'column2'
+
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.ThirdColumn'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Neos:ContentCollection'
+        -
+          type: 'NodeName'
+          settings:
+            nodeName: 'column3'
+
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.FourthColumn'
+
+down:
+  migration:
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.FirstColumn'
+
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Neos:ContentCollection'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.SecondColumn'
+
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Neos:ContentCollection'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.ThirdColumn'
+
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Neos:ContentCollection'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.FourthColumn'
+
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Neos:ContentCollection'
+

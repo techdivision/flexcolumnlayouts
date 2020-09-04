@@ -1,7 +1,43 @@
 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection':
+  label: "${String.cropAtWord(String.trim(String.stripTags(String.pregReplace(q(node).property('title') || q(node).property('text') || ((I18n.translate(node.nodeType.label) || node.nodeType.name))), '/<br\\W*?\\/?>|\\x{00a0}|[^[:print:]]|\\s+/u', ' '))), 100, '...')}"
+  abstract: true
   superTypes:
     'Neos.Neos:ContentCollection': true
     'TechDivision.NodeTypes.FlexColumnLayouts:FlexBasisMixin': true
     'TechDivision.NodeTypes.FlexColumnLayouts:FlexOrderMixin': true
     'TechDivision.NodeTypes.FlexColumnLayouts:FlexShrinkMixin': true
     'TechDivision.NodeTypes.FlexColumnLayouts:VisualMixin': true
+
+
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.FirstColumn':
+  ui:
+    label: 'Col 1'
+    icon: 'icon-dice-one'
+    inlineEditable: true
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection': true
+
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.SecondColumn':
+  ui:
+    label: 'Col 2'
+    icon: 'icon-dice-two'
+    inlineEditable: true
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection': true
+
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.ThirdColumn':
+  ui:
+    label: 'Col 3'
+    icon: 'icon-dice-three'
+    inlineEditable: true
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection': true
+
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.FourthColumn':
+  ui:
+    label: 'Col 4'
+    icon: 'icon-dice-four'
+    inlineEditable: true
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection': true
+

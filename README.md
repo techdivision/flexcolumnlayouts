@@ -5,6 +5,7 @@ It extends your standard Neos-ColumnLayouts with flex properties so you can adju
 ## Get started
 1. Install the package via packagist: Add `"techdivision/flexcolumnlayouts" : "~1.0"` to the require section of the composer.json or run `composer require techdivision/flexcolumnlayouts`.
 2. If needed (i.e. nothing follow the instructions under "TailwindCSS" or "Bootstrap4"
+3. Apply a node migration, if you want to use this feature on existing nodes. 
 
 ## How does it work?
 You find a whole lot of settings now in your multi column nodes. 
@@ -98,6 +99,14 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) {
             @position = 'end'
     }
 }
+```
+
+### Node Migration
+In case you do not start with a fresh project, but want to have those features available on your existing multi-column containers as well, we provided you with a node migration:  
+**Use with caution and only if you know what you are doing!**
+
+```shell
+./flow node:migrate 20200904150412
 ```
 
 #### Change breakpoint settings

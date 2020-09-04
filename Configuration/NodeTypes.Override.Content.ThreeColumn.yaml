@@ -1,11 +1,11 @@
 'Neos.NodeTypes.ColumnLayouts:ThreeColumn':
   childNodes:
     column0:
-      type: 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection'
+      type: 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.FirstColumn'
     column1:
-      type: 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection'
+      type: 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.SecondColumn'
     column2:
-      type: 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection'
+      type: 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.ThirdColumn'
   properties:
     layout:
       defaultValue: '100-100-100__100-100-100__33-33-33__33-33-33__33-33-33'
