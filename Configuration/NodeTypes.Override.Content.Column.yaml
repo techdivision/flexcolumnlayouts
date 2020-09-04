@@ -5,3 +5,8 @@
     'TechDivision.NodeTypes.FlexColumnLayouts:FlexJustifyMixin': true
     'TechDivision.NodeTypes.FlexColumnLayouts:FlexAlignItemsMixin': true
     'TechDivision.NodeTypes.FlexColumnLayouts:FlexAlignContentMixin': true
+  ui:
+    inspector:
+      groups:
+        column:
+          position: 'start 100'

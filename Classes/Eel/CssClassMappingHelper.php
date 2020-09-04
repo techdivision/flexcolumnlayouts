@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace TechDivision\NodeTypes\FlexColumnLayouts;
+namespace TechDivision\NodeTypes\FlexColumnLayouts\Eel;
 
 use Neos\Flow\Annotations as Flow;
 use Neos\Eel\ProtectedContextAwareInterface;

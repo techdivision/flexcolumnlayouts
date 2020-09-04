@@ -1,4 +1,4 @@
-'Neos.NodeTypes.ColumnLayouts:OneColumn':
+'TechDivision.NodeTypes.ColumnLayouts:OneColumn':
   superTypes:
     'Neos.NodeTypes.ColumnLayouts:Column': true
   ui:
@@ -6,7 +6,7 @@
     position: 100
   childNodes:
     column0:
-      type: 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollectionContainer'
+      type: 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection'
   properties:
     layout:
       defaultValue: '100-100__100-100__100-100__100-100__100-100'
