@@ -1,8 +1,7 @@
-# FlexColumLayouts for Neos CMS
+# Flex-ColumnLayouts for Neos CMS
 Based on [tailwindcss](https://tailwindcss.com/), offers also css classes for [Bootstrap4](https://getbootstrap.com/docs/4.4/utilities/flex/).  
-It extends your standard Neos ColumnLayouts with flex properties so you can adjust every column with [css flex properties](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
-It is based  on tailwindcss class names.
-If you want to change the class names, feel free to do so and build a more generic grid system.
+It extends your standard Neos-ColumnLayouts with flex properties so you can adjust every column with [css flex properties](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
+
 
 ## How does it work?
 You find a whole lot of settings now in your multi column nodes. 
@@ -33,14 +32,15 @@ Here you can see, how it looks like on Column level: There you can override your
 ![Column level](Documentation/assets/FlexColumnLayouts-Column.png "Column level")
 
 
-* Override width: Here you can override the width on a column-basis, so that you can have individual grids like 25/33 and dont have to add fixed layouts
+* Override width: Here you can override the width on a column-basis, so that you can have individual grids like 25/33 and dont have to add fixed layouts for that
 * [flex-order](https://yoksel.github.io/flex-cheatsheet/#section-order)
 * [flex-shrink](https://yoksel.github.io/flex-cheatsheet/#section-flex-shrink)
 * Inline-Styles: background-color, text-color and background-image
 
 ### Layouts
-In standard Neos column layouts, you only have the possibility to add layouts - but you have no flexibility to add breakpoint-specific layouts.
+In standard Neos column layouts, you have no flexibility to add breakpoint-specific layouts.
 The syntax we added seems a bit more complex on first sight (esp. on 4+ columns), but adds a whole new flexibility.  
+It won't be adapted fast anyway.
 
 Two columns-example:
 
@@ -60,7 +60,8 @@ test things on a website and get ideas for which layouts do make some sense.
 From that you can build great columnlayouts yourself.  
 Using all the options might be far too complicated for most editors, but gives a great toolbox for advanced ones.
 
-So it is considered rather a prototyping tool or one for advanced editors.
+**We consider it rather useful for prototyping or advanced editors.**
+
 ### TailwindCSS Classnames
 If you already use tailwindcss in your project, you are all set and the classnames will be available to you.
 If not, you have several choices:
@@ -73,14 +74,15 @@ If not, you have several choices:
 
 ### Bootstrap 4 Classnames
 If you are using Bootstrap 4 in your project and have [Flex Utilities](https://getbootstrap.com/docs/4.4/utilities/flex/) available, you just have to:
-* Add the small stylesheet  
+* Add the small stylesheet 
 `Resources/Public/Css/Bootstrap4AdditionalFlexClasses.css`  
 to your page that adds some classes that bootstrap doesn't provide.
 * Or include the scss file
 ```scss
 @import "Plugins/TechDivision.NodeTypes.FlexColumnLayouts/Resources/Private/Scss/Bootstrap4AdditionalFlexClasses";
 ```
-* For sure you need to add some fusion code to replace those classes:
+* For sure you need to add some fusion code to replace the tailwind classnames, which are a bit different:  
+(For replacement, we have a mapping file, where you can see the differences: `Configuration/Settings.CssClassMapping.Bootstrap4.yaml` 
 ```
 prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) {
     containerClasses.@process.replaceClasses {
@@ -94,7 +96,7 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) {
 }
 ```
 
-#### SCSS variables
+#### Change breakpoint settings
 
 If you include the scss files, you can overwrite the breakpoint variables defined by default:
 
@@ -106,6 +108,6 @@ $flexBreakpointConfiguration: (
         '1280px': 'xl\\:'
 );
 ```
-
-ToDo:
-- Remove empty spaces in classes 
+## Contribution
+If you want to contribute or found a bug, pls provide a PR or file an issue - or get in touch with us!
+ 
