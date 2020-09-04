@@ -1,5 +1,5 @@
 # Flex-ColumnLayouts for Neos CMS
-Based on [tailwindcss](https://tailwindcss.com/), offers also css classes for [Bootstrap4](https://getbootstrap.com/docs/4.4/utilities/flex/).  
+Based on [TailwindCSS](https://tailwindcss.com/), but offers also css classes for [Bootstrap4](https://getbootstrap.com/docs/4.4/utilities/flex/).  
 It extends your standard Neos-ColumnLayouts with flex properties so you can adjust every column with [css flex properties](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 
 ## Get started
@@ -7,12 +7,12 @@ It extends your standard Neos-ColumnLayouts with flex properties so you can adju
 2. If needed (i.e. nothing follow the instructions under "TailwindCSS" or "Bootstrap4"
 3. Apply a node migration, if you want to use this feature on existing nodes. 
 
-## How does it work?
+## For editors
 You find a whole lot of settings now in your multi column nodes. 
 We kept the css names instead of more speaking ones and added some links to an interactive documentation right in the inspector.
-Flex is sometimes better understood if you try it out.  
+Flex is sometimes better understood if you [try it out](https://yoksel.github.io/flex-cheatsheet/).  
 
-**All the settings can be overidden per breakpoint.**
+*Note: All the settings can be overidden per breakpoint.*
 
 
 ### NodeType level
@@ -42,6 +42,17 @@ Here you can see, how it looks like on Column level: There you can override your
 * [flex-shrink](https://yoksel.github.io/flex-cheatsheet/#section-flex-shrink)
 * Inline-Styles: background-color, text-color and background-image
 
+### Principle
+The idea behind this package is to have any options for flex layouts available to columns so as to 
+test things on a website and get ideas for which layouts do make some sense.  
+From that you can build great columnlayouts yourself.  
+Using all the options might be far too complicated for most editors, but gives a great toolbox for advanced ones.
+
+**We consider it rather useful for prototyping or advanced editors.**
+
+
+## For developers
+
 ### Layouts
 In standard Neos column layouts, you have no flexibility to add breakpoint-specific layouts.
 The syntax we added seems a bit more complex on first sight (esp. on 4+ columns), but adds a whole new flexibility.  
@@ -58,14 +69,6 @@ Two columns-example:
 50% / 50% for lg+ devices
 50% / 50% for xl+ devices
 ```
-
-## Principle
-The idea behind this package is to have any options for flex layouts available to columns so as to 
-test things on a website and get ideas for which layouts do make some sense.  
-From that you can build great columnlayouts yourself.  
-Using all the options might be far too complicated for most editors, but gives a great toolbox for advanced ones.
-
-**We consider it rather useful for prototyping or advanced editors.**
 
 ### TailwindCSS
 If you already use tailwindcss in your project, you are all set and the classnames will be available to you.
@@ -109,7 +112,7 @@ In case you do not start with a fresh project, but want to have those features a
 ./flow node:migrate 20200904150412
 ```
 
-#### Change breakpoint settings
+### Change breakpoint settings
 
 If you include the scss files, you can overwrite the breakpoint variables defined by default:
 
