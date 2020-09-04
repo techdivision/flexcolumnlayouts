@@ -2,6 +2,9 @@
 Based on [tailwindcss](https://tailwindcss.com/), offers also css classes for [Bootstrap4](https://getbootstrap.com/docs/4.4/utilities/flex/).  
 It extends your standard Neos-ColumnLayouts with flex properties so you can adjust every column with [css flex properties](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 
+## Get started
+1. Install the package via packagist: Add `"techdivision/flexcolumnlayouts" : "~1.0"` to the require section of the composer.json or run `composer require techdivision/flexcolumnlayouts`.
+2. If needed (i.e. nothing follow the instructions under "TailwindCSS" or "Bootstrap4"
 
 ## How does it work?
 You find a whole lot of settings now in your multi column nodes. 
@@ -9,6 +12,7 @@ We kept the css names instead of more speaking ones and added some links to an i
 Flex is sometimes better understood if you try it out.  
 
 **All the settings can be overidden per breakpoint.**
+
 
 ### NodeType level
 Here you can see, how it looks like on NodeType level: You have plenty of options to adjust your columns
@@ -62,7 +66,7 @@ Using all the options might be far too complicated for most editors, but gives a
 
 **We consider it rather useful for prototyping or advanced editors.**
 
-### TailwindCSS Classnames
+### TailwindCSS
 If you already use tailwindcss in your project, you are all set and the classnames will be available to you.
 If not, you have several choices:
 1. (default) include the small css we deliver with this package which only include tailwind flex classnames 
@@ -72,7 +76,7 @@ If not, you have several choices:
 @import "Plugins/TechDivision.NodeTypes.FlexColumnLayouts/Resources/Private/Scss/TailwindFlexClasses";
 ```
 
-### Bootstrap 4 Classnames
+### Bootstrap4
 If you are using Bootstrap 4 in your project and have [Flex Utilities](https://getbootstrap.com/docs/4.4/utilities/flex/) available, you just have to:
 * Add the small stylesheet 
 `Resources/Public/Css/Bootstrap4AdditionalFlexClasses.css`  
