@@ -43,10 +43,12 @@ Here you can see, how it looks like on Column level: There you can override your
 * Inline-Styles: background-color, text-color and background-image
 
 ### Principle
-The idea behind this package is to have any options for flex layouts available to columns so as to 
-test things on a website and get ideas for which layouts do make some sense.  
-From that you can build great columnlayouts yourself.  
-Using all the options might be far too complicated for most editors, but gives a great toolbox for advanced ones.
+The idea behind this package is to have a full set of options for flex layouts available, so you can:
+1. Do some experiments
+2. Check which layouts improve experience, readability and layout on your website
+3. Build new NodeTypes from that template
+
+Having all those options at hand might be too complicated for some editors, but gives a great toolbox for advanced ones.
 
 **We consider it rather useful for prototyping or advanced editors.**
 
