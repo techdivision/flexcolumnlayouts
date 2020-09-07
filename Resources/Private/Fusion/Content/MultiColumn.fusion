@@ -1,35 +1,35 @@
 prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos.Neos:ContentComponent) {
-    containerClasses = TechDivision.NodeTypes.FlexColumnLayouts:CssClasses {
+    containerClasses = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
         flex = 'flex'
-        flexDirection = TechDivision.NodeTypes.FlexColumnLayouts:CssClasses {
+        flexDirection = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
             flexDirection = ${q(node).property('flexDirection') ? q(node).property('flexDirection') : 'flex-row'}
             smFlexDirection = ${q(node).property('smFlexDirection')}
             mdFlexDirection = ${q(node).property('mdFlexDirection')}
             lgFlexDirection = ${q(node).property('lgFlexDirection')}
             xlFlexDirection = ${q(node).property('xlFlexDirection')}
         }
-        flexWrap = TechDivision.NodeTypes.FlexColumnLayouts:CssClasses {
+        flexWrap = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
             flexWrap = ${q(node).property('flexWrap') ? q(node).property('flexWrap') : 'flex-wrap'}
             smFlexWrap = ${q(node).property('smFlexWrap')}
             mdFlexWrap = ${q(node).property('mdFlexWrap')}
             lgFlexWrap = ${q(node).property('lgFlexWrap')}
             xlFlexWrap = ${q(node).property('xlFlexWrap')}
         }
-        flexJustify = TechDivision.NodeTypes.FlexColumnLayouts:CssClasses {
+        flexJustify = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
             flexJustify = ${q(node).property('flexJustify')}
             smFlexJustify = ${q(node).property('smFlexJustify')}
             mdFlexJustify = ${q(node).property('mdFlexJustify')}
             lgFlexJustify = ${q(node).property('lgFlexJustify')}
             xlFlexJustify = ${q(node).property('xlFlexJustify')}
         }
-        flexAlignItems = TechDivision.NodeTypes.FlexColumnLayouts:CssClasses {
+        flexAlignItems = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
             flexAlignItems = ${q(node).property('flexAlignItems')}
             smFlexAlignItems = ${q(node).property('smFlexAlignItems')}
             mdFlexAlignItems = ${q(node).property('mdFlexAlignItems')}
             lgFlexAlignItems = ${q(node).property('lgFlexAlignItems')}
             xlFlexAlignItems = ${q(node).property('xlFlexAlignItems')}
         }
-        flexAlignContent = TechDivision.NodeTypes.FlexColumnLayouts:CssClasses {
+        flexAlignContent = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
             flexAlignContent = ${q(node).property('flexAlignContent')}
             smFlexAlignContent = ${q(node).property('smFlexAlignContent')}
             mdFlexAlignContent = ${q(node).property('mdFlexAlignContent')}
@@ -37,6 +37,7 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos
             xlFlexAlignContent = ${q(node).property('xlFlexAlignContent')}
         }
     }
+    containerStyles = TechDivision.NodeTypes.FlexColumnLayouts:Helper.VisualStyles
 
     columns = Neos.Fusion:Collection {
         @context.columnLayout = ${q(node).property('layout')}
@@ -48,13 +49,13 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos
             nodePath = '.'
             attributes = Neos.Fusion:Attributes {
                 class >
-                class = TechDivision.NodeTypes.FlexColumnLayouts:CssClasses {
+                class = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
                     flexItem = ${'flex-item'}
                     basis = Neos.Fusion:Case {
                         self {
                             @position = 'start'
                             condition = ${q(node).property('flexBasis') || q(node).property('smFlexBasis') || q(node).property('mdFlexBasis') || q(node).property('lgFlexBasis') || q(node).property('xlFlexBasis')}
-                            renderer = TechDivision.NodeTypes.FlexColumnLayouts:CssClasses {
+                            renderer = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
                                 basis = ${q(node).property('flexBasis')}
                                 smBasis = ${q(node).property('smFlexBasis')}
                                 mdBasis = ${q(node).property('mdFlexBasis')}
@@ -74,14 +75,14 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos
                         }
 
                     }
-                    shrink = TechDivision.NodeTypes.FlexColumnLayouts:CssClasses {
+                    shrink = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
                         shrink = ${q(node).property('flexShrink')}
                         smShrink = ${q(node).property('smFlexShrink')}
                         mdShrink = ${q(node).property('mdFlexShrink')}
                         lgShrink = ${q(node).property('lgFlexShrink')}
                         xlShrink = ${q(node).property('xlFlexShrink')}
                     }
-                    order = TechDivision.NodeTypes.FlexColumnLayouts:CssClasses {
+                    order = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
                         order = ${q(node).property('flexOrder')}
                         smOrder = ${q(node).property('smFlexOrder')}
                         mdOrder = ${q(node).property('mdFlexOrder')}
@@ -89,26 +90,12 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos
                         xlOrder = ${q(node).property('xlFlexOrder')}
                     }
                 }
-                style = Neos.Fusion:Join {
-                    backgroundColor = Neos.Fusion:Value {
-                        value = ${'background-color:' + q(node).property('backgroundColor') + ';'}
-                        @if.exists = ${q(node).property('backgroundColor')}
-                    }
-                    textColor = Neos.Fusion:Value {
-                        value = ${'color:' + q(node).property('textColor') + ';'}
-                        @if.exists = ${q(node).property('textColor')}
-                    }
-                    backgroundImage = Neos.Neos:ImageUri {
-                        asset = ${q(node).property('backgroundImage')}
-                        @process.wrap = ${'background-image:url(' + value + ');background-repeat:no-repeat; background-position:center center;'}
-                        @if.exists = ${q(node).property('backgroundImage')}
-                    }
-                }
+                style = TechDivision.NodeTypes.FlexColumnLayouts:Helper.VisualStyles
             }
         }
     }
     renderer = afx`
-        <div class={props.containerClasses}>
+        <div class={props.containerClasses} style={props.containerStyles}>
             {props.columns}
         </div>
     `

@@ -1,0 +1,15 @@
+prototype(TechDivision.NodeTypes.FlexColumnLayouts:Helper.VisualStyles) < prototype(Neos.Fusion:Join) {
+    backgroundColor = Neos.Fusion:Value {
+        value = ${'background-color:' + q(node).property('backgroundColor') + ';'}
+        @if.exists = ${q(node).property('backgroundColor')}
+    }
+    textColor = Neos.Fusion:Value {
+        value = ${'color:' + q(node).property('textColor') + ';'}
+        @if.exists = ${q(node).property('textColor')}
+    }
+    backgroundImage = Neos.Neos:ImageUri {
+        asset = ${q(node).property('backgroundImage')}
+        @process.wrap = ${'background-image:url(' + value + ');background-repeat:no-repeat; background-position:center center;'}
+        @if.exists = ${q(node).property('backgroundImage')}
+    }
+}

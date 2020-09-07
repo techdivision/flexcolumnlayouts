@@ -5,6 +5,7 @@
     'TechDivision.NodeTypes.FlexColumnLayouts:FlexJustifyMixin': true
     'TechDivision.NodeTypes.FlexColumnLayouts:FlexAlignItemsMixin': true
     'TechDivision.NodeTypes.FlexColumnLayouts:FlexAlignContentMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:VisualMixin': true
   ui:
     inspector:
       groups:

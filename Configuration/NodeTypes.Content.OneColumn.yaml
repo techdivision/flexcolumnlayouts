@@ -1,4 +1,4 @@
-'TechDivision.NodeTypes.ColumnLayouts:OneColumn':
+'TechDivision.NodeTypes.FlexColumnLayouts:OneColumn':
   superTypes:
     'Neos.NodeTypes.ColumnLayouts:Column': true
   ui:
