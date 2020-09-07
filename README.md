@@ -40,7 +40,7 @@ Here you can see, how it looks like on Column level: There you can override your
 * Override width: Here you can override the width on a column-basis, so that you can have individual grids like 25/33 and dont have to add fixed layouts for that
 * [flex-order](https://yoksel.github.io/flex-cheatsheet/#section-order)
 * [flex-shrink](https://yoksel.github.io/flex-cheatsheet/#section-flex-shrink)
-* Inline-Styles: background-color, text-color and background-image
+* Inline-Styles: background-color, text-color and background-image (experimental, just inline-styling - too specific to generalize)
 
 ### Principle
 The idea behind this package is to have a full set of options for flex layouts available, so you can:

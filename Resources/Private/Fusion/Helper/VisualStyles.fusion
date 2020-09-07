@@ -7,6 +7,7 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:Helper.VisualStyles) < protot
         value = ${'color:' + q(node).property('textColor') + ';'}
         @if.exists = ${q(node).property('textColor')}
     }
+    // this is an experimental feature - needs proper styling settings per project, can hardly be generalized (any ideas?)
     backgroundImage = Neos.Neos:ImageUri {
         asset = ${q(node).property('backgroundImage')}
         @process.wrap = ${'background-image:url(' + value + ');background-repeat:no-repeat; background-position:center center;'}
