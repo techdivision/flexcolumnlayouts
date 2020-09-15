@@ -51,7 +51,7 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos
                 class >
                 class = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
                     flexItem = ${'flex-item'}
-                    layout = TechDivision.NodeTypes.FlexColumnLayouts:CssClasses {
+                    layout = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
                         basis = ${q(node).property('flexBasis') ? q(node).property('flexBasis') : (q(parentNode).property('layout') ? 'flex-basis-' + String.split(q(parentNode).property('layout'), '-')[columnIteration.index] : '')}
                         smBasis = ${q(node).property('smFlexBasis') ? q(node).property('smFlexBasis') : (q(parentNode).property('smLayout') ? 'flex-basis-' + String.split(q(parentNode).property('smLayout'), '-')[columnIteration.index] : '')}
                         mdBasis = ${q(node).property('mdFlexBasis') ? q(node).property('lgFlexBasis') : (q(parentNode).property('mdLayout') ? 'flex-basis-' + String.split(q(parentNode).property('mdLayout'), '-')[columnIteration.index] : '')}
