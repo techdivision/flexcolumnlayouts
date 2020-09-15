@@ -20,6 +20,8 @@
           group: 'defaultBreakpoint'
           editorOptions:
             values: &2ColLayoutValues
+              '':
+                label: 'none'
               '25-25':
                 label: '25% / 25%'
               '50-50':
