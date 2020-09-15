@@ -21,14 +21,13 @@ Here you can see, how it looks like on NodeType level: You have plenty of option
 ![NodeType level](Documentation/assets/FlexColumnLayouts-NodeType.png "NodeType level")
 
 You have the following options for the whole grid  
-* _Layout_: (as usual, but a bit more refined, see "Layouts")  
+* _Layout_: (as usual, but per breakpoint)  
 like 50/50, 60/33 or similar
 * [flex-direction](https://yoksel.github.io/flex-cheatsheet/#section-flex-direction) 
 * [flex-wrap](https://yoksel.github.io/flex-cheatsheet/#section-flex-wrap)
 * [justify-content](https://yoksel.github.io/flex-cheatsheet/#section-justify-content)
 * [align-items](https://yoksel.github.io/flex-cheatsheet/#section-align-items-self)
 * [align-content](https://yoksel.github.io/flex-cheatsheet/#section-align-content)
-
 
 ### Column level 
 
@@ -54,23 +53,6 @@ Having all those options at hand might be too complicated for some editors, but 
 
 
 ## For developers
-
-### Layouts
-In standard Neos column layouts, you have no flexibility to add breakpoint-specific layouts.
-The syntax we added seems a bit more complex on first sight (esp. on 4+ columns), but adds a whole new flexibility.  
-It won't be adapted fast anyway.
-
-Two columns-example:
-
-```
-100-100__100-100__50-50__50-50__50-50
-=> 
-100% / 100% base
-100% / 100% for sm+ devices
-50% / 50% for md+ devices
-50% / 50% for lg+ devices
-50% / 50% for xl+ devices
-```
 
 ### TailwindCSS
 If you already use tailwindcss in your project, you are all set and the classnames will be available to you.

@@ -6,23 +6,66 @@
       type: 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.SecondColumn'
     column2:
       type: 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.ThirdColumn'
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin': true
+  ui:
+    inspector:
+      groups:
+        mdBreakpoint:
+          collapsed: false
   properties:
     layout:
-      defaultValue: '100-100-100__100-100-100__33-33-33__33-33-33__33-33-33'
+      defaultValue: '100-100-100'
       ui:
         reloadIfChanged: true
         inspector:
+          group: 'defaultBreakpoint'
           editorOptions:
-            values:
-              '33-33-33': ~
-              '50-25-25': ~
-              '25-50-25': ~
-              '25-25-50': ~
-              '100-100-100__100-100-100__33-33-33__33-33-33__33-33-33':
+            values: &3ColLayoutValues
+              '33-33-33':
                 label: '33% / 33% / 33%'
-              '100-100-100__100-100-100__50-25-25__50-25-25__50-25-25':
-                label: '50% / 25% / 25%'
-              '100-100-100__100-100-100__25-50-25__25-50-25__25-50-25':
+              '25-50-25':
                 label: '25% / 50% / 25%'
-              '100-100-100__100-100-100__25-25-50__25-25-50__25-25-50':
+              '50-25-25':
+                label: '50% / 25% / 25%'
+              '25-25-50':
                 label: '25% / 25% / 50%'
+              '100-50-50':
+                label: '100% / 50% / 50%'
+              '50-50-100':
+                label: '50% / 50% / 100%'
+              '100-100-100':
+                label: '100% / 100% / 100%'
+    smLayout:
+      type: string
+      ui:
+        label: 'Layout'
+        reloadIfChanged: true
+        inspector:
+          group: 'smBreakpoint'
+          editorOptions: *3ColLayoutValues
+    mdLayout:
+      type: string
+      defaultValue: '33-33-33'
+      ui:
+        label: 'Layout'
+        reloadIfChanged: true
+        inspector:
+          group: 'mdBreakpoint'
+          editorOptions: *3ColLayoutValues
+    lgLayout:
+      type: string
+      ui:
+        label: 'Layout'
+        reloadIfChanged: true
+        inspector:
+          group: 'lgBreakpoint'
+          editorOptions: *3ColLayoutValues
+    xlLayout:
+      type: string
+      ui:
+        label: 'Layout'
+        reloadIfChanged: true
+        inspector:
+          group: 'xlBreakpoint'
+          editorOptions: *3ColLayoutValues
