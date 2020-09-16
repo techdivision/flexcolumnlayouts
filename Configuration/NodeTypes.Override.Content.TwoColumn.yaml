@@ -18,6 +18,7 @@
         reloadIfChanged: true
         inspector:
           group: 'defaultBreakpoint'
+          position: 'start'
           editorOptions:
             values: &2ColLayoutValues
               '':
@@ -45,7 +46,9 @@
           group: 'smBreakpoint'
           position: 'start'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
-          editorOptions: *2ColLayoutValues
+          editorOptions:
+            values:
+              <<: *2ColLayoutValues
     mdLayout:
       type: string
       defaultValue: '50-50'
@@ -56,7 +59,9 @@
           group: 'mdBreakpoint'
           position: 'start'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
-          editorOptions: *2ColLayoutValues
+          editorOptions:
+            values:
+              <<: *2ColLayoutValues
     lgLayout:
       type: string
       ui:
@@ -66,7 +71,9 @@
           group: 'lgBreakpoint'
           position: 'start'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
-          editorOptions: *2ColLayoutValues
+          editorOptions:
+            values:
+              <<: *2ColLayoutValues
     xlLayout:
       type: string
       ui:
@@ -76,4 +83,6 @@
           group: 'xlBreakpoint'
           position: 'start'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
-          editorOptions: *2ColLayoutValues
+          editorOptions:
+            values:
+              <<: *2ColLayoutValues
