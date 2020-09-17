@@ -9,13 +9,13 @@
       type: 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.FirstColumn'
   properties:
     layout:
-      defaultValue: '100__100__100__100__100'
+      defaultValue: '100'
       ui:
         reloadIfChanged: true
         inspector:
           editorOptions:
             values:
-              '100__100__100__100__100':
+              '100':
                 label: '100%'
     flexDirection: [ ]
     flexWrap: [ ]
