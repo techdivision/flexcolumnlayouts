@@ -3,7 +3,7 @@ Based on [TailwindCSS](https://tailwindcss.com/), but offers also css classes fo
 It extends your standard Neos-ColumnLayouts with flex properties so you can adjust every column with [css flex properties](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 
 ## Get started
-1. Install the package via packagist: Add `"techdivision/flexcolumnlayouts" : "~1.0"` to the require section of the composer.json or run `composer require techdivision/flexcolumnlayouts`.
+1. Install the package via packagist: Add `"techdivision/flexcolumnlayouts" : "~2.0"` to the require section of the composer.json or run `composer require techdivision/flexcolumnlayouts`.
 2. If needed (i.e. nothing follow the instructions under "TailwindCSS" or "Bootstrap4"
 3. Apply a node migration, if you want to use this feature on existing nodes. 
 
