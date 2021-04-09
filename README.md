@@ -64,25 +64,25 @@ If not, you have several choices:
 @import "Plugins/TechDivision.NodeTypes.FlexColumnLayouts/Resources/Private/Scss/TailwindFlexClasses";
 ```
 
-### Bootstrap4
-If you are using Bootstrap 4 in your project and have [Flex Utilities](https://getbootstrap.com/docs/4.4/utilities/flex/) available, you just have to:
+### Bootstrap 4 & 5 Support
+If you are using Bootstrap 4 or 5 in your project and have  [Flex Utilities 4](https://getbootstrap.com/docs/4.4/utilities/flex/)  or [Flex Utilities 5](https://getbootstrap.com/docs/5.0/utilities/flex/) available, you just have to:
 * Add the small stylesheet 
-`Resources/Public/Css/Bootstrap4AdditionalFlexClasses.css`  
+`Resources/Public/Css/BootstrapAdditionalFlexClasses.css`  
 to your page that adds some classes that bootstrap doesn't provide.
 * Or include the scss file
 ```scss
-@import "Plugins/TechDivision.NodeTypes.FlexColumnLayouts/Resources/Private/Scss/Bootstrap4AdditionalFlexClasses";
+@import "Plugins/TechDivision.NodeTypes.FlexColumnLayouts/Resources/Private/Scss/BootstrapAdditionalFlexClasses";
 ```
 * For sure you need to add some fusion code to replace the tailwind classnames, which are a bit different:  
-(For replacement, we have a mapping file, where you can see the differences: `Configuration/Settings.CssClassMapping.Bootstrap4.yaml` 
+(For replacement, we have a mapping file, where you can see the differences: `Configuration/Settings.CssClassMapping.Bootstrap.yaml` 
 ```
 prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) {
     containerClasses.@process.replaceClasses {
-            expression = ${CssClassMapping.replace(value, 'bootstrap4')}
+            expression = ${CssClassMapping.replace(value, 'bootstrap')}
             @position = 'end'
     }
     columns.itemRenderer.attributes.class.@process.replaceClasses {
-            expression = ${CssClassMapping.replace(value, 'bootstrap4')}
+            expression = ${CssClassMapping.replace(value, 'bootstrap')}
             @position = 'end'
     }
 }
@@ -108,6 +108,64 @@ $flexBreakpointConfiguration: (
         '1280px': 'xl\\:'
 );
 ```
+
+#### Remove/Adjust breakpoint 
+
+To get rid of a breakpoint you just have to remove the breakpoint from SCCS and change the YAML configuration.
+
+e.g. you want to remove the md breakpoint and edit some labels to increase the usability for the Editor
+```yaml
+'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin':
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin.Md': false #disable mdBreakpoint
+  ui:
+    inspector:
+      groups:
+        defaultBreakpoint:
+          label: 'Default (smallest)'
+        smBreakpoint:
+          label: 'Phone (sm) >= 576px' #added range of breakpoint
+        lgBreakpoint:
+          label: 'Tablet (lg) >= 992px' #added range of breakpoint
+        xlBreakpoint:
+          label: 'Desktop (xl) >= 1400px' #added range of breakpoint
+```
+
+## Activate disabled advanced flex-properties
+
+On default there are couple of flex properties disabled to provide a better usability for editors on a single line flex containers. 
+Feel free to activate them if you need one or more.
+
+### Flex Container
+#### align-content ([Documentation](https://yoksel.github.io/flex-cheatsheet/#section-align-content))
+
+```yaml
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.Advanced':
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexAlignContentMixin': true
+```
+
+Consider the loading order of your loaded packages! 
+
+
+
+
+### Flex Item
+#### flex-shrink ([Documentation](https://yoksel.github.io/flex-cheatsheet/#section-flex-shrink))
+
+```yaml
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.Advanced':
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexShrinkMixin': true
+```
+#### flex-basis ([Documentation](https://yoksel.github.io/flex-cheatsheet/#section-flex-basis))
+
+```yaml
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.Advanced':
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexBasisMixin': true
+```
+
 ## Contribution
 If you want to contribute or found a bug, pls provide a PR or file an issue - or get in touch with us!
  

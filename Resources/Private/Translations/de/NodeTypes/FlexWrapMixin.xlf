@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="TechDivision.NodeTypes.FlexColumnLayouts" source-language="en" target-language="de"  datatype="plaintext">
+        <body>
+            <trans-unit id="properties.flexWrap" xml:space="preserve">
+                <source>flow direction of columns</source>
+                <target>Flussrichtung der Spalten</target>
+            </trans-unit>
+            <trans-unit id="properties.flexWrap.ui.help.message" xml:space="preserve">
+                <source>This property enables you to change the flow direction of the columns within this container. You are able to change it to flow foward, backwards or force columns not wrap into the next line (default). Attention! This will only take place if the size of the container could use over 100% of the width, so if the Layout is defined e.g. as 50% / 50% this will not work you have to change it to none! Further Documentation: https://yoksel.github.io/flex-cheatsheet/#section-flex-wrap</source>
+                <target>Die Einstellung ermöglicht es die Flussrichtung der Spalten in diesem Container zu ändern. Dabei kann zwischen der Richtung vorwärts und rückwärts gewählt werden, aber auch das Verhalten dahingehend gezwungen werden, nicht in die nächste Zeile zu fließen (default). Achtung! Die Einstellung ist nur aktiv wenn der gesamte Inhalt über 100% der Breite beansprucht, jedoch wenn das Layout z.B. 50% / 50% gewählt ist, greift diese Einstellung nicht, dafür müsste das Layout none gewählt werden! Weitere Dokumentation: https://yoksel.github.io/flex-cheatsheet/#section-flex-wrap </target>
+            </trans-unit>
+            <trans-unit id="properties.flexWrap.selectBoxEditor.values." xml:space="preserve">
+                <source>none</source>
+                <target>none</target>
+            </trans-unit>
+            <trans-unit id="properties.flexWrap.selectBoxEditor.values.flex-wrap" xml:space="preserve">
+                <source>flow forwards</source>
+                <target>vorwärts fließend</target>
+            </trans-unit>
+            <trans-unit id="properties.flexWrap.selectBoxEditor.values.flex-no-wrap" xml:space="preserve">
+                <source>force no wrap</source>
+                <target>zwingend in einer Zeile</target>
+            </trans-unit>
+            <trans-unit id="properties.flexWrap.selectBoxEditor.values.flex-wrap-reverse" xml:space="preserve">
+                <source>flow backwards</source>
+                <target>rückwärts fließend</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
+

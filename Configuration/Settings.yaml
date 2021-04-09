@@ -3,6 +3,12 @@ Neos:
     fusion:
       autoInclude:
         'TechDivision.NodeTypes.FlexColumnLayouts': true
+    userInterface:
+      translation:
+        autoInclude:
+          TechDivision.NodeTypes.FlexColumnLayouts:
+            - 'Main'
+            - 'NodeTypes/*'
   Fusion:
     defaultContext:
       'CssClassMapping': 'TechDivision\NodeTypes\FlexColumnLayouts\Eel\CssClassMappingHelper'

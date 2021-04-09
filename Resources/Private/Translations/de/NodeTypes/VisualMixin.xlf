@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="TechDivision.NodeTypes.FlexColumnLayouts" source-language="en" target-language="de"  datatype="plaintext">
+        <body>
+            <trans-unit id="groups.visual" xml:space="preserve">
+                <source>Visual settings</source>
+                <target>Visuelle Einstellungen</target>
+            </trans-unit>
+            <trans-unit id="properties.backgroundImage" xml:space="preserve">
+                <source>Background-Image</source>
+                <target>Hintergrundbild</target>
+            </trans-unit>
+            <trans-unit id="properties.backgroundColor" xml:space="preserve">
+                <source>Background-Color</source>
+                <target>Hintergrundfarbe</target>
+            </trans-unit>
+            <trans-unit id="properties.textColor" xml:space="preserve">
+                <source>Text-Color</source>
+                <target>Textfarbe</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
+

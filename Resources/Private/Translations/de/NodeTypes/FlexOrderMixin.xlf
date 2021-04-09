@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="TechDivision.NodeTypes.FlexColumnLayouts" source-language="en" target-language="de"  datatype="plaintext">
+        <body>
+            <trans-unit id="properties.flexOrder" xml:space="preserve">
+                <source>Position of Column</source>
+                <target>Position der Spalte</target>
+            </trans-unit>
+            <trans-unit id="properties.flexOrder.ui.help.message" xml:space="preserve">
+                <source>This setting will affect the position of the columns. E.g. if the last column has the position 'on first position' it will be placed on the first slot of the flex container. This is useful for different ordering at different breakpoints. Further Documentation: https://yoksel.github.io/flex-cheatsheet/#section-order</source>
+                <target>Die Einstellung betrifft die Anordnung der einzelnen Spalten. Z.b. wenn die letzte Spalte die Position 'an erster Position' erhält, wird diese als erste Position im Flex-Container angezeigt. Das ist dahingehend hilfreich um verschiedene Positionen auf verschiedenen Breakpoints einzustellen. Weiterführende Dokumentation: https://yoksel.github.io/flex-cheatsheet/#section-order</target>
+            </trans-unit>
+            <trans-unit id="properties.flexOrder.selectBoxEditor.values." xml:space="preserve">
+                <source>running column number</source>
+                <target>fortlaufende Spaltennummer</target>
+            </trans-unit>
+            <trans-unit id="properties.flexOrder.selectBoxEditor.values.order-first" xml:space="preserve">
+                <source>on first position</source>
+                <target>an erster Position</target>
+            </trans-unit>
+            <trans-unit id="properties.flexOrder.selectBoxEditor.values.order-2" xml:space="preserve">
+                <source>on second position</source>
+                <target>an zweiter Position</target>
+            </trans-unit>
+            <trans-unit id="properties.flexOrder.selectBoxEditor.values.order-3" xml:space="preserve">
+                <source>on third position</source>
+                <target>an dritter Position</target>
+            </trans-unit>
+            <trans-unit id="properties.flexOrder.selectBoxEditor.values.order-last" xml:space="preserve">
+                <source>on last position</source>
+                <target>an letzter Position</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
+
