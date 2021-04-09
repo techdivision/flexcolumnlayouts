@@ -3,12 +3,12 @@
     inspector:
       tabs:
         visual:
-          label: 'Visual settings'
+          label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.VisualMixin:groups.visual'
           position: 'end'
           icon: 'icon-brush'
       groups:
         visual:
-          label: 'Visual Settings'
+          label: i18n
           position: 1
           icon: 'icon-brush'
           tab: 'visual'
@@ -18,7 +18,7 @@
     backgroundImage:
       type: Neos\Media\Domain\Model\ImageInterface
       ui:
-        label: 'Background-Image'
+        label: i18n
         reloadIfChanged: true
         inspector:
           group: 'visual'
@@ -26,7 +26,7 @@
     backgroundColor:
       type: string
       ui:
-        label: 'Background-Color'
+        label: i18n
         reloadIfChanged: true
         inspector:
           group: 'visual'
@@ -39,7 +39,7 @@
     textColor:
       type: string
       ui:
-        label: 'Text-Color'
+        label: i18n
         reloadIfChanged: true
         inspector:
           group: 'visual'

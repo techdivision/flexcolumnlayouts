@@ -2,7 +2,33 @@ TechDivision:
   NodeTypes:
     FlexColumnLayouts:
       cssClassMapping:
-        bootstrap4:
+        bootstrap:
+
+          'flex': 'd-flex'
+
+          'flex-col': 'flex-column'
+          'flex-col-reverse': 'flex-column-reverse'
+
+          'sm:order-first': 'order-sm-first'
+          'sm:order-2': 'order-sm-2'
+          'sm:order-3': 'order-sm-3'
+          'sm:order-last': 'order-sm-last'
+
+          'md:order-first': 'order-md-first'
+          'md:order-2': 'order-md-2'
+          'md:order-3': 'order-md-3'
+          'md:order-last': 'order-md-last'
+
+          'lg:order-first': 'order-lg-first'
+          'lg:order-2': 'order-lg-2'
+          'lg:order-3': 'order-lg-3'
+          'lg:order-last': 'order-lg-last'
+
+          'xl:order-first': 'order-xl-first'
+          'xl:order-2': 'order-xl-2'
+          'xl:order-3': 'order-xl-3'
+          'xl:order-last': 'order-xl-last'
+
           'sm:flex-row': 'flex-sm-row'
           'md:flex-row': 'flex-md-row'
           'lg:flex-row': 'flex-lg-row'
@@ -53,6 +79,12 @@ TechDivision:
           'lg:justify-around': 'justify-content-lg-around'
           'xl:justify-around': 'justify-content-xl-around'
 
+          'justify-evenly': 'justify-content-evenly'
+          'sm:justify-evenly': 'justify-content-sm-evenly'
+          'md:justify-evenly': 'justify-content-md-evenly'
+          'lg:justify-evenly': 'justify-content-lg-evenly'
+          'xl:justify-evenly': 'justify-content-xl-evenly'
+
           'items-stretch': 'align-items-stretch'
           'sm:items-stretch': 'align-items-sm-stretch'
           'md:items-stretch': 'align-items-md-stretch'
@@ -82,6 +114,9 @@ TechDivision:
           'md:items-center': 'align-items-md-center'
           'lg:items-center': 'align-items-lg-center'
           'xl:items-center': 'align-items-xl-center'
+
+
+          #ADVANCED Configuration/NodeTypes.FlexCollection.yaml properties
 
           'content-between': 'align-content-between'
           'sm:content-between': 'align-content-sm-between'

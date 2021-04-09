@@ -2,7 +2,7 @@
   superTypes:
     'Neos.NodeTypes.ColumnLayouts:Column': true
   ui:
-    label: 'One column content'
+    label: i18n
     position: 100
   childNodes:
     column0:
@@ -21,3 +21,19 @@
     flexWrap: [ ]
     flexAlignItems: [ ]
     flexAlignContent: [ ]
+    smFlexDirection: [ ]
+    smFlexWrap: [ ]
+    smFlexAlignItems: [ ]
+    smFlexAlignContent: [ ]
+    mdFlexDirection: [ ]
+    mdFlexWrap: [ ]
+    mdFlexAlignItems: [ ]
+    mdFlexAlignContent: [ ]
+    lgFlexDirection: [ ]
+    lgFlexWrap: [ ]
+    lgFlexAlignItems: [ ]
+    lgFlexAlignContent: [ ]
+    xlFlexDirection: [ ]
+    xlFlexWrap: [ ]
+    xlFlexAlignItems: [ ]
+    xlFlexAlignContent: [ ]

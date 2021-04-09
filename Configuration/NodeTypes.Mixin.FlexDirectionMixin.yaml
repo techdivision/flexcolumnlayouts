@@ -6,108 +6,110 @@
     flexDirection:
       type: string
       ui:
-        label: 'flex-direction'
+        label: i18n
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-direction'
+          message: i18n
         inspector:
           group: 'defaultBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'rows (default)'
+                label: i18n
+              'flex-row':
+                label: i18n
               'flex-row-reverse':
-                label: 'reverse rows'
+                label: i18n
               'flex-col':
-                label: 'columns'
+                label: i18n
               'flex-col-reverse':
-                label: 'reverse columns'
+                label: i18n
     smFlexDirection:
       type: string
       ui:
-        label: 'flex-direction'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-direction'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.ui.help.message'
         inspector:
           group: 'smBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'none'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.selectBoxEditor.values.'
               'sm:flex-row':
-                label: 'rows'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.selectBoxEditor.values.flex-row'
               'sm:flex-row-reverse':
-                label: 'reverse rows'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.selectBoxEditor.values.flex-row-reverse'
               'sm:flex-col':
-                label: 'columns'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.selectBoxEditor.values.flex-col'
               'sm:flex-col-reverse':
-                label: 'reverse columns'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.selectBoxEditor.values.flex-col-reverse'
     mdFlexDirection:
       type: string
       ui:
-        label: 'flex-direction'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-direction'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.ui.help.message'
         inspector:
           group: 'mdBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'none'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.selectBoxEditor.values.'
               'md:flex-row':
-                label: 'rows'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.selectBoxEditor.values.flex-row'
               'md:flex-row-reverse':
-                label: 'reverse rows'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.selectBoxEditor.values.flex-row-reverse'
               'md:flex-col':
-                label: 'columns'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.selectBoxEditor.values.flex-col'
               'md:flex-col-reverse':
-                label: 'reverse columns'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.selectBoxEditor.values.flex-col-reverse'
     lgFlexDirection:
       type: string
       ui:
-        label: 'flex-direction'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-direction'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.ui.help.message'
         inspector:
           group: 'lgBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'none'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.selectBoxEditor.values.'
               'lg:flex-row':
-                label: 'rows'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.selectBoxEditor.values.flex-row'
               'lg:flex-row-reverse':
-                label: 'reverse rows'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.selectBoxEditor.values.flex-row-reverse'
               'lg:flex-col':
-                label: 'columns'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.selectBoxEditor.values.flex-col'
               'lg:flex-col-reverse':
-                label: 'reverse columns'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.selectBoxEditor.values.flex-col-reverse'
     xlFlexDirection:
       type: string
       ui:
-        label: 'flex-direction'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-direction'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.ui.help.message'
         inspector:
           group: 'xlBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'none'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.selectBoxEditor.values.'
               'xl:flex-row':
-                label: 'rows'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.selectBoxEditor.values.flex-row'
               'xl:flex-row-reverse':
-                label: 'reverse rows'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.selectBoxEditor.values.flex-row-reverse'
               'xl:flex-col':
-                label: 'columns'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.selectBoxEditor.values.flex-col'
               'xl:flex-col-reverse':
-                label: 'reverse columns'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexDirectionMixin:properties.flexDirection.selectBoxEditor.values.flex-col-reverse'
