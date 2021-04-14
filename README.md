@@ -88,6 +88,35 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) {
 }
 ```
 
+### Adding or Changing wrapper or column classes 
+
+In case if you want wrap the Flex-Container you can easily add your desired class (in this case container-fluid or container) within the fusion for MultiColumn. Also you can add classes for Columns like this:
+```
+prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) {
+    
+    # add behaviour class and change wrapper class of wrapperClasses 
+    wrapperClasses = Neos.Fusion:Join {
+        wrapper = 'my-wrapper-class'
+        behaviour = 'container-fluid'
+        @glue = ' '
+    }
+
+    # add class to columns
+    columns = Neos.Fusion:Collection {
+        itemRenderer = Neos.Neos:ContentCollection {
+            attributes = Neos.Fusion:Attributes {
+                class = Neos.Fusion:Join {
+                    theme = 'myThemeClass'
+                    @glue = ' '
+                }
+            }
+        }
+    }
+
+}
+```
+
+
 ### Node Migration
 In case you do not start with a fresh project, but want to have those features available on your existing multi-column containers as well, we provided you with a node migration:  
 **Use with caution and only if you know what you are doing!**
