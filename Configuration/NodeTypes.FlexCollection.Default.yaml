@@ -4,21 +4,3 @@
   superTypes:
     'TechDivision.NodeTypes.FlexColumnLayouts:FlexOrderMixin': true
     'TechDivision.NodeTypes.FlexColumnLayouts:VisualMixin': true
-
-# advanced settings for flex cols not for every editor
-'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.Advanced':
-  abstract: true
-  superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexBasisMixin': true
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexShrinkMixin': true
-
-
-# default collection properties of a flex column
-'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection':
-  # for a better overview, we remove the auto-generated column name here
-  label: "${String.cropAtWord(String.trim(String.stripTags(String.pregReplace(q(node).property('title') || q(node).property('text') || ((I18n.translate(node.nodeType.label) || node.nodeType.name)), '/<br\\W*?\\/?>|\\x{00a0}|[^[:print:]]|\\s+/u', ' '))), 100, '...')}"
-  abstract: true
-  superTypes:
-    'Neos.Neos:ContentCollection': true
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.Default': true
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.Advanced': false
