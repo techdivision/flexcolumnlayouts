@@ -6,7 +6,7 @@
   superTypes:
     'Neos.Neos:ContentCollection': true
     'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.Default': true
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.Advanced': false
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.Advanced': true
 
 # add flex collection to every column nodetype
 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.FirstColumn':
