@@ -1,18 +1,3 @@
-# useful flex col properties for every editor
-'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.Default':
-  abstract: true
-  superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexOrderMixin': true
-    'TechDivision.NodeTypes.FlexColumnLayouts:VisualMixin': true
-
-# advanced settings for flex cols not for every editor
-'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.Advanced':
-  abstract: true
-  superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexBasisMixin': false #bad usability for dynamic usage for editors, so its false for default plugin
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexShrinkMixin': false #bad usability for dynamic usage for editors, so its false for default plugin
-
-
 # default collection properties of a flex column
 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection':
   # for a better overview, we remove the auto-generated column name here
@@ -21,7 +6,8 @@
   superTypes:
     'Neos.Neos:ContentCollection': true
     'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.Default': true
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.Advanced': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.Advanced': false
+
 # add flex collection to every column nodetype
 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.FirstColumn':
   ui:

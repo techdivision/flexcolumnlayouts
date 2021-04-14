@@ -3,12 +3,12 @@
     <file original="" product-name="TechDivision.NodeTypes.FlexColumnLayouts" source-language="en" target-language="de"  datatype="plaintext">
         <body>
             <trans-unit id="properties.flexDirection" xml:space="preserve">
-                <source>Column Arrangement</source>
+                <source>column arrangement</source>
                 <target>Spaltenanordnung</target>
             </trans-unit>
             <trans-unit id="properties.flexDirection.ui.help.message" xml:space="preserve">
-                <source>Define the arrangement of the columns, this option affects the appearance (within a row or column) and the direction (forward/backward) of displaying the columns. Further Documentation: https://yoksel.github.io/flex-cheatsheet/#section-flex-direction</source>
-                <target>Die Spaltenanordnung beeinflusst die Anordnung der Spalten bzw. Inhalte innerhalb dieses Containers. Dabei kann zwischen einer Darstellung innerhalb einer Zeile/Spalte gewählt werden, sowie jeweils eine rückwärtsfließende Anordnung erzwungen werden. Further Documentation: https://yoksel.github.io/flex-cheatsheet/#section-flex-direction</target>
+                <source>Define the arrangement of the columns, this option affects the appearance (within a row or column) and the direction (forward/backward) of displaying the columns. Attention: if a "column" option is chosen, horizontal and vertical alignment will behave different! Further Documentation: https://yoksel.github.io/flex-cheatsheet/#section-flex-direction</source>
+                <target>Die Spaltenanordnung beeinflusst die Anordnung der Spalten bzw. Inhalte innerhalb dieses Containers. Dabei kann zwischen einer Darstellung innerhalb einer Zeile/Spalte gewählt werden, sowie jeweils eine rückwärtsfließende Anordnung erzwungen werden. Achtung! Wenn eine "Spalten"-Option gewählt ist, beinflusst dies auch das Verhalten für die horizontale und vertikale Ausrichtung. Weiterführende Dokumentation: https://yoksel.github.io/flex-cheatsheet/#section-flex-direction</target>
             </trans-unit>
             <trans-unit id="properties.flexDirection.selectBoxEditor.values." xml:space="preserve">
                 <source>none</source>

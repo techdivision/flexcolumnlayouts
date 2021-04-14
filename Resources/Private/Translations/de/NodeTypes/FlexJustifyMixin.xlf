@@ -3,7 +3,7 @@
     <file original="" product-name="TechDivision.NodeTypes.FlexColumnLayouts" source-language="en" target-language="de"  datatype="plaintext">
         <body>
             <trans-unit id="properties.flexJustify" xml:space="preserve">
-                <source>Horizontal alignment</source>
+                <source>horizontal alignment</source>
                 <target>Horizontale Ausrichtung</target>
             </trans-unit>
             <trans-unit id="properties.flexJustify.ui.help.message" xml:space="preserve">
@@ -16,29 +16,28 @@
             </trans-unit>
             <trans-unit id="properties.flexJustify.selectBoxEditor.values.justify-between" xml:space="preserve">
                 <source>align with space between</source>
-                <target></target>
+                <target>mit Abstand</target>
             </trans-unit>
             <trans-unit id="properties.flexJustify.selectBoxEditor.values.justify-around" xml:space="preserve">
                 <source>align with space around</source>
-                <target></target>
+                <target>gleichmäßiger Abstand innen</target>
             </trans-unit>
             <trans-unit id="properties.flexJustify.selectBoxEditor.values.justify-evenly" xml:space="preserve">
                 <source>align evenly space around</source>
-                <target></target>
+                <target>gleichmäßiger Abstand außen</target>
             </trans-unit>
             <trans-unit id="properties.flexJustify.selectBoxEditor.values.justify-start" xml:space="preserve">
                 <source>align left</source>
-                <target></target>
+                <target>links</target>
             </trans-unit>
             <trans-unit id="properties.flexJustify.selectBoxEditor.values.justify-end" xml:space="preserve">
                 <source>align right</source>
-                <target></target>
+                <target>rechts</target>
             </trans-unit>
             <trans-unit id="properties.flexJustify.selectBoxEditor.values.justify-center" xml:space="preserve">
                 <source>align center</source>
-                <target></target>
+                <target>mittig</target>
             </trans-unit>
         </body>
     </file>
 </xliff>
-

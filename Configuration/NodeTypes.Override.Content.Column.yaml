@@ -1,17 +1,3 @@
-# useful flex grid properties for every editor
-'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.Default':
-  superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexDirectionMixin': true
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexAlignItemsMixin': true
-    'TechDivision.NodeTypes.FlexColumnLayouts:VisualMixin': true
-
-# Advanced settings for flex grid not useful for every editor
-'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.Advanced':
-  superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexJustifyMixin': true
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexWrapMixin': true
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexAlignContentMixin': false #Only multi-line flex containers ever have free space in the cross-axis
-
 # override with extended properties for default flex container
 'Neos.NodeTypes.ColumnLayouts:Column':
   superTypes:

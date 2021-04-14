@@ -1,0 +1,7 @@
+# Advanced settings for flex grid not useful for every editor
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.Advanced':
+  abstract: true
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexJustifyMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexWrapMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexAlignContentMixin': true #Only multi-line flex containers ever have free space in the cross-axis

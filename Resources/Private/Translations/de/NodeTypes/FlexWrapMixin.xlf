@@ -3,7 +3,7 @@
     <file original="" product-name="TechDivision.NodeTypes.FlexColumnLayouts" source-language="en" target-language="de"  datatype="plaintext">
         <body>
             <trans-unit id="properties.flexWrap" xml:space="preserve">
-                <source>flow direction of columns</source>
+                <source>direction of flow for columns</source>
                 <target>Flussrichtung der Spalten</target>
             </trans-unit>
             <trans-unit id="properties.flexWrap.ui.help.message" xml:space="preserve">

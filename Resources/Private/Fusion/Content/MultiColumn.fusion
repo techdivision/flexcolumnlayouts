@@ -1,7 +1,7 @@
 prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos.Neos:ContentComponent) {
 
     wrapperClasses = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
-        behaviour = 'container'
+        wrapper = 'flex-wrapper'
     }
 
     containerClasses = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
@@ -83,10 +83,10 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos
         }
     }
     renderer = afx`
-        <div class={props.wrapperClasses} style={props.containerStyles}>
+        <section class={props.wrapperClasses} style={props.containerStyles}>
             <div class={props.containerClasses}>
                 {props.columns}
             </div>
-        </div>
+        </section>
     `
 }
