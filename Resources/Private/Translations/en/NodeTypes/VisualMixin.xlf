@@ -3,7 +3,7 @@
     <file original="" product-name="TechDivision.NodeTypes.FlexColumnLayouts" source-language="en" datatype="plaintext">
         <body>
             <trans-unit id="groups.visual" xml:space="preserve">
-                <source>Visual settings</source>
+                <source>visual settings</source>
             </trans-unit>
             <trans-unit id="properties.backgroundImage" xml:space="preserve">
                 <source>Background-Image</source>

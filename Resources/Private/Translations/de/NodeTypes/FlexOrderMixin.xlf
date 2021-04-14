@@ -3,7 +3,7 @@
     <file original="" product-name="TechDivision.NodeTypes.FlexColumnLayouts" source-language="en" target-language="de"  datatype="plaintext">
         <body>
             <trans-unit id="properties.flexOrder" xml:space="preserve">
-                <source>Position of Column</source>
+                <source>position of Column</source>
                 <target>Position der Spalte</target>
             </trans-unit>
             <trans-unit id="properties.flexOrder.ui.help.message" xml:space="preserve">

@@ -20,8 +20,6 @@
             values: &2ColLayoutValues
               '':
                 label: 'none'
-              '25-25':
-                label: '25% / 25%'
               '50-50':
                 label: '50% / 50%'
               '33-66':

@@ -124,47 +124,47 @@ e.g. you want to remove the md breakpoint and edit some labels to increase the u
         defaultBreakpoint:
           label: 'Default (smallest)'
         smBreakpoint:
-          label: 'Phone (sm) >= 576px' #added range of breakpoint
+          label: 'Phone (sm) >= 576px' 
         lgBreakpoint:
-          label: 'Tablet (lg) >= 992px' #added range of breakpoint
+          label: 'Tablet (lg) >= 992px' 
         xlBreakpoint:
-          label: 'Desktop (xl) >= 1400px' #added range of breakpoint
+          label: 'Desktop (xl) >= 1400px' 
 ```
 
-## Activate disabled advanced flex-properties
+## Disable flex-properties
 
-On default there are couple of flex properties disabled to provide a better usability for editors on a single line flex containers. 
-Feel free to activate them if you need one or more.
+On default all flex properties enabled. To provide a better usability for editors, you are able to deactivate them. 
+Feel free to them them if you need one or more.
 
-### Flex Container
-#### align-content ([Documentation](https://yoksel.github.io/flex-cheatsheet/#section-align-content))
+### Flex Grid (suggestion for editors)
 
 ```yaml
-'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.Advanced':
+'Neos.NodeTypes.ColumnLayouts:Column':
   superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexAlignContentMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.Advanced': false
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexJustifyMixin': true
 ```
 
-Consider the loading order of your loaded packages! 
+Consider the loading order of your loaded packages!
 
-
-
-
-### Flex Item
-#### flex-shrink ([Documentation](https://yoksel.github.io/flex-cheatsheet/#section-flex-shrink))
+### Flex Column (suggestion for editors)
 
 ```yaml
-'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.Advanced':
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection':
   superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexShrinkMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.Advanced': false
+    'TechDivision.NodeTypes:Mixin.Layout': true
 ```
-#### flex-basis ([Documentation](https://yoksel.github.io/flex-cheatsheet/#section-flex-basis))
 
+## Disable nesting of grids
 ```yaml
-'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.Advanced':
-  superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexBasisMixin': true
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection':
+  constraints:
+    nodeTypes:
+      'Neos.NodeTypes.ColumnLayouts:Column': false
 ```
+
+Consider the loading order of your loaded packages!
 
 ## Contribution
 If you want to contribute or found a bug, pls provide a PR or file an issue - or get in touch with us!
