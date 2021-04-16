@@ -12,7 +12,7 @@
     label: i18n
   properties:
     layout:
-      defaultValue: '100-100-100'
+      defaultValue: '33-33-33'
       ui:
         reloadIfChanged: true
         inspector:
