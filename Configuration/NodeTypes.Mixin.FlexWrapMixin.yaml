@@ -6,98 +6,100 @@
     flexWrap:
       type: string
       ui:
-        label: 'flex-wrap'
+        label: i18n
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-wrap'
+          message: i18n
         inspector:
           group: 'defaultBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'wrap (default)'
+                label: i18n
+              'flex-wrap':
+                label: i18n
               'flex-no-wrap':
-                label: 'no wrap'
+                label: i18n
               'flex-wrap-reverse':
-                label: 'wrap reverse'
+                label: i18n
     smFlexWrap:
       type: string
       ui:
-        label: 'flex-wrap'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-wrap'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap.ui.help.message'
         inspector:
           group: 'smBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'none'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap.selectBoxEditor.values.'
               'sm:flex-wrap':
-                label: 'wrap'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap.selectBoxEditor.values.flex-wrap'
               'sm:flex-no-wrap':
-                label: 'no wrap'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap.selectBoxEditor.values.flex-no-wrap'
               'sm:flex-wrap-reverse':
-                label: 'wrap reverse'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap.selectBoxEditor.values.flex-wrap-reverse'
     mdFlexWrap:
       type: string
       ui:
-        label: 'flex-wrap'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-wrap'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap.ui.help.message'
         inspector:
           group: 'mdBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'none'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap.selectBoxEditor.values.'
               'md:flex-wrap':
-                label: 'wrap'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap.selectBoxEditor.values.flex-wrap'
               'md:flex-no-wrap':
-                label: 'no wrap'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap.selectBoxEditor.values.flex-no-wrap'
               'md:flex-wrap-reverse':
-                label: 'wrap reverse'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap.selectBoxEditor.values.flex-wrap-reverse'
     lgFlexWrap:
       type: string
       ui:
-        label: 'flex-wrap'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-wrap'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap.ui.help.message'
         inspector:
           group: 'lgBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'none'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap.selectBoxEditor.values.'
               'lg:flex-wrap':
-                label: 'wrap'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap.selectBoxEditor.values.flex-wrap'
               'lg:flex-no-wrap':
-                label: 'no wrap'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap.selectBoxEditor.values.flex-no-wrap'
               'lg:flex-wrap-reverse':
-                label: 'wrap reverse'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap.selectBoxEditor.values.flex-wrap-reverse'
     xlFlexWrap:
       type: string
       ui:
-        label: 'flex-wrap'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-wrap'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap.ui.help.message'
         inspector:
           group: 'xlBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'none'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap.selectBoxEditor.values.'
               'xl:flex-wrap':
-                label: 'wrap'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap.selectBoxEditor.values.flex-wrap'
               'xl:flex-no-wrap':
-                label: 'no wrap'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap.selectBoxEditor.values.flex-no-wrap'
               'xl:flex-wrap-reverse':
-                label: 'wrap reverse'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexWrapMixin:properties.flexWrap.selectBoxEditor.values.flex-wrap-reverse'

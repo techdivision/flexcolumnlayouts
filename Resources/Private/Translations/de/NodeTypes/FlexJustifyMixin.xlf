@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="TechDivision.NodeTypes.FlexColumnLayouts" source-language="en" target-language="de"  datatype="plaintext">
+        <body>
+            <trans-unit id="properties.flexJustify" xml:space="preserve">
+                <source>horizontal alignment</source>
+                <target>Horizontale Ausrichtung</target>
+            </trans-unit>
+            <trans-unit id="properties.flexJustify.ui.help.message" xml:space="preserve">
+                <source>Alignment of columns in different ways, left/center/right with no space between, or align with space between/around/evenly-around - useful for visual content. Attention! takes place only when none Layout is choosen. Further Documentation: https://yoksel.github.io/flex-cheatsheet/#section-justify-content</source>
+                <target>Ausrichtung der Spalten in ihrer Horizontalen, entweder klassisch links/zentriert/rechts mit keinem Abstand dazwischen, oder mit dem Abstand zwischen/außenrum/gleichmäßig-außenrum der Spalten. Achtung! Nur möglich, wenn kein Layout (none) gewählt ist. Weitere Dokumentation: https://yoksel.github.io/flex-cheatsheet/#section-justify-content  </target>
+            </trans-unit>
+            <trans-unit id="properties.flexJustify.selectBoxEditor.values." xml:space="preserve">
+                <source>none</source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="properties.flexJustify.selectBoxEditor.values.justify-between" xml:space="preserve">
+                <source>align with space between</source>
+                <target>mit Abstand</target>
+            </trans-unit>
+            <trans-unit id="properties.flexJustify.selectBoxEditor.values.justify-around" xml:space="preserve">
+                <source>align with space around</source>
+                <target>gleichmäßiger Abstand innen</target>
+            </trans-unit>
+            <trans-unit id="properties.flexJustify.selectBoxEditor.values.justify-evenly" xml:space="preserve">
+                <source>align evenly space around</source>
+                <target>gleichmäßiger Abstand außen</target>
+            </trans-unit>
+            <trans-unit id="properties.flexJustify.selectBoxEditor.values.justify-start" xml:space="preserve">
+                <source>align left</source>
+                <target>links</target>
+            </trans-unit>
+            <trans-unit id="properties.flexJustify.selectBoxEditor.values.justify-end" xml:space="preserve">
+                <source>align right</source>
+                <target>rechts</target>
+            </trans-unit>
+            <trans-unit id="properties.flexJustify.selectBoxEditor.values.justify-center" xml:space="preserve">
+                <source>align center</source>
+                <target>mittig</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -6,120 +6,120 @@
     flexAlignContent:
       type: string
       ui:
-        label: 'align-content'
+        label: i18n
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-align-content'
+          message: i18n
         inspector:
           group: 'defaultBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'none'
+                label: i18n
               'content-between':
-                label: 'centered, space between'
+                label: i18n
               'content-around':
-                label: 'centered, space around'
+                label: i18n
               'content-start':
-                label: 'start'
+                label: i18n
               'content-end':
-                label: 'end'
+                label: i18n
               'content-center':
-                label: 'center'
+                label: i18n
     smFlexAlignContent:
       type: string
       ui:
-        label: 'align-content'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-align-content'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.ui.help.message'
         inspector:
           group: 'smBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'none'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.'
               'sm:content-between':
-                label: 'centered, space between'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.content-between'
               'sm:content-around':
-                label: 'centered, space around'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.content-around'
               'sm:content-start':
-                label: 'start'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.content-start'
               'sm:content-end':
-                label: 'end'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.content-end'
               'sm:content-center':
-                label: 'center'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.content-center'
     mdFlexAlignContent:
       type: string
       ui:
-        label: 'align-content'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-align-content'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.ui.help.message'
         inspector:
           group: 'mdBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'none'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.'
               'md:content-between':
-                label: 'centered, space between'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.content-between'
               'md:content-around':
-                label: 'centered, space around'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.content-around'
               'md:content-start':
-                label: 'start'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.content-start'
               'md:content-end':
-                label: 'end'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.content-end'
               'md:content-center':
-                label: 'center'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.content-center'
     lgFlexAlignContent:
       type: string
       ui:
-        label: 'align-content'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-align-content'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.ui.help.message'
         inspector:
           group: 'lgBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'none'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.'
               'lg:content-between':
-                label: 'centered, space between'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.content-between'
               'lg:content-around':
-                label: 'centered, space around'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.content-around'
               'lg:content-start':
-                label: 'start'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.content-start'
               'lg:content-end':
-                label: 'end'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.content-end'
               'lg:content-center':
-                label: 'center'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.content-center'
     xlFlexAlignContent:
       type: string
       ui:
-        label: 'align-content'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-align-content'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.ui.help.message'
         inspector:
           group: 'xlBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'none'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.'
               'xl:content-between':
-                label: 'centered, space between'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.content-between'
               'xl:content-around':
-                label: 'centered, space around'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.content-around'
               'xl:content-start':
-                label: 'start'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.content-start'
               'xl:content-end':
-                label: 'end'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.content-end'
               'xl:content-center':
-                label: 'center'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexAlignContent.selectBoxEditor.values.content-center'

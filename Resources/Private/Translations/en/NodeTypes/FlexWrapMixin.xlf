@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="TechDivision.NodeTypes.FlexColumnLayouts" source-language="en" datatype="plaintext">
+        <body>
+            <trans-unit id="properties.flexWrap" xml:space="preserve">
+                <source>direction of flow for columns</source>
+            </trans-unit>
+            <trans-unit id="properties.flexWrap.ui.help.message" xml:space="preserve">
+                <source>This property enables you to change the flow direction of the columns within this container. You are able to change it to flow foward, backwards or force columns not wrap into the next line (default). This will only take place if the size of the width is not defined or is defined entirely with over 100%! Further Documentation: https://yoksel.github.io/flex-cheatsheet/#section-flex-wrap</source>
+            </trans-unit>
+            <trans-unit id="properties.flexWrap.selectBoxEditor.values." xml:space="preserve">
+                <source>none</source>
+            </trans-unit>
+            <trans-unit id="properties.flexWrap.selectBoxEditor.values.flex-wrap" xml:space="preserve">
+                <source>flow forwards</source>
+            </trans-unit>
+            <trans-unit id="properties.flexWrap.selectBoxEditor.values.flex-no-wrap" xml:space="preserve">
+                <source>force no wrap</source>
+            </trans-unit>
+            <trans-unit id="properties.flexWrap.selectBoxEditor.values.flex-wrap-reverse" xml:space="preserve">
+                <source>flow backwards</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

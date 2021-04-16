@@ -11,12 +11,7 @@
   superTypes:
     'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin': true
   ui:
-    inspector:
-      groups:
-        mdBreakpoint:
-          collapsed: false
-        lgBreakpoint:
-          collapsed: false
+    label: i18n
   properties:
     layout:
       defaultValue: '100-100-100-100'
@@ -35,10 +30,12 @@
                 label: '50% / 50% / 50% / 50%'
               '66-33-66-33':
                 label: '66% / 33% / 66% / 33%'
-              '33-66-33-66':
-                label: '33% / 66% / 33% / 66%'
+              '100-33-33-33':
+                label: '100% / 33% / 33% / 33%'
+              '100-100-50-50':
+                label: '100% / 100% / 50% / 50%'
               '100-100-100-100':
-                label: '25% / 25% / 25% / 25%'
+                label: '100% / 100% / 100% / 100%'
     smLayout:
       type: string
       ui:

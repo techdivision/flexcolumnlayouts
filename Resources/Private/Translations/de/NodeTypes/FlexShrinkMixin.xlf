@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="TechDivision.NodeTypes.FlexColumnLayouts" source-language="en" target-language="de"  datatype="plaintext">
+        <body>
+            <trans-unit id="properties.flexShrink" xml:space="preserve">
+                <source>shrink content to fit</source>
+                <target>Contentausdehnung</target>
+            </trans-unit>
+            <trans-unit id="properties.flexShrink.ui.help.message" xml:space="preserve">
+                <source>"Allow shrinking" is the default behaviour, so the browser tries to place all columns in one line and may shrink cols if needed. Denied will affect that this column can not be shrinked by the browser, may be useful when using a custom "column width". Attention: this is an advanced option so use carefully! Further Documentation: https://yoksel.github.io/flex-cheatsheet/#section-flex-shrink</source>
+                <target>"Ausdehnung verbieten" ist das Default-Verhalten, der Browser versucht immer die Ausdehnung, in einer Zeile, für alle Columns zu beschränken. Soll der Content jedoch die Contentbreite erweitern muss dies über die Option "Ausdehnung erlauben" gesetzt werden. Achtung: Dies kann ungewollte Seiteneffekte hervorrufen oder in manchen Konstellationen nicht funktionieren. Weiterführende Dokumentation: https://yoksel.github.io/flex-cheatsheet/#section-flex-shrink </target>
+            </trans-unit>
+            <trans-unit id="properties.flexShrink.selectBoxEditor.values." xml:space="preserve">
+                <source>none</source>
+            </trans-unit>
+            <trans-unit id="properties.flexShrink.selectBoxEditor.values.flex-shrink" xml:space="preserve">
+                <source>explicitly allow shrinking</source>
+                <target>Ausdehnung verbieten</target>
+            </trans-unit>
+            <trans-unit id="properties.flexShrink.selectBoxEditor.values.flex-shrink-0" xml:space="preserve">
+                <source>explicitly deny shrinking</source>
+                <target>Ausdehnung erlauben</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
+

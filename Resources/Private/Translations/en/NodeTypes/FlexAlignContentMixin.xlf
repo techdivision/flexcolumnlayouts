@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="TechDivision.NodeTypes.FlexColumnLayouts" source-language="en" datatype="plaintext">
+        <body>
+            <trans-unit id="properties.flexAlignContent" xml:space="preserve">
+                <source>content alignment</source>
+            </trans-unit>
+            <trans-unit id="properties.flexAlignContent.ui.help.message" xml:space="preserve">
+                <source>Align your content within the container. The content can be placed centered, on the bottom/top or even with space between or around. Attention: requires Layout "none" or entirely more as "100%" (multi-line)! Further Documentation: https://yoksel.github.io/flex-cheatsheet/#section-align-content</source>
+            </trans-unit>
+            <trans-unit id="properties.flexAlignContent.selectBoxEditor.values." xml:space="preserve">
+                <source>none</source>
+            </trans-unit>
+            <trans-unit id="properties.flexAlignContent.selectBoxEditor.values.content-between" xml:space="preserve">
+                <source>space between</source>
+            </trans-unit>
+            <trans-unit id="properties.flexAlignContent.selectBoxEditor.values.content-around" xml:space="preserve">
+                <source>centered, space around</source>
+            </trans-unit>
+            <trans-unit id="properties.flexAlignContent.selectBoxEditor.values.content-start" xml:space="preserve">
+                <source>top</source>
+            </trans-unit>
+            <trans-unit id="properties.flexAlignContent.selectBoxEditor.values.content-end" xml:space="preserve">
+                <source>bottom</source>
+            </trans-unit>
+            <trans-unit id="properties.flexAlignContent.selectBoxEditor.values.content-center" xml:space="preserve">
+                <source>center</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

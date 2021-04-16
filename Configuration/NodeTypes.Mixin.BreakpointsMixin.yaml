@@ -1,4 +1,4 @@
-'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin':
+'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin.Default':
   abstract: true
   ui:
     inspector:
@@ -8,23 +8,56 @@
           position: 1
           icon: 'icon-columns'
           collapsed: false
+
+'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin.Sm':
+  abstract: true
+  ui:
+    inspector:
+      groups:
         smBreakpoint:
-          label: 'Phone (sm)'
+          label: 'Phone (sm) >= 640px'
           position: 10
           icon: 'icon-phone'
           collapsed: true
+
+'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin.Md':
+  abstract: true
+  ui:
+    inspector:
+      groups:
         mdBreakpoint:
-          label: 'Tablet (md)'
+          label: 'Tablet (md) >= 768px'
           position: 20
           icon: 'icon-tablet'
           collapsed: true
+'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin.Lg':
+  abstract: true
+  ui:
+    inspector:
+      groups:
         lgBreakpoint:
-          label: 'Desktop (lg)'
+          label: 'Desktop (lg) >= 1024px'
           position: 20
           icon: 'icon-desktop'
           collapsed: true
+'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin.Xl':
+  abstract: true
+  ui:
+    inspector:
+      groups:
         xlBreakpoint:
-          label: 'Large Screen (xl)'
+          label: 'Large Screen (xl) >= 1280px'
           position: 20
           icon: 'icon-desktop'
           collapsed: true
+
+# default breakpoint mixin with all but adjustable groups
+'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin':
+  abstract: true
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin.Default': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin.Sm': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin.Md': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin.Lg': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin.Xl': true
+

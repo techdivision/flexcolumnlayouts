@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="TechDivision.NodeTypes.FlexColumnLayouts" source-language="en" target-language="de"  datatype="plaintext">
+        <body>
+            <trans-unit id="properties.flexAlignItems" xml:space="preserve">
+                <source>vertical alignment</source>
+                <target>vertikale Ausrichtung</target>
+            </trans-unit>
+            <trans-unit id="properties.flexAlignItems.ui.help.message" xml:space="preserve">
+                <source>Align your items vertical (y-axis) within the row. The items can be centered, placed on the bottom/top or even can be stretched over full row height. Further Documentation: https://yoksel.github.io/flex-cheatsheet/#section-align-items-self</source>
+                <target>Vertikale Ausrichtung (y-Achse) der Spalten innerhalb der Zeile. Dabei können diese mittig, oben, unten oder über die volle Zeilenhöhe gestreckt werden. Weitereführende Dokumentation: https://yoksel.github.io/flex-cheatsheet/#section-align-items-self</target>
+            </trans-unit>
+            <trans-unit id="properties.flexAlignItems.selectBoxEditor.values." xml:space="preserve">
+                <source>none</source>
+                <target>none</target>
+            </trans-unit>
+            <trans-unit id="properties.flexAlignItems.selectBoxEditor.values.items-stretch" xml:space="preserve">
+                <source>stretched over row height</source>
+                <target>gestreckt über volle Höhe</target>
+            </trans-unit>
+            <trans-unit id="properties.flexAlignItems.selectBoxEditor.values.items-baseline" xml:space="preserve">
+                <source>at top on body/font line</source>
+                <target>oben auf der Grund-/Schriftlinie</target>
+            </trans-unit>
+            <trans-unit id="properties.flexAlignItems.selectBoxEditor.values.items-start" xml:space="preserve">
+                <source>at top</source>
+                <target>oben</target>
+            </trans-unit>
+            <trans-unit id="properties.flexAlignItems.selectBoxEditor.values.items-end" xml:space="preserve">
+                <source>at bottom</source>
+                <target>unten</target>
+            </trans-unit>
+            <trans-unit id="properties.flexAlignItems.selectBoxEditor.values.items-center" xml:space="preserve">
+                <source>centered</source>
+                <target>mittig</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="TechDivision.NodeTypes.FlexColumnLayouts" source-language="en" target-language="de"  datatype="plaintext">
+        <body>
+            <trans-unit id="properties.flexAlignContent" xml:space="preserve">
+                <source>content alignment</source>
+                <target>Inhaltsanordnung</target>
+            </trans-unit>
+            <trans-unit id="properties.flexAlignContent.ui.help.message" xml:space="preserve">
+                <source>Align your content within the container. The content can be placed centered, on the bottom/top or even with space between or around. Attention: requires Layout "none" or entirely more as "100%" (multi-line)! Further Documentation: https://yoksel.github.io/flex-cheatsheet/#section-align-content</source>
+                <target>Anordnung des Inhalts, dieser kann mittig, oben/unten oder auch mit Abstand zwischen oder außenrum platziert werden. Achtung: benötigt das Layout "none" oder eine Gesamtbreite von mehr als 100% (multi-line)! Weitere Dokumentation: https://yoksel.github.io/flex-cheatsheet/#section-align-content</target>
+            </trans-unit>
+            <trans-unit id="properties.flexAlignContent.selectBoxEditor.values." xml:space="preserve">
+                <source>none</source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="properties.flexAlignContent.selectBoxEditor.values.content-between" xml:space="preserve">
+                <source>space between</source>
+                <target>Abstand dazwischen</target>
+            </trans-unit>
+            <trans-unit id="properties.flexAlignContent.selectBoxEditor.values.content-around" xml:space="preserve">
+                <source>centered, space around</source>
+                <target>mittig, Abstand außenrum</target>
+            </trans-unit>
+            <trans-unit id="properties.flexAlignContent.selectBoxEditor.values.content-start" xml:space="preserve">
+                <source>top</source>
+                <target>oben</target>
+            </trans-unit>
+            <trans-unit id="properties.flexAlignContent.selectBoxEditor.values.content-end" xml:space="preserve">
+                <source>bottom</source>
+                <target>unten</target>
+            </trans-unit>
+            <trans-unit id="properties.flexAlignContent.selectBoxEditor.values.content-center" xml:space="preserve">
+                <source>center</source>
+                <target>mittig</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
+

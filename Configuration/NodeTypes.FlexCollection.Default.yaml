@@ -1,0 +1,6 @@
+# useful flex col properties for every editor
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.Default':
+  abstract: true
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexOrderMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:VisualMixin': true

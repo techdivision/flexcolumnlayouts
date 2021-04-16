@@ -64,29 +64,58 @@ If not, you have several choices:
 @import "Plugins/TechDivision.NodeTypes.FlexColumnLayouts/Resources/Private/Scss/TailwindFlexClasses";
 ```
 
-### Bootstrap4
-If you are using Bootstrap 4 in your project and have [Flex Utilities](https://getbootstrap.com/docs/4.4/utilities/flex/) available, you just have to:
+### Bootstrap 4 & 5 Support
+If you are using Bootstrap 4 or 5 in your project and have  [Flex Utilities 4](https://getbootstrap.com/docs/4.4/utilities/flex/)  or [Flex Utilities 5](https://getbootstrap.com/docs/5.0/utilities/flex/) available, you just have to:
 * Add the small stylesheet 
-`Resources/Public/Css/Bootstrap4AdditionalFlexClasses.css`  
+`Resources/Public/Css/BootstrapAdditionalFlexClasses.css`  
 to your page that adds some classes that bootstrap doesn't provide.
 * Or include the scss file
 ```scss
-@import "Plugins/TechDivision.NodeTypes.FlexColumnLayouts/Resources/Private/Scss/Bootstrap4AdditionalFlexClasses";
+@import "Plugins/TechDivision.NodeTypes.FlexColumnLayouts/Resources/Private/Scss/BootstrapAdditionalFlexClasses";
 ```
 * For sure you need to add some fusion code to replace the tailwind classnames, which are a bit different:  
-(For replacement, we have a mapping file, where you can see the differences: `Configuration/Settings.CssClassMapping.Bootstrap4.yaml` 
+(For replacement, we have a mapping file, where you can see the differences: `Configuration/Settings.CssClassMapping.Bootstrap.yaml` 
 ```
 prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) {
     containerClasses.@process.replaceClasses {
-            expression = ${CssClassMapping.replace(value, 'bootstrap4')}
+            expression = ${CssClassMapping.replace(value, 'bootstrap')}
             @position = 'end'
     }
     columns.itemRenderer.attributes.class.@process.replaceClasses {
-            expression = ${CssClassMapping.replace(value, 'bootstrap4')}
+            expression = ${CssClassMapping.replace(value, 'bootstrap')}
             @position = 'end'
     }
 }
 ```
+
+### Adding or Changing wrapper or column classes 
+
+In case if you want wrap the Flex-Container you can easily add your desired class (in this case container-fluid or container) within the fusion for MultiColumn. Also you can add classes for Columns like this:
+```
+prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) {
+    
+    # add behaviour class and change wrapper class of wrapperClasses 
+    wrapperClasses = Neos.Fusion:Join {
+        wrapper = 'my-wrapper-class'
+        behaviour = 'container-fluid'
+        @glue = ' '
+    }
+
+    # add class to columns
+    columns = Neos.Fusion:Collection {
+        itemRenderer = Neos.Neos:ContentCollection {
+            attributes = Neos.Fusion:Attributes {
+                class = Neos.Fusion:Join {
+                    theme = 'myThemeClass'
+                    @glue = ' '
+                }
+            }
+        }
+    }
+
+}
+```
+
 
 ### Node Migration
 In case you do not start with a fresh project, but want to have those features available on your existing multi-column containers as well, we provided you with a node migration:  
@@ -108,6 +137,64 @@ $flexBreakpointConfiguration: (
         '1280px': 'xl\\:'
 );
 ```
+
+#### Remove/Adjust breakpoint 
+
+To get rid of a breakpoint you just have to remove the breakpoint from SCCS and change the YAML configuration.
+
+e.g. you want to remove the md breakpoint and edit some labels to increase the usability for the Editor
+```yaml
+'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin':
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin.Md': false #disable mdBreakpoint
+  ui:
+    inspector:
+      groups:
+        defaultBreakpoint:
+          label: 'Default (smallest)'
+        smBreakpoint:
+          label: 'Phone (sm) >= 576px' 
+        lgBreakpoint:
+          label: 'Tablet (lg) >= 992px' 
+        xlBreakpoint:
+          label: 'Desktop (xl) >= 1400px' 
+```
+
+## Disable flex-properties
+
+On default all flex properties enabled. To provide a better usability for editors, you are able to deactivate them. 
+Feel free to them them if you need one or more.
+
+### Flex Grid (suggestion for editors)
+
+```yaml
+'Neos.NodeTypes.ColumnLayouts:Column':
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.Advanced': false
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexJustifyMixin': true
+```
+
+Consider the loading order of your loaded packages!
+
+### Flex Column (suggestion for editors)
+
+```yaml
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection':
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.Advanced': false
+    'TechDivision.NodeTypes:Mixin.Layout': true
+```
+
+## Disable nesting of grids
+```yaml
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection':
+  constraints:
+    nodeTypes:
+      'Neos.NodeTypes.ColumnLayouts:Column': false
+```
+
+Consider the loading order of your loaded packages!
+
 ## Contribution
 If you want to contribute or found a bug, pls provide a PR or file an issue - or get in touch with us!
  

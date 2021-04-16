@@ -6,120 +6,130 @@
     flexJustify:
       type: string
       ui:
-        label: 'Horizontal alignment (justify)'
+        label: i18n
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-justify-content'
+          message: i18n
         inspector:
           group: 'defaultBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'none'
-              'justify-between':
-                label: 'centered, space between'
-              'justify-around':
-                label: 'centered, space around'
+                label: i18n
               'justify-start':
-                label: 'start'
+                label: i18n
               'justify-end':
-                label: 'end'
+                label: i18n
               'justify-center':
-                label: 'center'
+                label: i18n
+              'justify-between':
+                label: i18n
+              'justify-around':
+                label: i18n
+              'justify-evenly':
+                label: i18n
     smFlexJustify:
       type: string
       ui:
-        label: 'Horizontal alignment (justify)'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-justify-content'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.ui.help.message'
         inspector:
           group: 'smBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'none'
-              'sm:justify-between':
-                label: 'centered, space between'
-              'sm:justify-around':
-                label: 'centered, space around'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.'
               'sm:justify-start':
-                label: 'start'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-start'
               'sm:justify-end':
-                label: 'end'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-end'
               'sm:justify-center':
-                label: 'center'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-center'
+              'sm:justify-between':
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-between'
+              'sm:justify-around':
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-around'
+              'sm:justify-evenly':
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-evenly'
     mdFlexJustify:
       type: string
       ui:
-        label: 'justify-content'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-justify-content'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.ui.help.message'
         inspector:
           group: 'mdBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'none'
-              'md:justify-between':
-                label: 'centered, space between'
-              'md:justify-around':
-                label: 'centered, space around'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.'
               'md:justify-start':
-                label: 'start'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-start'
               'md:justify-end':
-                label: 'end'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-end'
               'md:justify-center':
-                label: 'center'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-center'
+              'md:justify-between':
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-between'
+              'md:justify-around':
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-around'
+              'md:justify-evenly':
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-evenly'
     lgFlexJustify:
       type: string
       ui:
-        label: 'Horizontal alignment (justify)'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-justify-content'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.ui.help.message'
         inspector:
           group: 'lgBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'none'
-              'lg:justify-between':
-                label: 'centered, space between'
-              'lg:justify-around':
-                label: 'centered, space around'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.'
               'lg:justify-start':
-                label: 'start'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-start'
               'lg:justify-end':
-                label: 'end'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-end'
               'lg:justify-center':
-                label: 'center'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-center'
+              'lg:justify-between':
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-between'
+              'lg:justify-around':
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-around'
+              'lg:justify-evenly':
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-evenly'
     xlFlexJustify:
       type: string
       ui:
-        label: 'Horizontal alignment (justify)'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-justify-content'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.ui.help.message'
         inspector:
           group: 'xlBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'none'
-              'xl:justify-between':
-                label: 'centered, space between'
-              'xl:justify-around':
-                label: 'centered, space around'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.'
               'xl:justify-start':
-                label: 'start'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-start'
               'xl:justify-end':
-                label: 'end'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-end'
               'xl:justify-center':
-                label: 'center'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-center'
+              'xl:justify-between':
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-between'
+              'xl:justify-around':
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-around'
+              'xl:justify-evenly':
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexJustifyMixin:properties.flexJustify.selectBoxEditor.values.justify-evenly'

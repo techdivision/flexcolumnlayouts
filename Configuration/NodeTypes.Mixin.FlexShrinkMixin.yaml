@@ -6,9 +6,9 @@
     flexShrink:
       type: string
       ui:
-        label: 'flex-shrink'
+        label: i18n
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-shrink'
+          message: i18n
         reloadIfChanged: true
         inspector:
           group: 'defaultBreakpoint'
@@ -16,17 +16,17 @@
           editorOptions:
             values:
               '':
-                label: 'none'
+                label: i18n
               'flex-shrink':
-                label: 'explicitly allow shrinking'
+                label: i18n
               'flex-shrink-0':
-                label: 'explicitly deny shrinking'
+                label: i18n
     smFlexShrink:
       type: string
       ui:
-        label: 'flex-shrink'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexShrink'
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-shrink'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexShrink.ui.help.message'
         reloadIfChanged: true
         inspector:
           group: 'smBreakpoint'
@@ -34,17 +34,17 @@
           editorOptions:
             values:
               '':
-                label: 'none'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexShrink.selectBoxEditor.values.'
               'sm:flex-shrink':
-                label: 'explicitly allow shrinking'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexShrink.selectBoxEditor.values.flex-shrink'
               'sm:flex-shrink-0':
-                label: 'explicitly deny shrinking'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexShrink.selectBoxEditor.values.flex-shrink-0'
     mdFlexShrink:
       type: string
       ui:
-        label: 'flex-shrink'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexShrink'
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-shrink'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexShrink.ui.help.message'
         reloadIfChanged: true
         inspector:
           group: 'mdBreakpoint'
@@ -52,17 +52,17 @@
           editorOptions:
             values:
               '':
-                label: 'none'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexShrink.selectBoxEditor.values.'
               'md:flex-shrink':
-                label: 'explicitly allow shrinking'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexShrink.selectBoxEditor.values.flex-shrink'
               'md:flex-shrink-0':
-                label: 'explicitly deny shrinking'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexShrink.selectBoxEditor.values.flex-shrink-0'
     lgFlexShrink:
       type: string
       ui:
-        label: 'flex-shrink'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexShrink'
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-shrink'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexShrink.ui.help.message'
         reloadIfChanged: true
         inspector:
           group: 'lgBreakpoint'
@@ -70,17 +70,17 @@
           editorOptions:
             values:
               '':
-                label: 'none'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexShrink.selectBoxEditor.values.'
               'lg:flex-shrink':
-                label: 'explicitly allow shrinking'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexShrink.selectBoxEditor.values.flex-shrink'
               'lg:flex-shrink-0':
-                label: 'explicitly deny shrinking'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexShrink.selectBoxEditor.values.flex-shrink-0'
     xlFlexShrink:
       type: string
       ui:
-        label: 'flex-shrink'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexShrink'
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-shrink'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexShrink.ui.help.message'
         reloadIfChanged: true
         inspector:
           group: 'xlBreakpoint'
@@ -88,9 +88,9 @@
           editorOptions:
             values:
               '':
-                label: 'none'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexShrink.selectBoxEditor.values.'
               'xl:flex-shrink':
-                label: 'explicitly allow shrinking'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexShrink.selectBoxEditor.values.flex-shrink'
               'xl:flex-shrink-0':
-                label: 'explicitly deny shrinking'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignContentMixin:properties.flexShrink.selectBoxEditor.values.flex-shrink-0'
 

@@ -6,120 +6,120 @@
     flexAlignItems:
       type: string
       ui:
-        label: 'align-items'
+        label: i18n
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-align-items-self'
+          message: i18n
         inspector:
           group: 'defaultBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'none'
+                label: i18n
               'items-stretch':
-                label: 'stretch'
+                label: i18n
               'items-baseline':
-                label: 'baseline'
+                label: i18n
               'items-start':
-                label: 'start'
+                label: i18n
               'items-end':
-                label: 'end'
+                label: i18n
               'items-center':
-                label: 'center'
+                label: i18n
     smFlexAlignItems:
       type: string
       ui:
-        label: 'align-items'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-align-items-self'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.ui.help.message'
         inspector:
           group: 'smBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'none'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.'
               'sm:items-stretch':
-                label: 'stretch'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.items-stretch'
               'sm:items-baseline':
-                label: 'baseline'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.items-baseline'
               'sm:items-start':
-                label: 'start'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.items-start'
               'sm:items-end':
-                label: 'end'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.items-end'
               'sm:items-center':
-                label: 'center'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.items-center'
     mdFlexAlignItems:
       type: string
       ui:
-        label: 'align-items'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-align-items-self'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.ui.help.message'
         inspector:
           group: 'mdBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'none'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.'
               'md:items-stretch':
-                label: 'stretch'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.items-stretch'
               'md:items-baseline':
-                label: 'baseline'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.items-baseline'
               'md:items-start':
-                label: 'start'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.items-start'
               'md:items-end':
-                label: 'end'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.items-end'
               'md:items-center':
-                label: 'center'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.items-center'
     lgFlexAlignItems:
       type: string
       ui:
-        label: 'align-items'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-align-items-self'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.ui.help.message'
         inspector:
           group: 'lgBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'none'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.'
               'lg:items-stretch':
-                label: 'stretch'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.items-stretch'
               'lg:items-baseline':
-                label: 'baseline'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.items-baseline'
               'lg:items-start':
-                label: 'start'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.items-start'
               'lg:items-end':
-                label: 'end'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.items-end'
               'lg:items-center':
-                label: 'center'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.items-center'
     xlFlexAlignItems:
       type: string
       ui:
-        label: 'align-items'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-align-items-self'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.ui.help.message'
         inspector:
           group: 'xlBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               '':
-                label: 'none'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.'
               'xl:items-stretch':
-                label: 'stretch'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.items-stretch'
               'xl:items-baseline':
-                label: 'baseline'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.items-baseline'
               'xl:items-start':
-                label: 'start'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.items-start'
               'xl:items-end':
-                label: 'end'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.items-end'
               'xl:items-center':
-                label: 'center'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexAlignItemsMixin:properties.flexAlignItems.selectBoxEditor.values.items-center'

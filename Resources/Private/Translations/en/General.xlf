@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="TechDivision.NodeTypes.FlexColumnLayouts" source-language="en" datatype="plaintext">
+        <body>
+            <trans-unit id="grid.with.onecolumn" xml:space="preserve">
+                <source>One column content</source>
+            </trans-unit>
+            <trans-unit id="grid.with.twocolumn" xml:space="preserve">
+                <source>Two column content</source>
+            </trans-unit>
+            <trans-unit id="grid.with.threecolumn" xml:space="preserve">
+                <source>Three column content</source>
+            </trans-unit>
+            <trans-unit id="grid.with.fourcolumn" xml:space="preserve">
+                <source>Four column content</source>
+            </trans-unit>
+        </body>
+    </file>TechDivision.NodeTypes.FlexColumnLayouts:General:grid.with.threecolumn
+</xliff>

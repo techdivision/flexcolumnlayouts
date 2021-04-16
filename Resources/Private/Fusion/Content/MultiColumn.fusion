@@ -1,4 +1,9 @@
 prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos.Neos:ContentComponent) {
+
+    wrapperClasses = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
+        wrapper = 'flex-wrapper'
+    }
+
     containerClasses = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
         flex = 'flex'
         flexDirection = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
@@ -54,8 +59,8 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos
                     layout = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
                         basis = ${q(node).property('flexBasis') ? q(node).property('flexBasis') : (q(parentNode).property('layout') ? 'flex-basis-' + String.split(q(parentNode).property('layout'), '-')[columnIteration.index] : '')}
                         smBasis = ${q(node).property('smFlexBasis') ? q(node).property('smFlexBasis') : (q(parentNode).property('smLayout') ? 'sm:flex-basis-' + String.split(q(parentNode).property('smLayout'), '-')[columnIteration.index] : '')}
-                        mdBasis = ${q(node).property('mdFlexBasis') ? q(node).property('lgFlexBasis') : (q(parentNode).property('mdLayout') ? 'md:flex-basis-' + String.split(q(parentNode).property('mdLayout'), '-')[columnIteration.index] : '')}
-                        lgBasis = ${q(node).property('lgFlexBasis') ? q(node).property('mdFlexBasis') : (q(parentNode).property('lgLayout') ? 'lg:flex-basis-' + String.split(q(parentNode).property('lgLayout'), '-')[columnIteration.index] : '')}
+                        mdBasis = ${q(node).property('mdFlexBasis') ? q(node).property('mdFlexBasis') : (q(parentNode).property('mdLayout') ? 'md:flex-basis-' + String.split(q(parentNode).property('mdLayout'), '-')[columnIteration.index] : '')}
+                        lgBasis = ${q(node).property('lgFlexBasis') ? q(node).property('lgFlexBasis') : (q(parentNode).property('lgLayout') ? 'lg:flex-basis-' + String.split(q(parentNode).property('lgLayout'), '-')[columnIteration.index] : '')}
                         xlBasis = ${q(node).property('xlFlexBasis') ? q(node).property('xlFlexBasis') : (q(parentNode).property('xlLayout') ? 'xl:flex-basis-' + String.split(q(parentNode).property('xlLayout'), '-')[columnIteration.index] : '')}
                     }
                     shrink = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
@@ -78,8 +83,10 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos
         }
     }
     renderer = afx`
-        <div class={props.containerClasses} style={props.containerStyles}>
-            {props.columns}
-        </div>
+        <section class={props.wrapperClasses} style={props.containerStyles}>
+            <div class={props.containerClasses}>
+                {props.columns}
+            </div>
+        </section>
     `
 }

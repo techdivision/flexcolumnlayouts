@@ -1,11 +1,8 @@
+# override with extended properties for default flex container
 'Neos.NodeTypes.ColumnLayouts:Column':
   superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexDirectionMixin': true
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexWrapMixin': true
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexJustifyMixin': true
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexAlignItemsMixin': true
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexAlignContentMixin': true
-    'TechDivision.NodeTypes.FlexColumnLayouts:VisualMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.Default': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.Advanced': true
   ui:
     inspector:
       groups:

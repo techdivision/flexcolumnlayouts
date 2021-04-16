@@ -6,10 +6,10 @@
     flexBasis:
       type: string
       ui:
-        label: 'Override width (flex-basis)'
+        label: i18n
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-basis'
+          message: i18n
         inspector:
           group: 'defaultBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -32,10 +32,10 @@
     smFlexBasis:
       type: string
       ui:
-        label: 'Override width (flex-basis)'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexBasisMixin:properties.flexBasis'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-basis'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexBasisMixin:properties.flexBasis.ui.help.message'
         inspector:
           group: 'smBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -58,10 +58,10 @@
     mdFlexBasis:
       type: string
       ui:
-        label: 'Override width (flex-basis)'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexBasisMixin:properties.flexBasis'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-basis'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexBasisMixin:properties.flexBasis.ui.help.message'
         inspector:
           group: 'mdBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -84,10 +84,10 @@
     lgFlexBasis:
       type: string
       ui:
-        label: 'Override width (flex-basis)'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexBasisMixin:properties.flexBasis'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-basis'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexBasisMixin:properties.flexBasis.ui.help.message'
         inspector:
           group: 'lgBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
@@ -110,10 +110,10 @@
     xlFlexBasis:
       type: string
       ui:
-        label: 'Override width (flex-basis)'
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexBasisMixin:properties.flexBasis'
         reloadIfChanged: true
         help:
-          message: 'https://yoksel.github.io/flex-cheatsheet/#section-flex-basis'
+          message: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexBasisMixin:properties.flexBasis.ui.help.message'
         inspector:
           group: 'xlBreakpoint'
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
