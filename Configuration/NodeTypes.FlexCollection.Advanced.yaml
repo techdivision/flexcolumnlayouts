@@ -1,6 +1,0 @@
-# advanced settings for flex cols not for every editor
-'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.Advanced':
-  abstract: true
-  superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexBasisMixin': true
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexShrinkMixin': true

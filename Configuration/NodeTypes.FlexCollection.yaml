@@ -5,8 +5,13 @@
   abstract: true
   superTypes:
     'Neos.Neos:ContentCollection': true
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.Default': true
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.Advanced': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.BasicFeatures': true
+###### Uncomment or extend the [nodeType] below to activate the  [Intermediate ] or [Advanced ]  features. ######
+#    'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.IntermediateFeatures': true
+#    'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.AdvancedFeatures': true
+
+
+
 
 # add flex collection to every column nodetype
 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.FirstColumn':
