@@ -160,72 +160,68 @@ e.g. you want to remove the md breakpoint and edit some labels to increase the u
 
 
 
-## Out-of-the-box Flex-Properties
+## Enable More Flex-Properties
 On Default only the basic features are enabled, to keep it simple but essential features for a better usability for editors.
 
 
-### Extend flex-properties with more advanced features
-To activate the [ Intermediate ] and [ Advanced ] features, you could  activate them by extending the superTypes as follows: 
+Extend flex-properties with more advanced features
+To activate the [ Intermediate ] or [ Advanced ] features, you could  activate them by extending the superTypes as follows: 
 
 
-####  Flex Grid:
-##### Basic (suggestion for editors)
+### Flex Grid:
+
+out of the box: only define Grid-Col sizes for breakpoints.
+
+#### Intermediate level will enable flex-properties:
+- flex-direction (https://yoksel.github.io/flex-cheatsheet/#section-flex-direction)
+- align-items (https://yoksel.github.io/flex-cheatsheet/#section-align-items-self)
+
+Add this to your YAML-Configuration:
 ```yaml
 'Neos.NodeTypes.ColumnLayouts:Column':
   superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.BasicFeatures': true
-```    
-
-##### Intermediate
-```yaml
-'Neos.NodeTypes.ColumnLayouts:Column':
-  superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.BasicFeatures': true
     'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.IntermediateFeatures': true
 ```
 
-##### Advanced
+#### Advanced level will enable all from Intermediate and enable flex-properties:
+- justify-content (https://yoksel.github.io/flex-cheatsheet/#section-justify-content)
+- flex-wrap (https://yoksel.github.io/flex-cheatsheet/#section-flex-wrap)
+- align-content: (https://yoksel.github.io/flex-cheatsheet/#section-align-content)
+
+Add this to your YAML-Configuration:
 ```yaml
 'Neos.NodeTypes.ColumnLayouts:Column':
   superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.BasicFeatures': true
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.IntermediateFeatures': true
     'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.AdvancedFeatures': true
 ```
 
-Consider the loading order of your loaded packages!
 
 
+###  Flex Column:
+
+- order:  (https://yoksel.github.io/flex-cheatsheet/#section-order)
+
+#### Intermediate level will enable:
+
+- flex-basis (https://yoksel.github.io/flex-cheatsheet/#section-flex-basis)
 
 
-####  Flex Column:
-##### Basic (suggestion for editors)
+Add this to your YAML-Configuration:
 ```yaml
 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection':
   superTypes:
-        'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.BasicFeatures': true
-```
-
-##### Intermediate
-```yaml
-'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection':
-  superTypes:
-        'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.BasicFeatures': true
     	'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.IntermediateFeatures': true
 ```
 
-##### Advanced
+#### Advanced level will enable all from Intermediate and enable flex-properties:
+- flex-shrink (https://yoksel.github.io/flex-cheatsheet/#section-flex-shrink))
+
+Add this to your YAML-Configuration:
 ```yaml
 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection':
   superTypes:
-        'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.BasicFeatures': true
-    	'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.IntermediateFeatures': true
     	'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.AdvancedFeatures': true
 ```
-
-Consider the loading order of your loaded packages!
-
-
 
 
 
@@ -237,7 +233,9 @@ Consider the loading order of your loaded packages!
       'Neos.NodeTypes.ColumnLayouts:Column': false
 ```
 
-Consider the loading order of your loaded packages!
+
+## Attention
+*Consider the loading order of your loaded packages!*
 
 ## Contribution
 If you want to contribute or found a bug, pls provide a PR or file an issue - or get in touch with us!
