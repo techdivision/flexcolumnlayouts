@@ -3,22 +3,22 @@
     <file original="" product-name="TechDivision.NodeTypes.FlexColumnLayouts" source-language="en" datatype="plaintext">
         <body>
             <trans-unit id="properties.flexOrder" xml:space="preserve">
-                <source>position of column</source>
+                <source>Order of column</source>
             </trans-unit>
             <trans-unit id="properties.flexOrder.ui.help.message" xml:space="preserve">
-                <source>This setting will affect the position of the columns. E.g. if the last column has the position 'on first position' it will be placed on the first slot of the flex container. This is useful for different ordering at different breakpoints. Documentation: https://yoksel.github.io/flex-cheatsheet/#section-order </source>
+                <source>This setting will affect the position of the columns. E.g. if the last column has the position 'on 1st position' it will be placed on the first slot of the flex container. This is useful for different ordering at different breakpoints. Documentation: https://yoksel.github.io/flex-cheatsheet/#section-order </source>
             </trans-unit>
             <trans-unit id="properties.flexOrder.selectBoxEditor.values." xml:space="preserve">
-                <source>running column number</source>
+                <source>none</source>
             </trans-unit>
             <trans-unit id="properties.flexOrder.selectBoxEditor.values.order-first" xml:space="preserve">
-                <source>on first position</source>
+                <source>on 1st position</source>
             </trans-unit>
             <trans-unit id="properties.flexOrder.selectBoxEditor.values.order-2" xml:space="preserve">
-                <source>on second position</source>
+                <source>on 2nd position</source>
             </trans-unit>
             <trans-unit id="properties.flexOrder.selectBoxEditor.values.order-3" xml:space="preserve">
-                <source>on third position</source>
+                <source>on 3rd position</source>
             </trans-unit>
             <trans-unit id="properties.flexOrder.selectBoxEditor.values.order-last" xml:space="preserve">
                 <source>on last position</source>

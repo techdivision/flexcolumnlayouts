@@ -1,0 +1,5 @@
+# useful flex grid properties for every editor
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.BasicFeatures':
+  abstract: true
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:VisualMixin': true

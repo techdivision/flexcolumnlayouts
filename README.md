@@ -5,7 +5,7 @@ It extends your standard Neos-ColumnLayouts with flex properties so you can adju
 ## Get started
 1. Install the package via packagist: Add `"techdivision/flexcolumnlayouts" : "~2.0"` to the require section of the composer.json or run `composer require techdivision/flexcolumnlayouts`.
 2. If needed (i.e. nothing follow the instructions under "TailwindCSS" or "Bootstrap4"
-3. Apply a node migration, if you want to use this feature on existing nodes. 
+3. Apply a node migration, if you want to use this feature on existing nodes.
 
 ## For editors
 You find a whole lot of settings now in your multi column nodes. 
@@ -16,7 +16,7 @@ Flex is sometimes better understood if you [try it out](https://yoksel.github.io
 
 
 ### NodeType level
-Here you can see, how it looks like on NodeType level: You have plenty of options to adjust your columns
+Here you can see, how it looks like on NodeType level: You have plenty of options to adjust your columns IF YOU EXTEND ALL ADVANCED FEATURES WITH SUPERTYPES [Go to Extend Flex-Properties With More Advanced Features section](#extend-flex-properties-with-more-advanced-features)
 
 ![NodeType level](Documentation/assets/FlexColumnLayouts-NodeType.png "NodeType level")
 
@@ -42,14 +42,12 @@ Here you can see, how it looks like on Column level: There you can override your
 * Inline-Styles: background-color, text-color and background-image (experimental, just inline-styling - too specific to generalize)
 
 ### Principle
-The idea behind this package is to have a full set of options for flex layouts available, so you can:
+The idea behind this package is to have a full extendable set of options for flex layouts available, so you can:
 1. Do some experiments
 2. Check which layouts improve experience, readability and layout on your website
 3. Build new NodeTypes from that template
 
-Having all those options at hand might be too complicated for some editors, but gives a great toolbox for advanced ones.
-
-**We consider it rather useful for prototyping or advanced editors.**
+Having all those options at hand might be too complicated for some editors, but gives a great toolbox for advanced ones. Therefore we keep the default features as simple as possible. [Go to Extend Flex-Properties With More Advanced Features section](#extend-flex-properties-with-more-advanced-features)  
 
 
 ## For developers
@@ -160,30 +158,72 @@ e.g. you want to remove the md breakpoint and edit some labels to increase the u
           label: 'Desktop (xl) >= 1400px' 
 ```
 
-## Disable flex-properties
 
-On default all flex properties enabled. To provide a better usability for editors, you are able to deactivate them. 
-Feel free to them them if you need one or more.
 
-### Flex Grid (suggestion for editors)
+## Enable More Flex-Properties
+On Default only the basic features are enabled, to keep it simple but essential features for a better usability for editors.
 
+
+Extend flex-properties with more advanced features
+To activate the [ Intermediate ] or [ Advanced ] features, you could  activate them by extending the superTypes as follows: 
+
+
+### Flex Grid:
+
+out of the box: only define Grid-Col sizes for breakpoints.
+
+#### Intermediate level will enable flex-properties:
+- flex-direction (https://yoksel.github.io/flex-cheatsheet/#section-flex-direction)
+- align-items (https://yoksel.github.io/flex-cheatsheet/#section-align-items-self)
+
+Add this to your YAML-Configuration:
 ```yaml
 'Neos.NodeTypes.ColumnLayouts:Column':
   superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.Advanced': false
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexJustifyMixin': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.IntermediateFeatures': true
 ```
 
-Consider the loading order of your loaded packages!
+#### Advanced level will enable all from Intermediate and enable flex-properties:
+- justify-content (https://yoksel.github.io/flex-cheatsheet/#section-justify-content)
+- flex-wrap (https://yoksel.github.io/flex-cheatsheet/#section-flex-wrap)
+- align-content: (https://yoksel.github.io/flex-cheatsheet/#section-align-content)
 
-### Flex Column (suggestion for editors)
+Add this to your YAML-Configuration:
+```yaml
+'Neos.NodeTypes.ColumnLayouts:Column':
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.AdvancedFeatures': true
+```
 
+
+
+###  Flex Column:
+
+- order:  (https://yoksel.github.io/flex-cheatsheet/#section-order)
+
+#### Intermediate level will enable:
+
+- flex-basis (https://yoksel.github.io/flex-cheatsheet/#section-flex-basis)
+
+
+Add this to your YAML-Configuration:
 ```yaml
 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection':
   superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.Advanced': false
-    'TechDivision.NodeTypes:Mixin.Layout': true
+    	'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.IntermediateFeatures': true
 ```
+
+#### Advanced level will enable all from Intermediate and enable flex-properties:
+- flex-shrink (https://yoksel.github.io/flex-cheatsheet/#section-flex-shrink))
+
+Add this to your YAML-Configuration:
+```yaml
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection':
+  superTypes:
+    	'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.AdvancedFeatures': true
+```
+
+
 
 ## Disable nesting of grids
 ```yaml
@@ -193,7 +233,9 @@ Consider the loading order of your loaded packages!
       'Neos.NodeTypes.ColumnLayouts:Column': false
 ```
 
-Consider the loading order of your loaded packages!
+
+## Attention
+*Consider the loading order of your loaded packages!*
 
 ## Contribution
 If you want to contribute or found a bug, pls provide a PR or file an issue - or get in touch with us!

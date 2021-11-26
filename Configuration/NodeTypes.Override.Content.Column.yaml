@@ -1,8 +1,10 @@
 # override with extended properties for default flex container
 'Neos.NodeTypes.ColumnLayouts:Column':
   superTypes:
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.Default': true
-    'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.Advanced': true
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.BasicFeatures': true
+###### Overwrite the [nodeType] within your project to activate the  [Intermediate ] exclusive or [Advanced ]  features. ######
+#    'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.IntermediateFeatures': true
+#    'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.AdvancedFeatures': true
   ui:
     inspector:
       groups:
