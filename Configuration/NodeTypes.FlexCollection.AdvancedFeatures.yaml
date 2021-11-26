@@ -2,4 +2,5 @@
 'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.AdvancedFeatures':
   abstract: true
   superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.IntermediateFeatures': true
     'TechDivision.NodeTypes.FlexColumnLayouts:FlexShrinkMixin': true

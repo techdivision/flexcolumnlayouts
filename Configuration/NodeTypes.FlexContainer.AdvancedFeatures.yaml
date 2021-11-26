@@ -2,6 +2,7 @@
 'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.AdvancedFeatures':
   abstract: true
   superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.IntermediateFeatures': true
     'TechDivision.NodeTypes.FlexColumnLayouts:FlexJustifyMixin': true
     'TechDivision.NodeTypes.FlexColumnLayouts:FlexWrapMixin': true
     'TechDivision.NodeTypes.FlexColumnLayouts:FlexAlignContentMixin': true #Only multi-line flex containers ever have free space in the cross-axis
