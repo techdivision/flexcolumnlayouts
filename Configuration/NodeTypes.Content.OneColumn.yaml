@@ -2,7 +2,7 @@
   superTypes:
     'Neos.NodeTypes.ColumnLayouts:Column': true
   ui:
-    label: 'One Column'
+    label: 'One column content'
     position: 100
   childNodes:
     column0:
