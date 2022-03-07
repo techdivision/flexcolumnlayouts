@@ -1,34 +1,36 @@
-@import "Variables";
-@import "Mixins/Content";
-@import "Mixins/Flex";
-@import "Mixins/FlexBasis";
-@import "Mixins/Item";
-@import "Mixins/Justify";
-@import "Mixins/Order";
-@import "Mixins/Self";
+@import 'Variables';
+@import 'Mixins/Content';
+@import 'Mixins/Flex';
+@import 'Mixins/FlexBasis';
+@import 'Mixins/Item';
+@import 'Mixins/Justify';
+@import 'Mixins/Order';
+@import 'Mixins/Self';
+@import 'Mixins/Separator';
 
 @mixin flex-breakpoint($size, $mediaCondition) {
-  @media ($mediaCondition + $size) {
-    @content;
-  }
+    @media ($mediaCondition + $size) {
+        @content;
+    }
 }
 
 @mixin responsive-flex-builder($configuration: $flexBreakpointConfiguration) {
-  @if $configuration {
-    @each $size in map-keys($configuration) {
-      @include flex-breakpoint($size, $flexMediaCondition) {
-        $prefix: map-get($configuration, $size);
+    @if $configuration {
+        @each $size in map-keys($configuration) {
+            @include flex-breakpoint($size, $flexMediaCondition) {
+                $prefix: map-get($configuration, $size);
 
-        @include flex-content($prefix);
-        @include flex($prefix);
-        @include flex-basis($prefix);
-        @include flex-item($prefix);
-        @include flex-justify($prefix);
-        @include flex-order($prefix);
-        @include flex-self($prefix);
-      }
+                @include flex-content($prefix);
+                @include flex($prefix);
+                @include flex-basis($prefix);
+                @include flex-item($prefix);
+                @include flex-justify($prefix);
+                @include flex-order($prefix);
+                @include flex-self($prefix);
+                @include vertical-separator($prefix);
+            }
+        }
     }
-  }
 }
 
 // Output the styles
@@ -38,4 +40,5 @@
 @include flex-justify('');
 @include flex-order('');
 @include flex-self('');
+@include vertical-separator('');
 @include responsive-flex-builder();

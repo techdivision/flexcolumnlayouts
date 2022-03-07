@@ -41,6 +41,13 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos
             lgFlexAlignContent = ${q(node).property('lgFlexAlignContent')}
             xlFlexAlignContent = ${q(node).property('xlFlexAlignContent')}
         }
+        verticalSeparator = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
+            verticalSeparator = ${q(node).property('verticalSeparator') ? 'vertical-separator' : ''}
+            smVerticalSeparator = ${q(node).property('smVerticalSeparator') ? 'sm:vertical-separator' : ''}
+            mdVerticalSeparator = ${q(node).property('mdVerticalSeparator') ? 'md:vertical-separator' : ''}
+            lgVerticalSeparator = ${q(node).property('lgVerticalSeparator') ? 'lg:vertical-separator' : ''}
+            xlVerticalSeparator = ${q(node).property('xlVerticalSeparator') ? 'xl:vertical-separator' : ''}
+        }
     }
     containerStyles = TechDivision.NodeTypes.FlexColumnLayouts:Helper.VisualStyles
 

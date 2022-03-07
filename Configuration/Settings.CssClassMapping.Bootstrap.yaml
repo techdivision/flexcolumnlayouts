@@ -158,3 +158,9 @@ TechDivision:
           'md:flex-shrink-0': 'flex-md-shrink-0'
           'lg:flex-shrink-0': 'flex-lg-shrink-0'
           'xl:flex-shrink-0': 'flex-xl-shrink-0'
+
+          'vertical-separator': 'vertical-separator'
+          'sm:vertical-separator': 'sm:vertical-separator'
+          'md:vertical-separator': 'md:vertical-separator'
+          'lg:vertical-separator': 'lg:vertical-separator'
+          'xl:vertical-separator': 'xl:vertical-separator'
