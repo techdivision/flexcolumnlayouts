@@ -1,0 +1,27 @@
+$separatorWidth: 2px !default;
+
+@mixin vertical-separator($prefix: '', $color: 'black') {
+    .#{$prefix}vertical-separator {
+        .flex-item {
+            position: relative;
+
+            &:not(:first-child) {
+                padding-left: 2rem;
+            }
+
+            &:not(:last-child) {
+                padding-right: calc(2rem + #{$separatorWidth});
+
+                &::after {
+                    content: '';
+                    background-color: #{$color};
+                    height: 100%;
+                    width: $separatorWidth;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
+        }
+    }
+}

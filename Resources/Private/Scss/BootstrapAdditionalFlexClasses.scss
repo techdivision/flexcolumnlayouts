@@ -1,28 +1,30 @@
-@import "Variables";
-@import "Mixins/FlexBasis";
-@import "Mixins/Order";
-
+@import 'Variables';
+@import 'Mixins/FlexBasis';
+@import 'Mixins/Order';
+@import 'Mixins/Separator';
 
 @mixin flex-breakpoint($size, $mediaCondition) {
-  @media ($mediaCondition + $size) {
-    @content;
-  }
+    @media ($mediaCondition + $size) {
+        @content;
+    }
 }
 
 @mixin responsive-flex-builder($configuration: $flexBreakpointConfiguration) {
-  @if $configuration {
-    @each $size in map-keys($configuration) {
-      @include flex-breakpoint($size, $flexMediaCondition) {
-        $prefix: map-get($configuration, $size);
+    @if $configuration {
+        @each $size in map-keys($configuration) {
+            @include flex-breakpoint($size, $flexMediaCondition) {
+                $prefix: map-get($configuration, $size);
 
-        @include flex-basis($prefix);
-        @include flex-order($prefix);
-      }
+                @include flex-basis($prefix);
+                @include flex-order($prefix);
+                @include vertical-separator($prefix);
+            }
+        }
     }
-  }
 }
 
 // Output the styles
 @include flex-basis('');
 @include flex-order('');
+@include vertical-separator('');
 @include responsive-flex-builder();

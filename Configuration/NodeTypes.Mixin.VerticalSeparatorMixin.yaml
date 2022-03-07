@@ -1,0 +1,50 @@
+'TechDivision.NodeTypes.FlexColumnLayouts:VerticalSeparatorMixin':
+  abstract: true
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:BreakpointsMixin': true
+  properties:
+    verticalSeparator:
+      type: boolean
+      defaultValue: false
+      ui:
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.VerticalSeparatorMixin:properties.verticalSeparator'
+        reloadIfChanged: true
+        inspector:
+          group: 'defaultBreakpoint'
+          position: 20
+    smVerticalSeparator:
+      type: boolean
+      defaultValue: false
+      ui:
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.VerticalSeparatorMixin:properties.verticalSeparator'
+        reloadIfChanged: true
+        inspector:
+          group: 'smBreakpoint'
+          position: 20
+    mdVerticalSeparator:
+      type: boolean
+      defaultValue: false
+      ui:
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.VerticalSeparatorMixin:properties.verticalSeparator'
+        reloadIfChanged: true
+        inspector:
+          group: 'mdBreakpoint'
+          position: 20
+    lgVerticalSeparator:
+      type: boolean
+      defaultValue: false
+      ui:
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.VerticalSeparatorMixin:properties.verticalSeparator'
+        reloadIfChanged: true
+        inspector:
+          group: 'lgBreakpoint'
+          position: 20
+    xlVerticalSeparator:
+      type: boolean
+      defaultValue: false
+      ui:
+        label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.VerticalSeparatorMixin:properties.verticalSeparator'
+        reloadIfChanged: true
+        inspector:
+          group: 'xlBreakpoint'
+          position: 20
