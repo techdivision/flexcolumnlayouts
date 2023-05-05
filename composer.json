@@ -3,7 +3,7 @@
     "type": "neos-plugin",
     "description": "Flex column layouts for neos nodetypes",
     "require": {
-        "neos/neos": "^5.0 || ^7.0 || ^8.0 || dev-master",
+        "neos/neos": "^5.0 || ^7.0 || ^8.0",
         "neos/fusion-afx": "*",
         "neos/nodetypes-columnlayouts": "*",
         "shel/neos-colorpicker": "*"
