@@ -87,6 +87,19 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos
                 }
                 style = TechDivision.NodeTypes.FlexColumnLayouts:Helper.VisualStyles
             }
+
+            @cache {
+                mode = 'cached'
+                entryIdentifier {
+                    node = ${node}
+                }
+                entryTags {
+                    # Whenever the node changes the matched condition could change
+                    1 = ${Neos.Caching.nodeTag(node)}
+                    # Whenever the parent nodes changes the layout could change
+                    2 = ${Neos.Caching.nodeTag(parentNode)}
+                }
+            }
         }
     }
     renderer = afx`
