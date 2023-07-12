@@ -98,6 +98,8 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos
                     1 = ${Neos.Caching.nodeTag(node)}
                     # Whenever the parent nodes changes the layout could change
                     2 = ${Neos.Caching.nodeTag(parentNode)}
+                    # Whenever the childs (the actual content) changes we need to flush this cache
+                    3 = ${Neos.Caching.descendantOfTag(node)}
                 }
             }
         }
