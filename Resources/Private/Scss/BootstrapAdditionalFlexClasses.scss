@@ -14,7 +14,6 @@
         @each $size in map-keys($configuration) {
             @include flex-breakpoint($size, $flexMediaCondition) {
                 $prefix: map-get($configuration, $size);
-
                 @include flex-basis($prefix);
                 @include flex-order($prefix);
                 @include vertical-separator($prefix);

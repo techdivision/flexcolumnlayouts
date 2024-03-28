@@ -4,8 +4,8 @@ $flexMediaCondition: 'min-width:' !default;
 // Define media query sizes and a css class prefix for this size
 // To disable the media-query-builder unset the variable like this: '$flexBreakpointConfiguration: null;'
 $flexBreakpointConfiguration: (
-        '640px': 'sm\\:',
-        '768px': 'md\\:',
-        '1024px': 'lg\\:',
-        '1280px': 'xl\\:'
+    '640px': 'sm\\:',
+    '768px': 'md\\:',
+    '1024px': 'lg\\:',
+    '1280px': 'xl\\:',
 ) !default;

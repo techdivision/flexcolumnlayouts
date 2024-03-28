@@ -1,0 +1,48 @@
+prototype(TechDivision.NodeTypes.FlexColumnLayouts:SingleColumn) < prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) {
+    columns >
+    columns = Neos.Neos:ContentCollection {
+        attributes = Neos.Fusion:Attributes {
+            class >
+            class = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
+                flexItem = ${'flex-item'}
+                layout = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
+                    basis = ${q(node).property('flexBasis') ? q(node).property('flexBasis') : (q(parentNode).property('layout') ? 'flex-basis-' + String.split(q(parentNode).property('layout'), '-')[columnIteration.index] : '')}
+                    smBasis = ${q(node).property('smFlexBasis') ? q(node).property('smFlexBasis') : (q(parentNode).property('smLayout') ? 'sm:flex-basis-' + String.split(q(parentNode).property('smLayout'), '-')[columnIteration.index] : '')}
+                    mdBasis = ${q(node).property('mdFlexBasis') ? q(node).property('mdFlexBasis') : (q(parentNode).property('mdLayout') ? 'md:flex-basis-' + String.split(q(parentNode).property('mdLayout'), '-')[columnIteration.index] : '')}
+                    lgBasis = ${q(node).property('lgFlexBasis') ? q(node).property('lgFlexBasis') : (q(parentNode).property('lgLayout') ? 'lg:flex-basis-' + String.split(q(parentNode).property('lgLayout'), '-')[columnIteration.index] : '')}
+                    xlBasis = ${q(node).property('xlFlexBasis') ? q(node).property('xlFlexBasis') : (q(parentNode).property('xlLayout') ? 'xl:flex-basis-' + String.split(q(parentNode).property('xlLayout'), '-')[columnIteration.index] : '')}
+                }
+                shrink = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
+                    shrink = ${q(node).property('flexShrink')}
+                    smShrink = ${q(node).property('smFlexShrink')}
+                    mdShrink = ${q(node).property('mdFlexShrink')}
+                    lgShrink = ${q(node).property('lgFlexShrink')}
+                    xlShrink = ${q(node).property('xlFlexShrink')}
+                }
+                order = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
+                    order = ${q(node).property('flexOrder')}
+                    smOrder = ${q(node).property('smFlexOrder')}
+                    mdOrder = ${q(node).property('mdFlexOrder')}
+                    lgOrder = ${q(node).property('lgFlexOrder')}
+                    xlOrder = ${q(node).property('xlFlexOrder')}
+                }
+            }
+            style = TechDivision.NodeTypes.FlexColumnLayouts:Helper.VisualStyles
+        }
+
+        @cache {
+            mode = 'cached'
+            entryIdentifier {
+                node = ${node}
+            }
+            entryTags {
+                # Whenever the node changes the matched condition could change
+                    1 = ${Neos.Caching.nodeTag(node)}
+                # Whenever the parent nodes changes the layout could change
+                    2 = ${Neos.Caching.nodeTag(parentNode)}
+                # Whenever the childs (the actual content) changes we need to flush this cache
+                    3 = ${Neos.Caching.descendantOfTag(node)}
+            }
+        }
+    }
+}
