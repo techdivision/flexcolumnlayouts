@@ -1,21 +1,20 @@
 <?php
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace TechDivision\NodeTypes\FlexColumnLayouts\Eel;
 
+/**
+ * This file is part of the TechDivision.NodeTypes.FlexColumnLayouts package.
+ *
+ * TechDivision - neos@techdivision.com
+ *
+ * This package is Open Source Software. For the full copyright and license
+ * information, please view the LICENSE file which was distributed with this
+ * source code.
+ */
+
 use Neos\Flow\Annotations as Flow;
 use Neos\Eel\ProtectedContextAwareInterface;
-
-
-/*
-* This file is part of the TechDivision.NodeTypes.FlexColumnLayouts package.
-*
-* TechDivision - neos@techdivision.com
-*
-* This package is Open Source Software. For the full copyright and license
-* information, please view the LICENSE file which was distributed with this
-* source code.
-*/
 
 class CssClassMappingHelper implements ProtectedContextAwareInterface
 {
@@ -23,16 +22,17 @@ class CssClassMappingHelper implements ProtectedContextAwareInterface
      * @var array
      * @Flow\InjectConfiguration("cssClassMapping")
      */
-    protected $cssClassMapping;
+    protected array $cssClassMapping;
 
     /**
      * replaces class values from class string with according css classes from
      * other frameworks
+     *
      * @param string $concatenatedCssClasses
      * @param string $configurationKey
      * @return string
      */
-    public function replace($concatenatedCssClasses, $configurationKey): string
+    public function replace(string $concatenatedCssClasses, string $configurationKey): string
     {
         if (array_key_exists($configurationKey, $this->cssClassMapping) === false) {
             return $concatenatedCssClasses;
@@ -43,7 +43,7 @@ class CssClassMappingHelper implements ProtectedContextAwareInterface
         $replacedCssClasses = [];
 
         foreach ($cssClasses as $cssClass) {
-            if (trim($cssClass) === ''){
+            if (trim($cssClass) === '') {
                 continue;
             }
             if (array_key_exists($cssClass, $replacements)) {
@@ -59,12 +59,10 @@ class CssClassMappingHelper implements ProtectedContextAwareInterface
 
     /**
      * @param string $methodName
-     *
      * @return boolean
      */
     public function allowsCallOfMethod($methodName): bool
     {
         return true;
     }
-
 }

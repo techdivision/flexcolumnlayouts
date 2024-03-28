@@ -1,0 +1,7 @@
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.ThirdColumn':
+  ui:
+    label: 'Col 3'
+    icon: 'icon-dice-three'
+    inlineEditable: true
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection': true

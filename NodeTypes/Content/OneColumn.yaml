@@ -1,0 +1,37 @@
+'TechDivision.NodeTypes.FlexColumnLayouts:OneColumn':
+  superTypes:
+    'Neos.NodeTypes.ColumnLayouts:Column': true
+    'Neos.Neos:ContentCollection': true
+  ui:
+    label: 'One column content'
+    position: 100
+  properties:
+    layout:
+      defaultValue: '100'
+      ui:
+        reloadIfChanged: true
+        inspector:
+          editorOptions:
+            values:
+              '100':
+                label: '100%'
+    flexDirection: []
+    flexWrap: []
+    flexAlignItems: []
+    flexAlignContent: []
+    smFlexDirection: []
+    smFlexWrap: []
+    smFlexAlignItems: []
+    smFlexAlignContent: []
+    mdFlexDirection: []
+    mdFlexWrap: []
+    mdFlexAlignItems: []
+    mdFlexAlignContent: []
+    lgFlexDirection: []
+    lgFlexWrap: []
+    lgFlexAlignItems: []
+    lgFlexAlignContent: []
+    xlFlexDirection: []
+    xlFlexWrap: []
+    xlFlexAlignItems: []
+    xlFlexAlignContent: []

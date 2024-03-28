@@ -1,0 +1,7 @@
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.FourthColumn':
+  ui:
+    label: 'Col 4'
+    icon: 'icon-dice-four'
+    inlineEditable: true
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection': true

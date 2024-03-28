@@ -9,6 +9,3 @@ Neos:
           TechDivision.NodeTypes.FlexColumnLayouts:
             - 'Main'
             - 'NodeTypes/*'
-  Fusion:
-    defaultContext:
-      'CssClassMapping': 'TechDivision\NodeTypes\FlexColumnLayouts\Eel\CssClassMappingHelper'

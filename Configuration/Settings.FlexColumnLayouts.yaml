@@ -3,7 +3,6 @@ TechDivision:
     FlexColumnLayouts:
       cssClassMapping:
         bootstrap:
-
           'flex': 'd-flex'
 
           'flex-col': 'flex-column'
@@ -114,7 +113,6 @@ TechDivision:
           'md:items-center': 'align-items-md-center'
           'lg:items-center': 'align-items-lg-center'
           'xl:items-center': 'align-items-xl-center'
-
 
           #ADVANCED Configuration/NodeTypes.FlexCollection.yaml properties
 
