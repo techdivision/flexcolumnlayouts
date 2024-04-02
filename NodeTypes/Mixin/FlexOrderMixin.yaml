@@ -88,7 +88,7 @@
               'lg:order-2':
                 label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexOrderMixin:properties.flexOrder.selectBoxEditor.values.order-2'
               'lg:order-3':
-                  label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexOrderMixin:properties.flexOrder.selectBoxEditor.values.order-3'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexOrderMixin:properties.flexOrder.selectBoxEditor.values.order-3'
               'lg:order-last':
                 label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexOrderMixin:properties.flexOrder.selectBoxEditor.values.order-last'
     xlFlexOrder:
@@ -110,6 +110,6 @@
               'xl:order-2':
                 label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexOrderMixin:properties.flexOrder.selectBoxEditor.values.order-2'
               'xl:order-3':
-                  label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexOrderMixin:properties.flexOrder.selectBoxEditor.values.order-3'
+                label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexOrderMixin:properties.flexOrder.selectBoxEditor.values.order-3'
               'xl:order-last':
                 label: 'TechDivision.NodeTypes.FlexColumnLayouts:NodeTypes.FlexOrderMixin:properties.flexOrder.selectBoxEditor.values.order-last'
