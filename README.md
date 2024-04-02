@@ -247,6 +247,11 @@ Add this to your YAML-Configuration:
             'Neos.NodeTypes.ColumnLayouts:Column': false
 ```
 
+## Breaking Change from version 3 to 4
+
+One Column Layout will lose the col0 content collection, instead content will be directly inserted into the One Column Layout, this will result in losing content after updating.
+With  `./flow node:repair --node-type TechDivision.NodeTypes.FlexColumnLayouts:OneColumn` you can delete the col0 from your One Column Layout, but you still have to add the old content manually.
+
 ## Attention
 
 _Consider the loading order of your loaded packages!_

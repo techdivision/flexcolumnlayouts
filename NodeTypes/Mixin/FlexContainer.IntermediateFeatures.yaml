@@ -2,5 +2,6 @@
 'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.IntermediateFeatures':
   abstract: true
   superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexContainer.BasicFeatures': true
     'TechDivision.NodeTypes.FlexColumnLayouts:FlexDirectionMixin': true
     'TechDivision.NodeTypes.FlexColumnLayouts:FlexAlignItemsMixin': true
