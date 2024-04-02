@@ -1,0 +1,7 @@
+'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection.SecondColumn':
+  ui:
+    label: 'Col 2'
+    icon: 'icon-dice-two'
+    inlineEditable: true
+  superTypes:
+    'TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection': true

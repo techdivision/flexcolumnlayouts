@@ -8,7 +8,7 @@
             </trans-unit>
             <trans-unit id="properties.flexAlignContent.ui.help.message" xml:space="preserve">
                 <source>Align your content within the container. The content can be placed centered, on the bottom/top or even with space between or around. Attention: requires Layout "none" or entirely more as "100%" (multi-line)! Further Documentation: https://yoksel.github.io/flex-cheatsheet/#section-align-content</source>
-                <target>Anordnung des Inhalts, dieser kann mittig, oben/unten oder auch mit Abstand zwischen oder außenrum platziert werden. Achtung: benötigt das Layout "none" oder eine Gesamtbreite von mehr als 100% (multi-line)! Weitere Dokumentation: https://yoksel.github.io/flex-cheatsheet/#section-align-content</target>
+                <target>Anordnung des Inhalts, dieser kann mittig, oben, unten oder auch mit Abstand zwischen oder außenrum platziert werden. Achtung: benötigt das Layout "none" oder eine Gesamtbreite von mehr als 100% (multi-line)! Weitere Dokumentation: https://yoksel.github.io/flex-cheatsheet/#section-align-content</target>
             </trans-unit>
             <trans-unit id="properties.flexAlignContent.selectBoxEditor.values." xml:space="preserve">
                 <source>none</source>
