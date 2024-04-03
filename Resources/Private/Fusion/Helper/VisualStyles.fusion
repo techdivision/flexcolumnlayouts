@@ -1,5 +1,4 @@
 prototype(TechDivision.NodeTypes.FlexColumnLayouts:Helper.VisualStyles) < prototype(Neos.Fusion:Join) {
-    ignoreStyles = false
     backgroundColor = Neos.Fusion:Value {
         value = ${'background-color:' + q(node).property('backgroundColor') + ';'}
         @if.exists = ${q(node).property('backgroundColor')}
@@ -14,5 +13,4 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:Helper.VisualStyles) < protot
         @process.wrap = ${'background-image:url(' + value + ');background-repeat:no-repeat; background-position:center center;'}
         @if.exists = ${q(node).property('backgroundImage')}
     }
-    @if.shouldUsed = ${!this.ignoreStyles}
 }
