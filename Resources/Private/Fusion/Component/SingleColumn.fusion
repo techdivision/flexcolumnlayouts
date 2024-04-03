@@ -27,7 +27,7 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:SingleColumn) < prototype(Tec
                     xlOrder = ${q(node).property('xlFlexOrder')}
                 }
             }
-            style = TechDivision.NodeTypes.FlexColumnLayouts:Helper.VisualStyles
+            style = null
         }
 
         @cache {
