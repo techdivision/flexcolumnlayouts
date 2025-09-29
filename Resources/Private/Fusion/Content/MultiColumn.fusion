@@ -51,15 +51,15 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos
     }
     containerStyles = TechDivision.NodeTypes.FlexColumnLayouts:Helper.VisualStyles
 
-    columns = Neos.Fusion:Collection {
+    columns = Neos.Fusion:Loop {
         @context.columnLayout = ${q(node).property('layout')}
         @context.parentNode = ${node}
-        collection = ${q(node).children('[instanceof TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection]')}
+        items = ${q(node).children('[instanceof TechDivision.NodeTypes.FlexColumnLayouts:FlexCollection]')}
         itemName = 'node'
         iterationName = 'columnIteration'
         itemRenderer = Neos.Neos:ContentCollection {
             nodePath = '.'
-            attributes = Neos.Fusion:Attributes {
+            attributes = Neos.Fusion:DataStructure {
                 class >
                 class = TechDivision.NodeTypes.FlexColumnLayouts:Helper.CssClasses {
                     flexItem = ${'flex-item'}
@@ -91,7 +91,7 @@ prototype(TechDivision.NodeTypes.FlexColumnLayouts:MultiColumn) < prototype(Neos
             @cache {
                 mode = 'cached'
                 entryIdentifier {
-                    node = ${node}
+                    node = ${Neos.Caching.entryIdentifierForNode(node)}
                 }
                 entryTags {
                     # Whenever the node changes the matched condition could change
